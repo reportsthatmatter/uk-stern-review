@@ -1,0 +1,108 @@
+# Golden pages: ground truth for this report, read off the PDF page image and checked by `pnpm ingest verify`.
+# Format and rules: @rtm/ingest src/golden.ts and the site's docs/quality-harness.md ("Golden pages").
+# A page marked xfail is a known pipeline defect: it stays red here, verify stays green, and the bead says why.
+# Printed page = roman folio of the PDF page (i at PDF p.1 to xxvii at PDF p.27). Chosen for the figures (pp.4, 5, 12, 15), the notes (pp.3, 5), the raised CO2 subscripts (pp.3, 11, 15, 16) and the bold-italic findings.
+pages:
+  # The one heading, then a bold-italic key finding (served as ***emphasis***) and a list item running over to p.2.
+  - pdf: 1
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - heading: "Executive Summary"
+        level: 2
+      - paragraph: {start: "The scientific evidence is now overwhelming:", end: "demands an urgent global response."}
+      - paragraph: {start: "This independent Review was commissioned by", end: "the economics of climate change."}
+      - paragraph: {start: "The Review first examines the evidence", end: "can no longer be avoided."}
+      - paragraph: {start: "The Review takes an international perspective.", end: "adaptation, particularly for developing countries."}
+      - paragraph: {start: "Climate change presents a unique challenge", end: "economics, including many recent advances."}
+      - paragraph: {start: "***The benefits of strong, early action", end: "climate change outweigh the costs***"}
+      - paragraph: {start: "The effects of our actions now", end: "century and in the next."}
+      - paragraph: {start: "No-one can predict the consequences of", end: "conceptual framework of this Review."}
+      - paragraph: {start: "The Review considers the economic costs", end: "it, in three different ways:"}
+      - list: {start: "Using disaggregated techniques, in other words", end: "to reduce greenhouse gas emissions;", items: 1}
+    markers: []
+  # Note 1 is a raised "1" after "CO2"; every "CO2" subscript is a raised 2 and no marker. Figure 1's title (p.4) is joined onto the last paragraph: "2°C." read as an initial (lb9l).
+  - pdf: 3
+    xfail: reportsthatmatter-lb9l
+    xfail_only: [blocks]
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "The first half of the Review", end: "the conceptual framework described above."}
+      - paragraph: {start: "***The scientific evidence points to increasing", end: "business-as-usual (BAU) paths for emissions.***"}
+      - paragraph: {start: "The scientific evidence on the causes", end: "amplified the underlying physical processes."}
+      - paragraph: {start: "The stocks of greenhouse gases in", end: "summarised in Figure 1 below."}
+      - paragraph: {start: "The current level or stock of", end: "inertia in the climate system.", notes: [1]}
+      - paragraph: {start: "Even if the annual flow of", end: "global average temperature rise exceeding 2°C."}
+    footnotes: [1]
+    markers: [1]
+  # Figure 1 (a pie chart): title, then the chart's labels (not served), then its Source line in the body.
+  - pdf: 4
+    xfail: reportsthatmatter-lb9l
+    xfail_only: [blocks]
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 1 Greenhouse-gas emissions in 2000,", end: "emissions in 2000, by source"}
+      - paragraph: {start: "Source: Prepared by Stern Review, from", end: "(CAIT) on-line database version 3.0."}
+      - paragraph: {start: "Under a BAU scenario, the stock", end: "in the last ice age."}
+      - paragraph: {start: "Such changes would transform the physical", end: "how they live their lives."}
+      - paragraph: {start: "Figure 2 summarises the scientific evidence", end: "gases in the atmosphere rise."}
+    markers: []
+  # Figure 2: the title, the caption citing notes 2-4, then the chart and impacts table (not served) and the notes.
+  - pdf: 5
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 2 Stabilisation levels and probability", end: "probability ranges for temperature increases"}
+      - paragraph: {start: "The figure below illustrates the types", end: "based on current scientific literature.", notes: [2, 3, 4]}
+    footnotes: [2, 3, 4]
+    markers: [2, 3, 4]
+  # Plain body; four raised subscripts (CO2, GtCO2e, CO2e), none of them a note marker.
+  - pdf: 11
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "***Emissions have been, and continue to", end: "and consistent with continued growth.***"}
+      - paragraph: {start: "CO2 emissions per head have been", end: "increasing share of energy-intensive industries."}
+      - paragraph: {start: "Yet despite the historical pattern and", end: "maintaining economic growth in both."}
+      - paragraph: {start: "Stabilisation - at whatever level -", end: "level of current annual emissions."}
+      - paragraph: {start: "This Review has focused on the", end: "the range of 450-550ppm CO2e."}
+      - paragraph: {start: "Stabilising at or below 550ppm CO2e", end: "of current levels by 2050."}
+      - paragraph: {start: "To stabilise at 450ppm CO2e, without", end: "below current levels by 2050."}
+      - paragraph: {start: "Theoretically it might be possible to", end: "stabilisation target for atmospheric concentration."}
+    markers: []
+  # Figure 3: title, caption, chart (not served), Source; then a finding, a four-item list and a new paragraph straight under it.
+  - pdf: 12
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 3 Illustrative emissions paths to", end: "to stabilise at 550ppm CO2e."}
+      - paragraph: {start: "The figure below shows six illustrative", end: "reduced from 2.5%/yr to 1.5%/yr."}
+      - paragraph: {start: "Source: Reproduced by the Stern Review", end: "University Press, pp.265 - 280."}
+      - paragraph: {start: "***Achieving these deep cuts in emissions", end: "that is significant but manageable.***"}
+      - paragraph: {start: "Reversing the historical trend in emissions", end: "high-efficiency goods and services expand."}
+      - paragraph: {start: "Greenhouse-gas emissions can be cut in", end: "used, and in which sector:"}
+      - list: {start: "Reducing demand for emissions-intensive goods and", end: "for power, heat and transport", items: 4}
+      - paragraph: {start: "Estimating the costs of these changes", end: "for high-carbon goods and services."}
+    markers: []
+  # Figure 4 (a scatter plot) under its two-line title; the Source line; body.
+  - pdf: 15
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 4 Model cost projections scatter", end: "GDP against level of reduction"}
+      - paragraph: {start: "Source: Barker, T., M.S. Qureshi and", end: "Research, Cambridge: University of Cambridge."}
+      - paragraph: {start: "A broad range of modelling studies,", end: "the degree of policy flexibility."}
+      - paragraph: {start: "The figure above uses Barker's combined", end: "very pessimistic by historical standards."}
+      - paragraph: {start: "Stabilisation at 450ppm CO2e is already", end: "likely to be very costly."}
+      - paragraph: {start: "An important corollary is that there", end: "already associated with significant risks."}
+    markers: []
+  # Two bold-italic findings, body paragraphs; the last runs on to p.17.
+  - pdf: 16
+    verified_by: "Claude (Opus 5.5), 2026-11-08, against the page image"
+    blocks:
+      - paragraph: {start: "***The transition to a low-carbon economy", end: "but also opportunities for growth.***"}
+      - paragraph: {start: "Costs of mitigation of around 1%", end: "dynamism to embrace the change."}
+      - paragraph: {start: "There are also significant new opportunities", end: "take advantage of these opportunities."}
+      - paragraph: {start: "Climate-change policy can help to root", end: "spend around $250bn a year."}
+      - paragraph: {start: "Policies on climate change can also", end: "proportion of the world's biodiversity."}
+      - paragraph: {start: "National objectives for energy security can", end: "reliable energy for many economies."}
+      - paragraph: {start: "***Reducing the expected adverse impacts of", end: "both highly desirable and feasible.***"}
+      - paragraph: {start: "This conclusion follows from a comparison", end: "costs of climate change impacts."}
+      - paragraph: {start: "The third approach to analysing the", end: "avoids large-scale formal economic models."}
+      - paragraph: {start: "Preliminary calculations adopting the approach to", end: "the medium to long term."}
+    markers: []

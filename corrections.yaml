@@ -1,0 +1,40 @@
+# Human corrections to the PDF's text layer, applied deterministically on every ingest.
+# Format: @rtm/ingest src/corrections.ts. Each names its page and why.
+version: 1
+corrections:
+  # Compounds hyphenated at a line end, where the text reading keeps the hyphen and a space because it cannot
+  # tell a compound from a word broken for the line. Each is read off the page image as one hyphenated word.
+  - id: c-0001
+    find: "peer- reviewed"
+    replace: "peer-reviewed"
+    reason: "PDF p.9 (printed ix): 'peer-' ends the line and 'reviewed' opens the next; the compound peer-reviewed."
+    added: 2026-11-08
+  - id: c-0002
+    find: "These co- benefits"
+    replace: "These co-benefits"
+    reason: "PDF p.16 (printed xvi): 'co-' ends the line and 'benefits' opens the next; the compound co-benefits."
+    added: 2026-11-08
+  - id: c-0003
+    find: "flood- resistant"
+    replace: "flood-resistant"
+    reason: "PDF p.26 (printed xxvi): 'drought- and flood-' ends the line and 'resistant' opens the next; 'drought- and flood-resistant crops'. The space after 'drought-' is printed and stays."
+    added: 2026-11-08
+# Suspects read against the page and judged right as served; they leave the review queue.
+dismissed:
+  - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
+  - { match: "1m", reason: "PDF p.7: 'a 1m rise in sea levels' (one metre), as printed.", added: 2026-11-08 }
+  - { match: "GtCO2e", reason: "Gigatonnes of CO2 equivalent, as printed.", added: 2026-11-08 }
+  - { match: "4CMR", reason: "PDF p.15: the Cambridge Centre for Climate Change Mitigation Research's acronym, as printed.", added: 2026-11-08 }
+  - { match: "international", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "International", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "governments", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "Intergovernmental", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "patterns", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "alternatives", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "Governments", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "learning", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "Barnett", reason: "PDF p.5, note 3: the author D.N. Barnett, as printed.", added: 2026-11-08 }
+  - { match: "borne", reason: "'Vector-borne', as printed.", added: 2026-11-08 }
+  - { match: "internationally", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "externality", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }
+  - { match: "returns", reason: "A real word; born-digital text layer, no OCR.", added: 2026-11-08 }

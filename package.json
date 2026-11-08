@@ -1,0 +1,9 @@
+{
+  "name": "uk-stern-review",
+  "private": true,
+  "type": "module",
+  "description": "Source archive and ingestion definition for: Stern Review on the Economics of Climate Change (HM Treasury, 2006)",
+  "dependencies": {
+    "@rtm/ingest": "github:reportsthatmatter/ingest#v0.33.0"
+  }
+}
