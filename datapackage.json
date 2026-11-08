@@ -1,0 +1,35 @@
+{
+  "name": "uk-stern-review",
+  "title": "Stern Review on the Economics of Climate Change",
+  "resources": [
+    {
+      "title": "Stern Review: The Economics of Climate Change, Executive Summary (full), HM Treasury pre-publication edition, 30 October 2006",
+      "path": "archive/stern-review-executive-summary.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 317419,
+      "hash": "sha256:992ad24f46cd9d5be4078f42652417df86de9411242a29a257eefd073a077474",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury, Executive Summary PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Executive_Summary.pdf"
+        },
+        {
+          "title": "Wayback Machine capture of 23 October 2008 (the copy archived here; one digest for this file from November 2006 to May 2013)",
+          "web": "https://web.archive.org/web/20081023104149id_/http://www.hm-treasury.gov.uk/d/Executive_Summary.pdf"
+        }
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "name": "OGL-UK-3.0",
+      "title": "Open Government Licence v3.0",
+      "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+Licences in this repository
+===========================
+
+This repository holds a public report, the text we derive from it, and the code that builds that text. They have three different statuses. This file is a statement of those statuses, not legal advice.
+
+1. The report's text
+--------------------
+
+The Stern Review on the Economics of Climate Change (HM Treasury, 30 October 2006) is Crown copyright. It was carried out inside HM Treasury by Crown servants, led by Sir Nicholas Stern, then Second Permanent Secretary to the Treasury and Head of the Government Economic Service, and published by HM Treasury on its website. The PDF files themselves print no copyright line. HM Treasury's copyright page of the time said: "The majority of the information published by the HM Treasury is Crown Copyright", and allowed reuse under the Crown copyright Click-Use licence. The National Archives states that any Crown copyright information that was available under the Click-Use licence can now be reused under the Open Government Licence, and the UK Government Web Archive, which holds HM Treasury's site, states: "Unless otherwise stated, you may re-use Crown copyright material from the archive under the terms of the Open Government Licence (OGL)." Contains public sector information licensed under the Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+
+The report reproduces data and findings from third parties (its figures credit, among others, the World Resources Institute, the IPCC and the Hadley Centre). No figure or image is reproduced here, and any third-party material is not covered by this statement.
+
+The report was also published as a book by Cambridge University Press (2007, ISBN 0-521-70080-9). That edition is not used here.
+
+2. Our markup, processing and editorial additions
+-------------------------------------------------
+
+The structure and Markdown formatting of full.md, paragraph and section identifiers, golden.yaml, baseline.json, fidelity.md, PROCESSING.md, datapackage.json, the README and any other words we wrote are licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/legalcode). Attribute them to "Reports that Matter (https://reportsthatmatter.org)". This does not change the status of the report's own text, described in section 1, which we do not own.
+
+3. Code
+-------
+
+The code that builds the text (ingest.ts and other TypeScript, JavaScript and Python files, and package.json) is licensed under the MIT licence; see LICENSE-MIT, Copyright (c) 2026 Rufus Pollock and contributors.
+
+Other files
+-----------
+
+Files under archive/ are copies of the report as its publisher issued it, kept so the text can be rebuilt and checked; they have the status described in section 1.
