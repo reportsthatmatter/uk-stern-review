@@ -19,6 +19,13 @@ corrections:
     replace: "flood-resistant"
     reason: "PDF p.26 (printed xxvi): 'drought- and flood-' ends the line and 'resistant' opens the next; 'drought- and flood-resistant crops'. The space after 'drought-' is printed and stays."
     added: 2026-11-08
+  # Since the full report's volumes were added, the line-end hyphen reader sees more "cooperation" than before and
+  # joins this one; the Executive Summary prints "co-operation" here and throughout (15 times).
+  - id: c-0004
+    find: "requires greater international co- operation and the development"
+    replace: "requires greater international co-operation and the development"
+    reason: "PDF p.23 (Executive Summary, printed xxiii): 'co-' ends the line and 'operation' opens the next; the summary spells it co-operation everywhere."
+    added: 2026-11-12
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
