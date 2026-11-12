@@ -151,13 +151,18 @@ const keyFindings: BodyPass = {
     if (!layout || !at) return lines;
     const squash = (text: string) => text.replace(/\s+/g, "");
     const page = layout.lines(at.volume, at.pdfIndex);
-    // Runs of consecutive bold-italic lines, in reading order.
+    // Runs of consecutive bold-italic lines, in reading order. A gap wider than a line and a half starts a new
+    // run: Chapter 10 p.247 (PDF p.8) sets two findings one above the other ("Consequently, the average expected
+    // cost ..." and "Potential co-benefits need to be considered."), which as one run left a stray `***` on each.
     const runs: string[][] = [];
     let open: string[] | null = null;
+    let prev: (typeof page)[number] | null = null;
     for (const line of page) {
       if (KEY_FINDING_FACES.has(line.font) && squash(line.text)) {
+        if (open && prev && line.top - prev.top > 1.6 * prev.height) open = null;
         if (!open) runs.push((open = []));
         open.push(squash(line.text));
+        prev = line;
       } else open = null;
     }
     if (!runs.length) return lines;

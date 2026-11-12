@@ -129,6 +129,36 @@ corrections:
     replace: "In the 'energy-related CO2 e"
     reason: "Chapter 10, note 8 (printed 245): 'energy-' ends the line, 'related' opens the next; 'energy-related CO2 emissions'."
     added: 2026-11-12
+  - id: c-0025
+    find: "Robert Muir- Wood"
+    replace: "Robert Muir-Wood"
+    reason: "Acknowledgements (printed iii): 'Muir-' ends the line, 'Wood' opens the next; Robert Muir-Wood. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0026
+    find: "India and South- East Asia"
+    replace: "India and South-East Asia"
+    reason: "Chapter 6 key finding (printed 158): 'South-' ends the line, 'East Asia' opens the next; South-East Asia, as elsewhere in the Review. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0027
+    find: "abatement: A Meta- Analysis"
+    replace: "abatement: A Meta-Analysis"
+    reason: "Chapter 10 references: 'Meta-' ends the line, 'Analysis' opens the next; the paper's title 'A Meta-Analysis of post-SRES mitigation scenarios'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0028
+    find: "'The role of non- CO2"
+    replace: "'The role of non-CO2"
+    reason: "Chapter 10 references: 'non-' ends the line, 'CO2' opens the next; the paper's title 'The role of non-CO2 greenhouse-gases in climate policy'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0029
+    find: "(2001): Low- CO2 energy"
+    replace: "(2001): Low-CO2 energy"
+    reason: "Chapter 10 references: 'Low-' ends the line, 'CO2' opens the next; the paper's title 'Low-CO2 energy pathways'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0030
+    find: "happens to non- CO2 greenhouse"
+    replace: "happens to non-CO2 greenhouse"
+    reason: "Chapter 13 (printed 297): 'non-' ends the line, 'CO2' opens the next; non-CO2 greenhouse gases. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
