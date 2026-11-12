@@ -5,7 +5,7 @@ published_at: "30 October 2006"
 source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
 pages: 149
 footnotes: 156
-corrections: 5
+corrections: 24
 ---
 
 %%page i%%
@@ -519,7 +519,7 @@ The terms of reference for the Review included a requirement to consult broadly 
 - the costs and benefits of actions to reduce the net global balance of greenhouse gas emissions from energy use and other sources, including the role of land-use changes and forestry, taking into account the potential impact of technological advances on future costs; and
 - the impact and effectiveness of national and international policies and arrangements in reducing net emissions in a cost-effective way and promoting a dynamic, equitable and sustainable global economy, including distributional effects and impacts on incentives for investment in cleaner technologies.
 
-## Overall approach to the Review
+### Overall approach to the Review
 
 We have taken a broad view of the economics required to understand the challenges of climate change. Wherever possible, we have based our Review on gathering and structuring existing research material.
 
@@ -535,7 +535,7 @@ There is a solid basis in the literature for the principles underlying our analy
 
 In some areas, we found that existing literature did not provide answers. In these cases, we have conducted some of our own research, within the constraints allowed by our timetable and resources. We also commissioned some papers and analysis to feed into the Review. A full list of commissioned work and links to the papers are at www.sternreview.org.uk
 
-## Acknowledgements
+### Acknowledgements
 
 The team was led by Siobhan Peters. Team members included Vicki Bakhshi, Alex Bowen, Catherine Cameron, Sebastian Catovsky, Di Crane, Sophie Cruickshank, Simon Dietz, Nicola Edmondson, Su-Lin Garbett, Lorraine Hamid, Gideon Hoffman, Daniel Ingram, Ben Jones, Nicola Patmore, Helene Radcliffe, Raj Sathiyarajah, Michelle Stock, Chris Taylor, Tamsin Vernon, Hannah Wanjie, and Dimitri Zenghelis.
 
@@ -577,7 +577,7 @@ Our approach emphasises a number of key themes, which will feature throughout.
 
 - We use a consistent approach towards uncertainty. The science of climate change is reliable, and the direction is clear. But we do not know precisely when and where particular impacts will occur. Uncertainty about impacts strengthens the argument for mitigation: this Review is about the economics of the management of very large risks.
 - We focus on a quantitative understanding of risk, assisted by recent advances in the science that have begun to assign probabilities to the relationships between emissions and changes in the climate system, and to those between the climate and the natural environment.
-- We take a systematic approach to the treatment of inter- and intra- generational equity in our analysis, informed by a consideration of what various ethical perspectives imply in the context of climate change. Inaction now risks great damage to the prospects of future generations, and particularly to the poorest amongst them. A coherent economic analysis of policy requires that we be explicit about the effects.
+- We take a systematic approach to the treatment of inter- and intra-generational equity in our analysis, informed by a consideration of what various ethical perspectives imply in the context of climate change. Inaction now risks great damage to the prospects of future generations, and particularly to the poorest amongst them. A coherent economic analysis of policy requires that we be explicit about the effects.
 
 %%page v#2%%
 
@@ -950,7 +950,7 @@ There are important challenges for public policy to promote mitigation beyond th
 
 ***Standards and regulation can provide powerful and effective policies to promote action on mitigation.***
 
-The learning process for new technologies is uncertain. There are probably important scale effects in this process due to experience or learning-by-doing and the externalities of learning- by-watching. In these circumstances, standards for emissions, for example, can provide a clear sense of direction and reduced uncertainty for investors, allowing these economies of scale to be realised.
+The learning process for new technologies is uncertain. There are probably important scale effects in this process due to experience or learning-by-doing and the externalities of learning-by-watching. In these circumstances, standards for emissions, for example, can provide a clear sense of direction and reduced uncertainty for investors, allowing these economies of scale to be realised.
 
 In other circumstances, particularly concerning energy efficiency, there will be market imperfections, for example due to the nature of landlord-tenant relations in property, which may inhibit adaptation of beneficial investments or technologies. In these circumstances, regulation can produce results more efficient than those that are available from other instruments alone.
 
@@ -978,7 +978,7 @@ The poorest in society are likely to have the least capacity to adapt, partly be
 
 Climate change shares some characteristics with other environmental challenges linked to the management of common international resources, including the protection of the ozone layer and the depletion of fisheries. Crucially, there is no global single authority with the legal, moral, practical or other capacity to manage the climate resource.
 
-This is particularly challenging, because, as Chapter 8 makes clear, no one country, region or sector alone can achieve the reductions in GHG emissions required to stabilise atmospheric concentrations of GHGs at the necessary level. In addition, there are significant gains to co- operating across borders, for example in undertaking emission reductions in the most cost-effective way. The economics and science point to the need for emitters to face a common price of emissions at the margin. And, although adaptation to climate change will often deliver some local reduction in its impact, those countries most vulnerable to climate change are particularly short of the resources to invest in adaptation. Hence international collective action on both mitigation and adaptation is required, and Part VI of the Review discusses the challenges and options.
+This is particularly challenging, because, as Chapter 8 makes clear, no one country, region or sector alone can achieve the reductions in GHG emissions required to stabilise atmospheric concentrations of GHGs at the necessary level. In addition, there are significant gains to co-operating across borders, for example in undertaking emission reductions in the most cost-effective way. The economics and science point to the need for emitters to face a common price of emissions at the margin. And, although adaptation to climate change will often deliver some local reduction in its impact, those countries most vulnerable to climate change are particularly short of the resources to invest in adaptation. Hence international collective action on both mitigation and adaptation is required, and Part VI of the Review discusses the challenges and options.
 
 %%page 38%%
 
@@ -1071,7 +1071,7 @@ Sen, A.K. (1970): 'Collective Choice and Social Welfare', San Francisco: Holden-
 
 Sen, A.K. (1986): 'Social Choice Theory', Handbook of Mathematical Economics, K.J. Arrow and M. Intriligator, Vol3. Amsterdam: North-Holland.
 
-Sen, A.K. (1999): 'The Possibility of Social Choice', American Economic Review 89(3): 349- 378
+Sen, A.K. (1999): 'The Possibility of Social Choice', American Economic Review 89(3): 349-378
 
 Sen, A. and B. Williams (eds.) (1982): 'Utilitarianism and Beyond', Cambridge: Cambridge University Press/Maison des Sciences de l'Homme.
 
@@ -1091,7 +1091,7 @@ Part II considers how climate change will affect people's lives, the environment
 
 These effects will not be felt evenly across the globe. Although some parts of the world would benefit from modest rises in temperature, at higher temperature increases, most countries will suffer heavily and global growth will be affected adversely. For some of the poorest countries there is a real risk of being pushed into a downwards spiral of increasing vulnerability and poverty.
 
-Average global temperature increases of only 1-2°C (above pre-industrial levels) could commit 15-40 percent of species to extinction. As temperatures rise above 2- 3°C, as will very probably happen in the latter part of this century, so the risk of abrupt and large-scale damage increases, and the costs associated with climate change – across the three dimensions of mortality, ecosystems and income – are likely to rise more steeply. In mathematical terms, the global damage function is convex.
+Average global temperature increases of only 1-2°C (above pre-industrial levels) could commit 15-40 percent of species to extinction. As temperatures rise above 2-3°C, as will very probably happen in the latter part of this century, so the risk of abrupt and large-scale damage increases, and the costs associated with climate change – across the three dimensions of mortality, ecosystems and income – are likely to rise more steeply. In mathematical terms, the global damage function is convex.
 
 No region would be left untouched by changes of this magnitude, though developing countries would be affected especially adversely. This applies particularly to the poorest people within the large populations of both sub-Saharan Africa, and South Asia. By 2100, in South Asia and Sub Saharan Africa, up to 145 - 220 million additional people could fall below the $2-a-day poverty line, and every year an additional 165,000 - 250,000 children could die compared with a world without climate change.
 
@@ -1166,7 +1166,7 @@ Income in the 'no climate change' scenario is conventionally measured in terms o
 
 Making such estimates is a formidable task in many ways (discussed below). It is also a computationally demanding exercise, with the result that such models must make drastic, often heroic, simplifications along all stages of the climate-change chain. What is more, large uncertainties are associated with each element in the cycle. Nevertheless, the IAMs remain the best tool available for estimating aggregate quantitative global costs and risks of climate change.
 
-The initial focus of IAMs is on economic sectors for which prices exist or can be imputed relatively straightforwardly. These 'market' sectors include agriculture, energy use and forestry. But this market- sector approach fails to capture most direct impacts on the environment and human health, because they are not priced in markets. These important impacts – together with some other effects in agriculture and forestry that are not covered by market prices – are often described as 'non-market'.
+The initial focus of IAMs is on economic sectors for which prices exist or can be imputed relatively straightforwardly. These 'market' sectors include agriculture, energy use and forestry. But this market-sector approach fails to capture most direct impacts on the environment and human health, because they are not priced in markets. These important impacts – together with some other effects in agriculture and forestry that are not covered by market prices – are often described as 'non-market'.
 
 Economists have developed a range of techniques for calculating prices and costing non-market impacts, but the resulting estimates are problematic in terms of concept, ethical framework, and practicalities. Many would argue that it is better to present costs in human lives and environmental quality side-by-side with income and consumption, rather than trying to summarise them in monetary terms. That is indeed the approach taken across most of the Review. Nevertheless, modellers have tried to do their best to assess the full costs of climate change and the costs of avoiding it on a comparable basis, and thus make their best efforts to include 'non-market' impacts.
 
@@ -1174,7 +1174,7 @@ Economists have developed a range of techniques for calculating prices and costi
 
 Figure 6.1 Modelling climate change from emissions to impacts.
 
-This figure describes a simple unidirectional chain. This is a simplification as, in the real climate- human system, there will be feedbacks between many links in the chain.
+This figure describes a simple unidirectional chain. This is a simplification as, in the real climate-human system, there will be feedbacks between many links in the chain.
 
 Source: Hope (2005).
 
@@ -2042,7 +2042,7 @@ Key Messages
 
 Broader behavioural modelling exercises suggest a wide range of costs of climate-change mitigation and abatement, mostly lying in the range –2 to +5% of annual GDP by 2050 for a variety of stabilisation paths. These capture a range of factors, including the shift away from carbon-intensive goods and services throughout economies as carbon prices rise, but differ widely in their assumptions about technologies and costs.
 
-Overall, the expected annual cost of achieving emissions reductions, consistent with an emissions trajectory leading to stabilisation at around 500- 550ppm CO2e, is likely to be around 1% of GDP by 2050, with a range of +/- 3%, reflecting uncertainties over the scale of mitigation required, the pace of technological innovation and the degree of policy flexibility.
+Overall, the expected annual cost of achieving emissions reductions, consistent with an emissions trajectory leading to stabilisation at around 500-550ppm CO2e, is likely to be around 1% of GDP by 2050, with a range of +/- 3%, reflecting uncertainties over the scale of mitigation required, the pace of technological innovation and the degree of policy flexibility.
 
 Costs are likely to rise significantly as mitigation efforts become more ambitious or sudden, suggesting that efforts to reduce emissions rapidly are likely to be very costly.
 
@@ -2090,7 +2090,7 @@ Most models, however, are restricted to estimating the cost of altered fossil-fu
 
 ***The wide range of model results reflects the design of the models and their choice of assumptions, which itself reflects the uncertainties and differing approaches inherent in projecting the future.***
 
-Figure 10.1 uses Barker's combined three-model dataset to show the reduction in annual CO2 emissions from the baseline and the associated changes in world GDP. Although most of the model estimates for 2050 are clustered in the –2 to 5% of GDP loss in the final-year cost range, these costs depend on a range of assumptions. The full range of estimates drawn from a variety of stabilisation paths and years extends from –4% of GDP (that is, net gains) to +15% of GDP costs. A notable feature, examined in more detail below, is the greater-than- proportionate increase in costs to any rise in the amount of mitigation.
+Figure 10.1 uses Barker's combined three-model dataset to show the reduction in annual CO2 emissions from the baseline and the associated changes in world GDP. Although most of the model estimates for 2050 are clustered in the –2 to 5% of GDP loss in the final-year cost range, these costs depend on a range of assumptions. The full range of estimates drawn from a variety of stabilisation paths and years extends from –4% of GDP (that is, net gains) to +15% of GDP costs. A notable feature, examined in more detail below, is the greater-than-proportionate increase in costs to any rise in the amount of mitigation.
 
 This variation in cost estimates is driven by a diversity of characteristics in individual models. To take two examples, the AIM model shows a marked rise in costs towards 2100, reflecting the use of only one option – energy conservation – being induced by climate policy, so that costs rise substantially as this option becomes exhausted. At the opposite extreme, the E3MG global econometric model assumes market failures due to increasing returns and unemployed resources in the base case. This means that additional energy-sector investment, and associated innovation driven by stabilisation constraints, act to increase world GDP. The fact that there is such a broad range of studies and assumptions is welcome, making it possible to use meta-analysis[^1] to determine what factors drive the results.
 
@@ -2106,7 +2106,7 @@ Source: Barker et al. (2006). Note: GWP should read GDP.
 
 To make sense of the growing range of estimates generated, model comparison exercises have attempted to synthesise the main findings of these models. This has helped to make more transparent the differences between the assumptions in different models. A meta-analysis of leading model simulations, undertaken for the Stern Review by Terry Barker[^2], shows that some of the higher cost estimates come from models with limited substitution opportunities, little technological learning, and limited flexibility about when and where to cut emissions[^3].
 
-The meta-analysis work essentially treats the output of each model as data, and then quantifies the importance of parameters and assumptions common to the various models in generating results. The analysis generates an overarching model, based on estimates of the impacts of individual model characteristics. This can be used to predict costs as a percentage of world GDP in any year, for any given mitigation strategy. Table 10.1 shows estimated costs in 2030 for stabilisation at 450ppm CO2. This corresponds with approximately 500-550ppm CO2e, assuming adjustments in the emissions of other gases such that, at stabilisation, 10- 20% of total CO2e will be composed of non-CO2 gases (see Chapter 8).
+The meta-analysis work essentially treats the output of each model as data, and then quantifies the importance of parameters and assumptions common to the various models in generating results. The analysis generates an overarching model, based on estimates of the impacts of individual model characteristics. This can be used to predict costs as a percentage of world GDP in any year, for any given mitigation strategy. Table 10.1 shows estimated costs in 2030 for stabilisation at 450ppm CO2. This corresponds with approximately 500-550ppm CO2e, assuming adjustments in the emissions of other gases such that, at stabilisation, 10-20% of total CO2e will be composed of non-CO2 gases (see Chapter 8).
 
 A feature of the model is that it can effectively switch on or off the factors identified as being statistically and economically significant in cutting costs. For example, the 'worst case' assumption assumes that all the identified cost-cutting factors are switched off – in this case, costs total 3.4% of GDP. At the other extreme, the 'best case' projection assumes all the identified cost-cutting factors are active, in which case mitigation yields net benefits to the world economy to the tune of 3.9% of GDP. (Table 10.1 lists the individual estimated contributions to costs from the identified assumptions – a positive percentage point contribution represents the average reduction in costs when the parameter is 'switched on').
 
@@ -2181,7 +2181,7 @@ Cost-effective planning and substituting activities across time require policy s
 
 A common feature of the model projections was the presence of increasing marginal costs to mitigation. This applies not just to the total mitigation achieved, but also the speed at which it is brought about. This means that each additional unit reduction of GHG becomes more expensive as abatement increases in ambition and also in speed. Chapter 13 discusses findings from model comparisons and shows a non-linear acceleration of costs as more ambitious stabilisation paths are pursued. The relative absence of energy model results for stabilisation concentrations below 500ppm CO2e is explained by the fact that carbon-energy models found very significant costs associated with moving below 450ppm, as the number of affordable mitigation options was quickly exhausted. Some models were unable to converge on a solution at such low stabilisation levels, reflecting the absence of mitigation options and inflexibilities in the diffusion of 'backstop' technologies.
 
-***In general, model comparisons find that the cost of stabilising emissions at 500- 550ppm CO2e would be around a third of doing so at 450-500ppm CO2e.***
+***In general, model comparisons find that the cost of stabilising emissions at 500-550ppm CO2e would be around a third of doing so at 450-500ppm CO2e.***
 
 The lesson here is to avoid doing too much, too fast, and to pace the flow of mitigation appropriately. For example great uncertainty remains as to the costs of very deep reductions. Digging down to emissions reductions of 60-80% or more relative to baseline will require progress in reducing emissions from industrial processes, aviation, and a number of areas where it is presently hard to envisage cost-effective approaches. Thus a great deal depends on assumptions about technological advance (see Chapters 9, 16 and 24). The IMCP studies of cost impacts to 2050 of aiming for around 500-550ppm CO2e were below 1% of GDP for all but one model (IMACLIM), but they diverged afterwards. By 2100, some fell while others rose sharply, reflecting the greater uncertainty about the costs of seeking out successive new mitigation sources.
 
@@ -2518,7 +2518,7 @@ Source: adapted from Edenhofer et al. (2006); 'Green Book' is a declining discou
 
 %%page 297%%
 
-It is important to note that these results are tentative, and that there is still much debate about the role of induced technological progress, the focus of the study. Nevertheless, the bottom line in Table 13.3 suggests that the extra mitigation costs from choosing a goal of around 500ppm instead of 550ppm CO2 would be small, ranging from 0.06% to 0.18% of gross world output, depending on how much future costs are discounted. In terms of a CO2e goal, this is similar to going from 600 – 700ppm to 550 – 650ppm, depending on what happens to non- CO2 greenhouse gases (see Chapter 8). The extra costs of choosing a goal of 450ppm CO2 instead of 500ppm CO2 would be higher, ranging from 0.25% to 0.58%; this is similar to going from 550 – 650ppm CO2e to 500 – 550ppm CO2e. None of the discount schemes used are the same as the one used in Chapter 6 of this Review, as the discount rates are not path- dependent. However, as stabilisation reduces the chances of very bad outcomes compared with 'business as usual', the discounting issue is less important than when evaluating potential impacts without mitigation. It is important to note that the studies concerned take the year 2000 as a baseline. Given the probable cumulative emissions since then, the goals would now be more difficult and expensive to hit.
+It is important to note that these results are tentative, and that there is still much debate about the role of induced technological progress, the focus of the study. Nevertheless, the bottom line in Table 13.3 suggests that the extra mitigation costs from choosing a goal of around 500ppm instead of 550ppm CO2 would be small, ranging from 0.06% to 0.18% of gross world output, depending on how much future costs are discounted. In terms of a CO2e goal, this is similar to going from 600 – 700ppm to 550 – 650ppm, depending on what happens to non- CO2 greenhouse gases (see Chapter 8). The extra costs of choosing a goal of 450ppm CO2 instead of 500ppm CO2 would be higher, ranging from 0.25% to 0.58%; this is similar to going from 550 – 650ppm CO2e to 500 – 550ppm CO2e. None of the discount schemes used are the same as the one used in Chapter 6 of this Review, as the discount rates are not path-dependent. However, as stabilisation reduces the chances of very bad outcomes compared with 'business as usual', the discounting issue is less important than when evaluating potential impacts without mitigation. It is important to note that the studies concerned take the year 2000 as a baseline. Given the probable cumulative emissions since then, the goals would now be more difficult and expensive to hit.
 
 The recent US Climate Change Science Program draft report on scenarios of greenhouse gas emissions and atmospheric concentrations also provides useful estimates, reporting for various points in time the percentage change in gross world product expected due to adopting policies to meet four different stabilisation goals[^12]. Again, the studies covered take 2000 as the base year. The implications for incremental costs (as a fraction of gross world output) of adopting successively tougher goals are summarised in Table 13.4 below. These studies were not designed with the objective of this chapter in mind, of course, and the draft is subject to revision, so the estimates should be regarded as suggestive of magnitudes, not definitive.
 
@@ -2540,7 +2540,7 @@ All of these studies take as a starting point the year 2000. If it takes 20 year
 
 In some cases, the models have been used to estimate the 'optimal' amount of mitigation that maximises benefits less costs. These studies recommend that greenhouse gas emissions be reduced below business-as-usual forecasts, but the reductions suggested have been modest. For example, on the basis of the climate sensitivities and assessments available at the time the studies were undertaken,
 
-- Nordhaus and Boyer (1999) found that the optimal global mitigation effort reduces atmospheric concentrations of carbon dioxide from 557ppm in 2100 (business-as- usual) to 538ppm. This reduces the global mean temperature from an estimated 2.42°C above 1900 levels to 2.33°C;
+- Nordhaus and Boyer (1999) found that the optimal global mitigation effort reduces atmospheric concentrations of carbon dioxide from 557ppm in 2100 (business-as-usual) to 538ppm. This reduces the global mean temperature from an estimated 2.42°C above 1900 levels to 2.33°C;
 - Tol (1997) found that the optimal mitigation effort reduces the global mean temperature in 2100 from around 4°C above 1990 levels to between around 3.6°C and 3.9°C, depending on whether countries cooperate and on the costs of mitigation;
 - Manne et al. (1995) did not use their model to find the optimal reduction in emissions, but the policy option they explored that delivers the highest net benefits reduces atmospheric concentrations of carbon dioxide from around 800ppm in 2100 to around 750ppm, reducing global mean temperature from around 3.25°C above 1990 levels to around 3°C.
 
@@ -2548,7 +2548,7 @@ However, the optimal amount of mitigation may in fact be greater than these stud
 
 ***Given the paucity of estimates of the appropriate stabilisation level and the disadvantages of the ones that exist, this chapter does not propose a specific numerical goal. Instead, it explores how economic analysis can at least help suggest upper and lower limits to the range for an atmospheric concentration goal. Allowing for the current uncertainties, the evidence suggests that the upper limit to the stabilisation range should not be above 550ppm CO2e.***
 
-Putting together our results on the valuation of climate-change impacts with the mitigation- cost studies suggests that the benefits of choosing a lower stabilisation goal clearly outweigh the costs until one reaches 550 – 600ppm CO2e. But around this level the cost-benefit calculus starts to get less clear-cut. The incremental mitigation costs of choosing 500 – 550ppm instead of 550 – 600ppm CO2e are three to four times as much as the incremental costs of choosing 550 – 600ppm instead of 600 – 650ppm CO2e, according to the numbers in Edenhofer et al. The higher mitigation costs incurred if 500 – 550ppm is chosen instead of 550 – 600ppm CO2e might be of similar size to the incremental benefits. They would be bigger if induced technological change were inadequate or 'business as usual' emissions were at the higher end of projections, as in the IGSM projections reported in Table 13.4.
+Putting together our results on the valuation of climate-change impacts with the mitigation-cost studies suggests that the benefits of choosing a lower stabilisation goal clearly outweigh the costs until one reaches 550 – 600ppm CO2e. But around this level the cost-benefit calculus starts to get less clear-cut. The incremental mitigation costs of choosing 500 – 550ppm instead of 550 – 600ppm CO2e are three to four times as much as the incremental costs of choosing 550 – 600ppm instead of 600 – 650ppm CO2e, according to the numbers in Edenhofer et al. The higher mitigation costs incurred if 500 – 550ppm is chosen instead of 550 – 600ppm CO2e might be of similar size to the incremental benefits. They would be bigger if induced technological change were inadequate or 'business as usual' emissions were at the higher end of projections, as in the IGSM projections reported in Table 13.4.
 
 %%page 299%%
 
@@ -2574,7 +2574,7 @@ It is clear that studies of climate-change impacts and of mitigation costs do no
 
 In any case, agreement requires discussion and negotiation about the ethical issues involved. Chapter 6 demonstrates that taking proper account of the non-marginal nature of the risks from climate change leads to a higher estimate of risk-adjusted losses of wellbeing than if the larger risks are ignored or submerged in simple averages. Those who weigh more heavily the potential costs of the climate change possible at any given stabilisation level will argue for a goal towards the lower end of the range. Greater risk aversion and more concern for equity across regions and generations will push in the same direction. But those who are pessimistic about the direction and pace of technological developments or who believe emissions under 'business as usual' will grow more rapidly than generally expected will tend to advocate a goal towards the upper limit, other things being equal.
 
-The EU has adopted an objective, endorsed by a large number of NGOs and policy think- tanks, to limit global average temperature change to less than 2°C relative to pre-industrial levels. This goal is based on a precautionary approach. A peak temperature increase of less than 2°C would strongly reduce the risks of climate-change impacts, and might be sufficient to avoid certain thresholds for major irreversible change – including the melting of ice-sheets, the loss of major rainforests, and the point at which the natural vegetation becomes a source of emissions rather than a sink. Some would argue that the implications of exceeding the 2°C limit are sufficiently severe to justify action at any cost. Others have criticised the 2°C limit as arbitrary, and have raised questions about the feasibility of the action that is required to maintain a high degree of confidence of staying below this level. Recent research on the uncertainties surrounding temperature projections suggests that at 450ppm CO2e there would already be a more-than-evens chance of exceeding 2°C (see Chapter 8). This highlights the need for urgent action and the importance of keeping quantitative objectives under review, so that they can be updated to reflect the latest scientific and economic analysis.
+The EU has adopted an objective, endorsed by a large number of NGOs and policy think-tanks, to limit global average temperature change to less than 2°C relative to pre-industrial levels. This goal is based on a precautionary approach. A peak temperature increase of less than 2°C would strongly reduce the risks of climate-change impacts, and might be sufficient to avoid certain thresholds for major irreversible change – including the melting of ice-sheets, the loss of major rainforests, and the point at which the natural vegetation becomes a source of emissions rather than a sink. Some would argue that the implications of exceeding the 2°C limit are sufficiently severe to justify action at any cost. Others have criticised the 2°C limit as arbitrary, and have raised questions about the feasibility of the action that is required to maintain a high degree of confidence of staying below this level. Recent research on the uncertainties surrounding temperature projections suggests that at 450ppm CO2e there would already be a more-than-evens chance of exceeding 2°C (see Chapter 8). This highlights the need for urgent action and the importance of keeping quantitative objectives under review, so that they can be updated to reflect the latest scientific and economic analysis.
 
 Some of the uncertainties will be resolved by continuing progress in the science of climate change, but ethics and social values will always have a crucial part to play in decision-making. The precise choice of policy objective will depend on values, attitudes to risk and judgements about the political feasibility of the objective. It is a decision with significant implications that will rightly be the subject of a broad public and international debate.
 
@@ -2647,7 +2647,7 @@ Further work on what social cost of carbon corresponds to potential stabilisatio
 
 Preliminary calculations with the model used in Chapter 6 suggest that the current social cost of carbon with business as usual might be around $85/tCO2 (year 2000 prices), taking the baseline climate sensitivity assumption used there, if some account is taken of non-market impacts and the risk of catastrophes, subject to all the important caveats discussed in Chapter 6. But along a trajectory towards 550ppm CO2e, the social cost of carbon would be around $30/tCO2 and along a trajectory to 450ppm CO2e around $25/tCO2e. These numbers indicate roughly where the range for the policy-induced price of emissions should be if the ethical judgements and assumptions about impacts and uncertainty underlying the exercise in Chapter 6 are accepted.
 
-It would only make sense to have chosen a 550ppm CO2e target in the first place if a carbon- price path starting at $30/tCO2 had been judged likely to be sufficient (together with other policies) to pull through over time the deployment of the technological innovations required. Similarly, it would only make sense to have chosen a 450ppm CO2e target if a price path starting at $25/tCO2e had been judged sufficient to bring through the technology needed.
+It would only make sense to have chosen a 550ppm CO2e target in the first place if a carbon-price path starting at $30/tCO2 had been judged likely to be sufficient (together with other policies) to pull through over time the deployment of the technological innovations required. Similarly, it would only make sense to have chosen a 450ppm CO2e target if a price path starting at $25/tCO2e had been judged sufficient to bring through the technology needed.
 
 The social cost of carbon[^21] can be used to calculate an estimate of the benefits of climatechange policy. The gross benefits of policy for a particular year can be approximated by
 
@@ -2706,7 +2706,7 @@ Downing, T.E., D. Anthoff, R. Butterfield et al. (2005): 'Social cost of carbon:
 
 Edenhofer, O., K. Lessmann, C. Kemfert, et al. (2006): 'Induced technological change: exploring its implications for the economics of atmospheric stabilization: synthesis report from the innovation modeling comparison project', The Energy Journal, special issue, April: 57-108
 
-Hanemann, W.M. (2000): 'Adaptation and its measurement' Climatic Change 45 (3-4): 571- 581
+Hanemann, W.M. (2000): 'Adaptation and its measurement' Climatic Change 45 (3-4): 571-581
 
 Hope, C. (2003): 'The marginal impacts of CO2, CH4 and SF6 emissions,' Judge Institute of Management Research Paper No.2003/10, Cambridge, UK, University of Cambridge, Judge Institute of Management.
 
@@ -2916,7 +2916,7 @@ Tol, R.S.J. (2005): 'The marginal damage costs of carbon dioxide emissions: an a
 
 [^27]: Assuming 40% thermal efficiency and a c.v. of coal of 8,000kWh/tonne. Pounds (lbs) are a unit of weight: 1 lbs = 0.454 kg.
 
-[^28]: This is intended to provide an indicative representation of average technology costs only (costs of individual technologies will, or course, vary). It draws together work on recent sectoral estimates undertaken by Enviros as part of the Energy Efficiency and Innovation Review (see www.defra.gov.uk/environment/energy/eeir/pdf/enviros- report.pdf) and drawing on data from the BRE and Enusim databases on the service sectors respectively, as well as Defra internal estimates for the domestic sector. The cost information presented here is based on a 3.5% social discount rate.
+[^28]: This is intended to provide an indicative representation of average technology costs only (costs of individual technologies will, or course, vary). It draws together work on recent sectoral estimates undertaken by Enviros as part of the Energy Efficiency and Innovation Review (see www.defra.gov.uk/environment/energy/eeir/pdf/enviros-report.pdf) and drawing on data from the BRE and Enusim databases on the service sectors respectively, as well as Defra internal estimates for the domestic sector. The cost information presented here is based on a 3.5% social discount rate.
 
 [^29]: Read (2006) discusses how if CCS technologies were to capture emissions from the use of biofuels this could create negative emissions, that is, sequestering carbon dioxide from the atmosphere.
 
@@ -2978,7 +2978,7 @@ Tol, R.S.J. (2005): 'The marginal damage costs of carbon dioxide emissions: an a
 
 [^7]: EMF-21; see Weyant et al. (2004), van Vuuren et al. (2006)
 
-[^8]: The EMF found that as much as half of agriculture, waste and other non-CO2 emissions could be cut at relatively low cost. The study looked at how the world might meet a stabilisation objective if it selected the least-cost abatement among energy-related CO2 emissions and non-CO2 emissions (but not land use). Two stabilisation scenarios were compared (aimed at stabilising emissions to 650ppm CO2e): one in which only energy-related CO2 emissions could be cut; and another in which energy-related CO2 emissions and non-CO2 gases could be reduced. In the 'energy- related CO2 emissions only' scenario, CO2 emissions fall by 75% on baseline levels in 2100. Some non-CO2 gases also fall as an indirect consequence. In the multi-gas scenario, CO2 emissions fall by a lesser extent (67% by 2100) and there are significant cuts in the non-CO2 gases (CH4 falling by 52%, N2O by 38%, F-gases by 73%). CO2 remains the major contributor to emission savings, because it represents the biggest share in GHG emissions.
+[^8]: The EMF found that as much as half of agriculture, waste and other non-CO2 emissions could be cut at relatively low cost. The study looked at how the world might meet a stabilisation objective if it selected the least-cost abatement among energy-related CO2 emissions and non-CO2 emissions (but not land use). Two stabilisation scenarios were compared (aimed at stabilising emissions to 650ppm CO2e): one in which only energy-related CO2 emissions could be cut; and another in which energy-related CO2 emissions and non-CO2 gases could be reduced. In the 'energy-related CO2 emissions only' scenario, CO2 emissions fall by 75% on baseline levels in 2100. Some non-CO2 gases also fall as an indirect consequence. In the multi-gas scenario, CO2 emissions fall by a lesser extent (67% by 2100) and there are significant cuts in the non-CO2 gases (CH4 falling by 52%, N2O by 38%, F-gases by 73%). CO2 remains the major contributor to emission savings, because it represents the biggest share in GHG emissions.
 
 [^9]: Babiker et al. (2004)
 

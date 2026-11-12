@@ -483,6 +483,28 @@ const chapterHeadingFaces: BodyPass = {
 };
 
 /**
+ * The Preface (pp.i-iii, second numbering) sets its two parts, "Overall approach to the Review" and
+ * "Acknowledgements", in the face of its own title, so all three read as top-level headings; the Preface's short
+ * opening then folded, as a sliver, into the end of the Executive Summary's section. Its two parts are read one
+ * level down (the chapter titles' face in the layout the heading reader reads), so the Preface is one section
+ * with two subsections. The text is untouched.
+ */
+const PREFACE = vol("stern-review-preface-and-acknowledgements.pdf");
+const prefaceParts: BodyPass = {
+  name: "prefaceParts",
+  stage: "body",
+  run(lines, context, at) {
+    const layout = context?.layout;
+    if (!layout || !at || at.volume !== PREFACE) return lines;
+    for (const line of layout.lines(at.volume, at.pdfIndex)) {
+      if (line.font === "Arial,Bold|18|#000065|b" && /^(Overall approach to the Review|Acknowledgements)$/.test(line.text.trim()))
+        (line as { font: string }).font = CHAPTER_FACE;
+    }
+    return lines;
+  },
+};
+
+/**
  * How this report is built. Owned by the report: every decision that shaped its text is named here.
  *
  * The source is HM Treasury's web edition of the Review, 30 October 2006: one born-digital, untagged (or, for the
@@ -514,6 +536,7 @@ export default pipeline({
     chartsAndTables,
     chemicalSubscripts,
     chapterHeadingFaces,
+    prefaceParts,
     // Each chapter numbers its footnotes from 1 (Chapter 2's run 1-13 from p.23, Chapter 6's 1-45 from p.143), after
     // the Executive Summary's 1-5. A chapter's first page offers only its note 1 or 1-2 to read, and without this
     // their notes were read into the body until a page with three: Chapter 6 lost notes 1-7, Chapter 10 1-6.
