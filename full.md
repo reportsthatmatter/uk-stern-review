@@ -1,11 +1,11 @@
 ---
-title: "Stern Review: The Economics of Climate Change: Executive Summary"
+title: "Stern Review: The Economics of Climate Change"
 authors: "Nicholas Stern (HM Treasury)"
 published_at: "30 October 2006"
 source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
 pages: 149
 footnotes: 156
-corrections: 4
+corrections: 5
 ---
 
 %%page i%%
@@ -1726,8 +1726,6 @@ GtCO2e/year might be saved at $20/tCO2e in 2030[^18] . It is important to invest
 
 Table 9.1 summarises the possible cost-effective non-fossil fuel CO2 emission savings for 2050 described above. These figures are very uncertain but the estimates for waste and industrial processes arguably represent a lower-end estimate because they come from IPCC studies looking at possible emission savings in 2020, and savings by 2050 could be higher. Some of these savings cost $5/tCO2e or less, and it is possible that more could be saved at a slightly higher cost, with the technical potential for land-use changes being particularly significant. Achieving these emission savings would mean non-fossil fuel emissions in 2050 would be almost 11 GtCO2e lower in 2050 than in the baseline case.
 
-energy-efficiency measures.
-
 %%page 219%%
 
 Table 9.1 Non-fossil-fuel emissions and savings by sector
@@ -2161,15 +2159,9 @@ However, given that climate change is a product of the stock of greenhouse gases
 Flexibility over the distribution of emission-saving efforts across the globe will also help to lower abatement costs, because some countries have cheaper abatement options than others[^10].
 
 - The natural resource endowments of some countries will make some forms of emissions abatement cheaper than in other countries. For example, emission reduction from deforestation will only be possible where there are substantial deforestation emissions. Brazil is well suited to growing sugar, which can be used to produce biofuel cheaply, although, to the extent that biofuels can be transported, other countries are also likely to benefit. Brazil, like many other developing countries, also has a very good wind resource. In addition, the solar resources of developing countries are immense, the incident solar energy per m2 being 2-2.5 times greater than in most of Europe, and it is better distributed throughout the year (see Chapter 9).
-- Countries that have already largely decarbonised their energy sector are likely to find further savings there expensive. They will tend to focus on the scope for emissions cuts elsewhere. Energy-efficiency measures are typically among the cheapest abatement options, and energy efficiency varies hugely by country. For example, unit energy and carbon intensity are particularly low in Switzerland
+- Countries that have already largely decarbonised their energy sector are likely to find further savings there expensive. They will tend to focus on the scope for emissions cuts elsewhere. Energy-efficiency measures are typically among the cheapest abatement options, and energy efficiency varies hugely by country. For example, unit energy and carbon intensity are particularly low in Switzerland (1.2toe/$GDP and 59tc/$GDP respectively in 2002), reflecting the compositional structure of output and the use of low-carbon energy production. By contrast, Russia and Uzbekistan remain very energy- and carbon-intensive (12.5toe/$GDP and 840tc/$GDP respectively for Uzbekistan in 2002), partly reflecting aging capital stock and price subsidies in the energy market (see, for example, Box 12.3 on gas flaring in Russia).
 
 %%page 246%%
-
-(1.2toe/$GDP and 59tc/$GDP respectively in 2002), reflecting the compositional structure of output and the use of low-carbon energy production. By contrast, Russia and Uzbekistan remain very energy- and carbon-intensive (12.5toe/$GDP and
-
-840tc/$GDP respectively for Uzbekistan in 2002), partly reflecting aging capital stock and price subsidies in the energy market (see, for example, Box 12.3 on gas flaring in
-
-Russia).
 
 - It will also be cheaper to pursue emission cuts in countries that are in the process of making big capital investments. The timing of emission savings will also differ by country, according to when capital stock is retired and when savings from longer-term investments such as innovation programmes come to fruition. Countries such as India and China are expected to increase their capital infrastructure substantially over coming decades, with China alone accounting for around 15% of total global energy investment. If they use low-emission technologies, emission savings can be 'locked in' for the lifetime of the asset. It is much cheaper to build a new piece of capital equipment using low-emission technology than to retro-fit dirty capital stock.
 
@@ -2902,7 +2894,7 @@ Tol, R.S.J. (2005): 'The marginal damage costs of carbon dioxide emissions: an a
 
 [^16]: See for example Sohngen et al (2006)
 
-[^17]: IPCC (2001). Note this excludes savings from use of biomass and indirect emission reductions from fossil fuels via
+[^17]: IPCC (2001). Note this excludes savings from use of biomass and indirect emission reductions from fossil fuels via energy-efficiency measures.
 
 [^18]: Smith et al (2006 forthcoming).
 

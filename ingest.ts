@@ -346,6 +346,49 @@ const marginBullets: SourcePass = {
 };
 
 /**
+ * A list item carried over a page break arrives as a run of hanging lines at the head of the next page, and the
+ * text reading cut that run at lines opening on a number or a bracket: "(output-weighted), and they reach 0.5 - 2%
+ * of global GDP..." stood as a paragraph after the 'Tol' model's item (Chapter 6 p.148), and Chapter 10's item on
+ * countries' abatement costs fell into three ("(1.2toe/$GDP ...", "840tc/$GDP ...", "Russia).", p.246). On p.246
+ * the head's hanging lines (the first run of lines set in at the item's text column, up to a blank line) are set on
+ * one line, so the carried text reads as one piece and joins its item. On p.148 the same join leaves the two lines
+ * a paragraph of their own (the list item above is not rejoined), so that page is left as it reads.
+ */
+const CARRIED_ITEM_PAGES = new Set([`${vol("stern-review-chapter-10.pdf")}:8`]);
+const carriedItems: SourcePass = {
+  name: "carriedItems",
+  stage: "source",
+  run(lines, at) {
+    if (!CARRIED_ITEM_PAGES.has(`${at.volume}:${at.pdfIndex}`)) return lines;
+    const indent = (line: string) => line.length - line.trimStart().length;
+    // The page head ("PART II: ...") is the first line; the carried item is the first indented run after it.
+    const start = lines.findIndex((line, i) => i > 0 && line.trim() && indent(line) >= 8);
+    if (start < 0) throw new Error(`carriedItems: no hanging lines at the head of volume ${at.volume} PDF p.${at.pdfIndex}`);
+    let end = start + 1;
+    while (end < lines.length && lines[end].trim() && indent(lines[end]) === indent(lines[start])) end++;
+    const joined = lines[start].trimEnd() + " " + lines.slice(start + 1, end).map((line) => line.trim()).join(" ");
+    return [...lines.slice(0, start), joined.trimEnd(), ...lines.slice(end)];
+  },
+};
+
+/**
+ * Chapter 9's note 17 runs over from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone
+ * above note 18 and were read as a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the
+ * foot of the body but in the notes' block). The line is taken off p.218 here, and corrections.yaml (c-0005) sets
+ * the words back at the end of note 17, where the page prints them.
+ */
+const noteTail: SourcePass = {
+  name: "noteTail",
+  stage: "source",
+  run(lines, at) {
+    if (at.volume !== vol("stern-review-chapter-09.pdf") || at.pdfIndex !== 8) return lines;
+    const i = lines.findIndex((line) => /^\s*energy-efficiency measures\.\s*$/.test(line));
+    if (i < 0 || !/^\s*18\s*$/.test(lines[i + 1] ?? "")) throw new Error("noteTail: note 17's last line not found on Chapter 9 PDF p.8");
+    return [...lines.slice(0, i), ...lines.slice(i + 1)];
+  },
+};
+
+/**
  * The chapters draw their charts in Word and Excel with live-text labels (axis values, legends, data labels:
  * "MAC / SCC, / x0* GHG abatement in period 0", Figure 2.1, p.25; Figure 6.3's "Proportion of Model Runs", p.153),
  * set their tables in a smaller Arial (Table 13.1, p.289: "Advantages Disadvantages ... -Linked directly to the
@@ -442,13 +485,16 @@ const chapterHeadingFaces: BodyPass = {
 /**
  * How this report is built. Owned by the report: every decision that shaped its text is named here.
  *
- * The source is HM Treasury's pre-publication web edition of the Executive Summary (full), 30 October 2006:
- * a born-digital, untagged Word-to-Distiller PDF, 27 A4 pages, single column, folioed i-xxvii, Arial 11pt
- * body (layout key 16). See README.md for the source and scope.
+ * The source is HM Treasury's web edition of the Review, 30 October 2006: one born-digital, untagged (or, for the
+ * January 2007 reissues, tagged) Word-to-Distiller PDF per part, A4, single column, Arial body. The Executive
+ * Summary (27 pp, i-xxvii, body layout key 16) was the first unit; the front matter, the Part I-III introductions
+ * and Chapters 2, 6, 9, 10 and 13 (body layout key 15) the second. The passes above that name a volume or a page
+ * apply there only; the rest apply to every volume, and the Executive Summary's text is unchanged by the later
+ * volumes but for one line-end hyphen ("long-run", p.xxvii). See README.md for the source, versions and scope.
  */
 export default pipeline({
   id: "uk-stern-review",
-  title: "Stern Review: The Economics of Climate Change: Executive Summary",
+  title: "Stern Review: The Economics of Climate Change",
   authors: "Nicholas Stern (HM Treasury)",
   published_at: "30 October 2006",
   source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm",
@@ -462,6 +508,8 @@ export default pipeline({
     ordinalNote,
     partTitles,
     marginBullets,
+    carriedItems,
+    noteTail,
     bodyFaceFigures,
     chartsAndTables,
     chemicalSubscripts,

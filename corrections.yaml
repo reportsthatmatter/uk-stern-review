@@ -26,6 +26,12 @@ corrections:
     replace: "requires greater international co-operation and the development"
     reason: "PDF p.23 (Executive Summary, printed xxiii): 'co-' ends the line and 'operation' opens the next; the summary spells it co-operation everywhere."
     added: 2026-11-12
+  # The other half of the ingest.ts pass noteTail: note 17's last words, printed at the head of p.218's notes.
+  - id: c-0005
+    find: "indirect emission reductions from fossil fuels via"
+    replace: "indirect emission reductions from fossil fuels via energy-efficiency measures."
+    reason: "Chapter 9, PDF pp.7-8 (printed 217-218): note 17 ends 'from fossil fuels via' at the foot of p.217 and runs over to 'energy-efficiency measures.' above note 18 on p.218."
+    added: 2026-11-12
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }

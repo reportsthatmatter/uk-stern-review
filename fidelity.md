@@ -1,6 +1,6 @@
-# Fidelity review — Stern Review: The Economics of Climate Change: Executive Summary
+# Fidelity review — Stern Review: The Economics of Climate Change
 
-Pages: 149  ·  Footnotes: 156  ·  Auto-fixes applied: 1  ·  Human corrections: 4
+Pages: 149  ·  Footnotes: 156  ·  Auto-fixes applied: 1  ·  Human corrections: 5
 
 **42 open**, 17 reviewed and judged correct.
 
@@ -34,8 +34,8 @@ file under `dismissed:` and the entry leaves this queue for good.
 | likely | digit inside a word | `5p` | Vol 10 · PDF p.14 | from the fossil-fuel technologies are 2.5p/kWh for central generation, 8p/kWh for  |
 | likely | digit inside a word | `8p` | Vol 10 · PDF p.14 | es are 2.5p/kWh for central generation, 8p/kWh for decentralised generation, £4/GJ |
 | likely | digit inside a word | `N2O` | Vol 11 · PDF p.7 |  the non-CO2 gases (CH4 falling by 52%, N2O by 38%, F-gases by 73%). CO2 remains th |
-| likely | digit inside a word | `2toe` | Vol 11 · PDF p.8 | cularly low in Switzerland (1.2toe/$GDP and 59tc/$GDP respectively in 2002 |
-| likely | digit inside a word | `5toe` | Vol 11 · PDF p.8 | n very energy- and carbon-intensive (12.5toe/$GDP and 840tc/$GDP respectiv |
+| likely | digit inside a word | `2toe` | Vol 11 · PDF p.8 |  are particularly low in Switzerland (1.2toe/$GDP and 59tc/$GDP respectively in 2002 |
+| likely | digit inside a word | `5toe` | Vol 11 · PDF p.8 | n very energy- and carbon-intensive (12.5toe/$GDP and 840tc/$GDP respectively for Uz |
 | likely | digit inside a word | `1ppt` | Vol 11 · PDF p.8 | the potential to reduce OECD costs by 0.1ppt to 0.9ppt by as early as 2010. 12 Fo |
 | likely | digit inside a word | `9ppt` | Vol 11 · PDF p.8 | ial to reduce OECD costs by 0.1ppt to 0.9ppt by as early as 2010. 12 For example, |
 | likely | digit inside a word | `5ppm` | Vol 12 · PDF p.16 |  at 430ppm CO2e, increasing at around 2.5ppm/yr, the feasibility of hitting 450ppm C |
