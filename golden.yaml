@@ -298,3 +298,30 @@ pages:
       - paragraph: {start: "This chapter explores the process of", end: "low-carbon technologies in the future."}
     footnotes: [78, 79, 80]
     markers: [78, 79, 80]
+  # Chapter 20 (vol 29, printed 431): the reissue's lighter-navy section heading (Distiller 7) read as a heading; a key finding in bold italic; a list with notes 1 and 2
+  - pdf: 2
+    volume: 29
+    printed: 431
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - list: {start: "Providing high quality information; Effective land-use", end: "take account of climate change.", items: 3}
+      - paragraph: {start: "The application of these principles is", end: "in detail in Chapter 26)."}
+      - heading: "20.2 Adaptation prospects in the developing world"
+        level: 4
+      - paragraph: {start: "***Individuals, firms and civil society will", end: "barriers and increase adaptive capacity.***"}
+      - paragraph: {start: "Individuals, firms, and civil society will", end: "extreme weather events. For example:"}
+      - list: {start: "In parts of the Mahanadi floodplains", end: "impacts of a hostile climate.", notes: [1, 2], items: 2}
+      - paragraph: {start: "However, many poor people face a", end: "the burden on the poorest."}
+      - paragraph: {start: "Governments have an important potential role", end: "discussed in more detail below."}
+    footnotes: [1, 2]
+    markers: [1, 2]
+  # Chapter 21 (vol 31, printed 459): Figures 21.1 and 21.2, two charts with no source line, served as their titles only; notes 22 and 23 in the paragraph run over from p.458 (the "2" of CO2e in note 22 is a subscript)
+  - pdf: 10
+    volume: 31
+    printed: 459
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 21.1 Emissions reductions in developed", end: "their 1990 emissions by 2050."}
+      - paragraph: {start: "Figure 21.2 Emissions reductions in developed", end: "their 1990 emissions by 2050"}
+    footnotes: [22, 23]
+    markers: [22, 23]

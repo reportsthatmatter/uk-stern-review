@@ -60,6 +60,32 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-16.pdf", sha256: "d77a199021064420b8e7b4f74e0359dcd282f84dc4bbbc9ab472490a2faf5537" },
   // Chapter 17, Beyond carbon markets and technology, 26 pp, 377-402. Reissue of 18 January 2007.
   { path: "archive/stern-review-chapter-17.pdf", sha256: "dcefebeb2c9f391434e7873642662921efbdd24315c0e26781d0cf26a615a2cf" },
+  // Part V introduction, 1 p, 403. 27 October 2006 (one version only; /d/ holds only a 45-page bundle of the Part,
+  // whose first page has the same text).
+  { path: "archive/stern-review-part-5-introduction.pdf", sha256: "61169b23c14ee0028ebbba04f0423bc8d8fe16a35c176dba9c69f4621f001fc9" },
+  // Chapter 18, Understanding the economics of adaptation, 12 pp, 404-415. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-18.pdf", sha256: "b622f17cb88546bdc630131c7984ff004bf51ef2ff3d4d23f6b39e3ac8322ca6" },
+  // Chapter 19, Adaptation in the developed world, 14 pp, 416-429. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-19.pdf", sha256: "b60d28cbc1ac8a8d7633b5a4d956f14778ede3e45d32287d5c084f3905856e6b" },
+  // Chapter 20, Adaptation in the developing world, 18 pp, 430-447. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-20.pdf", sha256: "1d07df402994485e535c07887552d9ba7866ac88ac87c86ed6aac1dbbbd30f38" },
+  // Part VI introduction, 1 p, 449. 27 October 2006 (never replaced).
+  { path: "archive/stern-review-part-6-introduction.pdf", sha256: "3720a0155051be0172b33137926cebbc0e02416bbd98fed53d0877a563c39b9f" },
+  // Chapter 21, Framework for understanding international collective action, 18 pp, 450-467. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-21.pdf", sha256: "c933e42430e49df05d89e7d3c0d69d92249ef82fd280cbd466eab73f98bc5025" },
+  // Chapter 22, Creating a global price for carbon, 23 pp, 468-490. Reissue of 19 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-22.pdf", sha256: "33ae347a8314ef5a1b77e957b5f59a168abaa603ca0a8e041aa3cb67a18fdcf5" },
+  // Chapter 23, Supporting the transition to a low-carbon global economy, 25 pp, 491-515 (printed 1-25). Reissue of
+  // 18 January 2007.
+  { path: "archive/stern-review-chapter-23.pdf", sha256: "4a4c47de882fd5c7d5b6da49c30d12de0cc90e0df9c437eb9096e99457fb8a50" },
+  // Chapter 24, Promoting effective international technology co-operation, 21 pp, 516-536. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-24.pdf", sha256: "9cbf7834daf647577450137dea99d156be30d748d708f9d915d39985e9bfcecb" },
+  // Chapter 25, Reversing emissions from land use change, 17 pp, 537-553. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-25.pdf", sha256: "d2034beeacc0a60dbe84e20dfdbbce5973fa954e8b3176dc0700ace603d56004" },
+  // Chapter 26, International support for adaptation, 18 pp, 554-571. 27 October 2006 (never replaced).
+  { path: "archive/stern-review-chapter-26.pdf", sha256: "3bf6cf02c60eb3f8624a5d04f3be7b3702beccc717afe128a00ec61941572087" },
+  // Chapter 27, Conclusions: building and sustaining international co-operation, 4 pp, 572-575. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-27.pdf", sha256: "573ad213a0e28b1657fa783b3386f89282592f6ada53cf418cb73b567cad99eb" },
 ];
 
 /** The 1-based volume index of a file in VOLUMES (what a pass sees as `at.volume`). */
@@ -187,6 +213,9 @@ const lateMarkers: BodyPass = {
  * and note 5, as its text. A page whose lines are missing throws.
  */
 const RUN_ON_LINES: ReadonlyArray<{ file: string; pdfIndex: number; line: RegExp }> = [
+  // Chapter 26's References (p.569): Adger (2005)'s second line opens on an editor's initial, "F. Berkhout, M. Leach
+  // and I. Scoones (eds.)", which read as a lettered heading.
+  { file: "stern-review-chapter-26.pdf", pdfIndex: 16, line: /^\s*F\. Berkhout, M\. Leach and I\. Scoones \(eds\.\)/ },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 5, line: /^9GtCO2 per year by around 2150 - 2300/ },
   // Box 8.3's items (p.204): each one's last line, opening on a capital or a number, stood as a paragraph.
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+125% increase in electricity demand\. The reduction in total fossil fuel related emissions\s*$/ },
@@ -194,6 +223,37 @@ const RUN_ON_LINES: ReadonlyArray<{ file: string; pdfIndex: number; line: RegExp
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+2\.2% over the same period\.\s*$/ },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+5\.2% per year\.\s*$/ },
 ];
+/**
+ * A note marker the text layer sets on a line of its own, over the line it belongs to: Chapter 20 p.435 prints
+ * "...high on the agenda for governments.15" with the "15" raised, and the text reading sets "15" alone above
+ * "agenda for governments.", where it read as the start of the page. The marker is set back after its word; its
+ * line goes. Chapter 26 p.558 runs "technology.9" into its word, which the layout does not raise: set by hand.
+ */
+const FLOATING_MARKERS: ReadonlyArray<{ file: string; pdfIndex: number; marker: string; after: string }> = [
+  { file: "stern-review-chapter-20.pdf", pdfIndex: 6, marker: "15", after: "agenda for governments." },
+  { file: "stern-review-chapter-26.pdf", pdfIndex: 5, marker: "", after: "transfer of technology.9 There" },
+];
+const floatingMarkers: SourcePass = {
+  name: "floatingMarkers",
+  stage: "source",
+  run(lines, at) {
+    let out = lines;
+    for (const f of FLOATING_MARKERS.filter((x) => vol(x.file) === at.volume && x.pdfIndex === at.pdfIndex)) {
+      const j = out.findIndex((line) => line.includes(f.after));
+      if (j < 0) throw new Error(`floatingMarkers: "${f.after}" not found on ${f.file} PDF p.${f.pdfIndex}`);
+      if (!f.marker) {
+        const m = /^(.*\D)(\d{1,2})( .*)$/.exec(f.after)!;
+        out = out.map((line, k) => (k === j ? line.replace(f.after, `${m[1]}[^${m[2]}]${m[3]}`) : line));
+        continue;
+      }
+      const i = out.findIndex((line, k) => k < j && k >= j - 2 && line.trim() === f.marker);
+      if (i < 0) throw new Error(`floatingMarkers: marker ${f.marker} not found over "${f.after}" on ${f.file} PDF p.${f.pdfIndex}`);
+      out = out.flatMap((line, k) => (k === i ? [] : k === j ? [line.replace(f.after, `${f.after}[^${f.marker}]`)] : [line]));
+    }
+    return out;
+  },
+};
+
 const runOnLines: SourcePass = {
   name: "runOnLines",
   stage: "source",
@@ -320,10 +380,17 @@ const runningTitle: SourcePass = {
  * note was read into the body. The note is set back as the page prints it. A page whose lines are missing throws.
  */
 const CH2 = vol("stern-review-chapter-02.pdf");
+// Chapter 26's note 9 (p.558) the same way: "9   th" over "World Bank data, as of 25 September, 2006".
+const CH26 = vol("stern-review-chapter-26.pdf");
 const ordinalNote: SourcePass = {
   name: "ordinalNote",
   stage: "source",
   run(lines, at) {
+    if (at.volume === CH26 && at.pdfIndex === 5) {
+      const i = lines.findIndex((line) => /^9\s+th\s*$/.test(line));
+      if (i < 0 || !/^\s*World Bank data, as of 25 September, 2006\s*$/.test(lines[i + 1] ?? "")) throw new Error("ordinalNote: note 9's lines not found on Chapter 26 PDF p.5");
+      return [...lines.slice(0, i), "9", lines[i + 1].replace("25 September", "25th September"), ...lines.slice(i + 2)];
+    }
     if (at.volume !== CH2 || at.pdfIndex !== 11) return lines;
     const i = lines.findIndex((line) => /^10\s+th\s*$/.test(line));
     const ok =
@@ -352,6 +419,25 @@ const ordinalNote: SourcePass = {
  */
 type Region = { file: string; pdfIndex: number; after?: RegExp; from?: RegExp; before: RegExp; insert?: string[] };
 const REGIONS: ReadonlyArray<Region> = [
+  // Batch 3a (Parts V and VI): Figures 21.1 and 21.2 (p.459), two charts with no source line, one under the other
+  // above the page's notes; the chart in Box 24.8 (p.530), titled in the body's face with no figure number.
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\.\s*$/, before: /^\s*Figure 21\.2\s/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\s*$/, before: /^\s*22\s*$/ },
+  // Table 18.1 (p.406), the two tables in Box 18.2 (p.409) and Tables 21.1 (p.456) and the survey in Box 21.6 (p.465), with no source line; the three
+  // diagrams of Box 18.1 (p.408); the chart in Box 21.5 (p.461); the four charts of Chapter 22 (p.475), with no
+  // title; Table 24.1's second page (p.529), whose title and note stay on p.528.
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 3, after: /^\s*Table 18\.1 Examples of adaptation in practice/, before: /^\s*The distinction between short-run and long-run adaptation/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 6, after: /^\s*Adaptation costs and benefits\s*$/, before: /^\s*The various costs and benefits of adapting to climate change/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 6, from: /^\s*Cost of planning for\s{3,}Risks of climate change/, before: /^\s*5\s*$/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /types of inputs, capital K, variable inputs to production and environmental quality E\.\s*$/, before: /^\s*In the short run . and given a change in E/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /respond only by changing variable inputs \(shown as red in the diagram below\)\.\s*$/, before: /^\s*In contrast, in the long run/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /variable inputs and the capital stock to maximise profits given a change\.\s*$/, before: /^\s{20,}408\s*$/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 7, after: /^\s*Table 21\.1 Goals on climate change and clean energy/, before: /^\s*The majority of the world.s largest economies now have goals/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 12, after: /employment and regional development\.\s*$/, before: /^\s*Shared notions of responsible and collaborative behaviour/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 16, after: /^\s*Global Warming Concerns\s*$/, before: /^\s*21\.5\s+Conclusions/ },
+  { file: "stern-review-chapter-22.pdf", pdfIndex: 8, after: /^\s*criterion\.\s*$/, before: /^\s*22\.4\s+Putting efficiency and equity together/ },
+  { file: "stern-review-chapter-24.pdf", pdfIndex: 14, from: /^\s*Imputed carbon price,\s*$/, before: /^\s*More formal co-ordination of deployment support/ },
+  { file: "stern-review-chapter-24.pdf", pdfIndex: 15, after: /^\s*Impact of carbon and energy prices on CCS deployment/, before: /^\s*Alternatively, international agreement could focus on a regulatory/ },
   { file: "stern-review-chapter-02.pdf", pdfIndex: 5, after: /^\s*Figure 2\.2 How the path for the social cost of carbon drives the extent of abatement\s*$/, before: /^\s*This illustrates how important it is that the dynamics/ },
   { file: "stern-review-chapter-02.pdf", pdfIndex: 13, after: /^\s*term\s*$/, before: /^\s*The issues are represented schematically in Figure 2\.4/ },
   { file: "stern-review-chapter-06.pdf", pdfIndex: 4, after: /human system, there will be feedbacks between many links in the chain\.\s*$/, before: /^\s*Source: Hope \(2005\)\.\s*$/ },
@@ -520,11 +606,26 @@ const wrappedHeadings: SourcePass = {
     if (!REGION_VOLUMES.has(at.volume)) return lines;
     const out: string[] = [];
     for (let i = 0; i < lines.length; i++) {
-      const m = SECTION_HEAD.exec(lines[i]);
       const next = lines[i + 1] ?? "";
+      // A chapter title set over two lines on the chapter's first page ("21 Framework for Understanding International
+      // Collective Action for Climate" over "Change", p.450; Chapter 27, p.572) is one heading.
+      const title = at.pdfIndex === 1 ? /^\s*(\d{1,2})\s+[A-Z]/.exec(lines[i]) : null;
+      if (title && VOLUMES[at.volume - 1].path.endsWith(`chapter-${title[1].padStart(2, "0")}.pdf`) && /^\s*[A-Z][a-z]+(?: [A-Za-z]+)?\s*$/.test(next) && !/^\s*Key Messages\s*$/.test(next)) {
+        out.push(`${lines[i].trimEnd()} ${next.trim()}`);
+        i++;
+        continue;
+      }
+      const m = SECTION_HEAD.exec(lines[i]);
       const column = m ? m[1].length + m[2].length + m[3].length : -1;
       const indent = next.length - next.trimStart().length;
       if (m && next.trim() && Math.abs(indent - column) <= 3 && next.trim().length < 50 && !/[.:]$/.test(m[4].trim())) {
+        // Chapter 26 ends one heading with a full stop ("26.5 Risk management ... resettling" over "refugees.",
+        // p.566), which the heading reader takes for a sentence: served without it (and so in the layout, below).
+        if (at.volume === CH26 && m[2] === "26.5") {
+          out.push(`${lines[i].trimEnd()} ${next.trim().replace(/\.$/, "")}`);
+          i++;
+          continue;
+        }
         out.push(`${lines[i].trimEnd()} ${next.trim()}`);
         i++;
         continue;
@@ -580,6 +681,9 @@ const MARGIN_BULLET_PAGES = new Set([
   `${vol("stern-review-chapter-06.pdf")}:1`,
   ...[
     ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15], ["16", 11], ["12", 10], ["16", 1], ["16", 17], ["17", 5],
+    // Batch 3a: lists in boxes and in the running text, Chapters 18 (p.409), 19 (pp.419, 424), 20 (p.435), 23 (p.496),
+    // 24 (p.525) and 26 (pp.554, 558, 564).
+    ["18", 6], ["19", 4], ["19", 9], ["20", 6], ["23", 6], ["24", 10], ["26", 1], ["26", 5], ["26", 11],
   ].map(([n, p]) => `${vol(`stern-review-chapter-${n}.pdf`)}:${p}`),
 ]);
 const MARGIN_BULLET = /^ ?•(\s+)\S/;
@@ -645,12 +749,15 @@ const carriedItems: SourcePass = {
  * from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone above note 18 and were read as
  * a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the foot of the body but in the
  * notes' block). Chapter 11's note 5 (p.255) runs over to the foot of p.256 in five lines ("rough magnitude of this
- * higher order indirect impact. ..."), with no number, after the body. The lines are taken off the page here, and
- * corrections.yaml (c-0005, c-0050) sets the words back at the end of their note, where the pages print them.
+ * higher order indirect impact. ..."), with no number, after the body. Chapter 25's note 4 (p.537) runs over to
+ * the head of p.538's notes in two lines ("use change within the range ... Baumert KA et al. (2005)."), read as
+ * the end of Figure 25.1's source line. The lines are taken off the page here, and corrections.yaml (c-0005,
+ * c-0050, c-0200) sets the words back at the end of their note, where the pages print them.
  */
 const NOTE_TAILS: ReadonlyArray<{ file: string; pdfIndex: number; first: RegExp; last: RegExp; next?: RegExp }> = [
   { file: "stern-review-chapter-09.pdf", pdfIndex: 8, first: /^\s*energy-efficiency measures\.\s*$/, last: /^\s*energy-efficiency measures\.\s*$/, next: /^\s*18\s*$/ },
   { file: "stern-review-chapter-11.pdf", pdfIndex: 4, first: /^\s*rough magnitude of this higher order indirect impact\. Because data disaggregated/, last: /^\s*here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief\.\s*$/ },
+  { file: "stern-review-chapter-25.pdf", pdfIndex: 2, first: /^\s*use change within the range equivalent to 2\.2 to 9\.9 GtCO2,, with a central estimate/, last: /^\s*setting out the range of estimates can be found in Baumert KA et al\. \(2005\)\.\s*$/, next: /^\s*5\s*$/ },
 ];
 const noteTail: SourcePass = {
   name: "noteTail",
@@ -675,7 +782,7 @@ const noteTail: SourcePass = {
  * the same top, each starting where the last ends) are put back into one layout line before any pass reads it. The
  * text layer is untouched.
  */
-const PIECED = new Set([vol("stern-review-chapter-08.pdf")]);
+const PIECED = new Set(["08", "22", "24"].map((n) => vol(`stern-review-chapter-${n}.pdf`)));
 const layoutPieces: BodyPass = {
   name: "layoutPieces",
   stage: "body",
@@ -794,7 +901,11 @@ const chemicalSubscripts: BodyPass = {
  */
 const CHAPTER_FACE = "Arial,Bold|16|#000065|b";
 const SECTION_FACE = "Arial,Bold|15|#000065|b";
-const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b"]);
+// Chapter 20 (the reissue of 18 January 2007, made with Distiller 7) sets its title and sections in a lighter navy at
+// the body's size ("20 Adaptation in the developing world", "20.2 Adaptation prospects ...", pp.430-431); Chapter 26
+// (27 October 2006) sets its section 26.5 in the navy of its page foot ("26.5 Risk management and risk preparedness:
+// ...", p.566), and its References in black (p.569).
+const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b", "Arial|15|#33339a|b", "Arial,Bold|15|#000080|b"]);
 const chapterHeadingFaces: BodyPass = {
   name: "chapterHeadingFaces",
   stage: "body",
@@ -807,7 +918,7 @@ const chapterHeadingFaces: BodyPass = {
     // A section heading's second line (`wrappedHeadings`) is set on its first in the layout too, so the heading
     // reader takes the whole heading.
     if (REGION_VOLUMES.has(at.volume))
-      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}\.\d{1,2}\s+\S/.test(l.text.trim()))) {
+      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}(?:\.\d{1,2})?\s+\S/.test(l.text.trim()))) {
         const next = page.find((l) => l.font === head.font && l.top > head.top && l.top - head.top <= 1.5 * head.height && l.left > head.left);
         if (!next || next.text.trim().length >= 50) continue;
         Object.assign(head, { text: `${head.text.trimEnd()} ${next.text.trim()}` });
@@ -816,6 +927,11 @@ const chapterHeadingFaces: BodyPass = {
     // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
     // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
     for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
+    if (at.volume === CH26)
+      for (const line of page) {
+        if (line.font === "Arial,Bold|15|#000000|b" && line.text.trim() === "References") (line as { font: string }).font = SECTION_FACE;
+        if (/^26\.5 .*refugees\.\s*$/.test(line.text.trim())) Object.assign(line, { text: line.text.replace(/\.(\s*)$/, "$1") });
+      }
     const navy = page.filter((line) => NAVY.has(line.font) && !/^STERN REVIEW:|^\d+$/.test(line.text.trim()));
     const numbered = navy.filter((line) => faceOf(line.text.trim()));
     for (const line of navy) {
@@ -873,6 +989,7 @@ export default pipeline({
     figureTitleBreak,
     noteMarkers,
     runOnLines,
+    floatingMarkers,
     runningTitle,
     ordinalNote,
     partTitles,

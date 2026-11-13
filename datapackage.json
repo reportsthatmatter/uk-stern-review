@@ -575,6 +575,282 @@
           "web": "https://web.archive.org/web/20081023104506id_/http://www.hm-treasury.gov.uk/d/Chapter_17_Beyond_Carbon_Markets_and_Technology.pdf"
         }
       ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part V introduction, 27 October 2006 (one version only)",
+      "path": "archive/stern-review-part-5-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 1000626,
+      "hash": "sha256:61169b23c14ee0028ebbba04f0423bc8d8fe16a35c176dba9c69f4621f001fc9",
+      "description": "One digest in every capture, 2006-2008 (also at media/4/C/). HM Treasury's /d/ listing carries only Part_V_Introduction_group.pdf, a 45-page bundle of the introduction and Chapters 18-20, whose first page has the same text.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/media/8A8/22/Part_V_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20061209034437id_/http://www.hm-treasury.gov.uk/media/8A8/22/Part_V_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 18, Understanding the economics of adaptation, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-18.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 369243,
+      "hash": "sha256:b622f17cb88546bdc630131c7984ff004bf51ef2ff3d4d23f6b39e3ac8322ca6",
+      "description": "Replaces the original of October 2006 (media/8A8/39/Chapter_18_Understanding_the_economics.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_18_Understanding_the_Economics_of_Adaptation.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104447id_/http://www.hm-treasury.gov.uk/d/Chapter_18_Understanding_the_Economics_of_Adaptation.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 19, Adaptation in the developed world, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-19.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 355668,
+      "hash": "sha256:b60d28cbc1ac8a8d7633b5a4d956f14778ede3e45d32287d5c084f3905856e6b",
+      "description": "Replaces the original of October 2006 (media/8A8/40/Chapter_19_Adaptation_in_the_developed_world.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_19_Adaptation_In_The_Developed_World.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104707id_/http://www.hm-treasury.gov.uk/d/Chapter_19_Adaptation_In_The_Developed_World.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 20, Adaptation in the developing world, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-20.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 175553,
+      "hash": "sha256:1d07df402994485e535c07887552d9ba7866ac88ac87c86ed6aac1dbbbd30f38",
+      "description": "The only version archived: one digest at /d/ and media/4/D/; no October 2006 original found under /media/.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_20_Adaptation_in_the_Developing_World.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104427id_/http://www.hm-treasury.gov.uk/d/Chapter_20_Adaptation_in_the_Developing_World.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part VI introduction, 27 October 2006 (never replaced)",
+      "path": "archive/stern-review-part-6-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 56707,
+      "hash": "sha256:3720a0155051be0172b33137926cebbc0e02416bbd98fed53d0877a563c39b9f",
+      "description": "Same text and creation time as the original at media/EB9/F9/Part_VI_Introduction.pdf (a different file digest).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Part_VI_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104617id_/http://www.hm-treasury.gov.uk/d/Part_VI_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 21, Framework for understanding international collective action for climate change, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-21.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 477340,
+      "hash": "sha256:c933e42430e49df05d89e7d3c0d69d92249ef82fd280cbd466eab73f98bc5025",
+      "description": "Replaces the original of October 2006 (media/8A8/75/Chapter_21_Framework_for_International_Collective_Action.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_21_Framework_for_Understanding_International_Collective_Action_for_Climate_Change.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104501id_/http://www.hm-treasury.gov.uk/d/Chapter_21_Framework_for_Understanding_International_Collective_Action_for_Climate_Change.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 22, Creating a global price for carbon, HM Treasury reissue of 19 January 2007",
+      "path": "archive/stern-review-chapter-22.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 216652,
+      "hash": "sha256:33ae347a8314ef5a1b77e957b5f59a168abaa603ca0a8e041aa3cb67a18fdcf5",
+      "description": "The only version archived: one digest at /d/ and media/7/4/; no October 2006 original found under /media/.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_22_Creating_a_Global_Price_for_Carbon.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104504id_/http://www.hm-treasury.gov.uk/d/Chapter_22_Creating_a_Global_Price_for_Carbon.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 23, Supporting the transition to a low-carbon global economy, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-23.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 541649,
+      "hash": "sha256:4a4c47de882fd5c7d5b6da49c30d12de0cc90e0df9c437eb9096e99457fb8a50",
+      "description": "Replaces the original of October 2006 (media/8A8/84/Chapter_23_Supporting_the_Transition.pdf). Prints its folios 1-25, where the table of contents sets the chapter at pp.491-515.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_23_Supporting_the_Transition_to_a_Low-Carbon_Global_Economy.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104614id_/http://www.hm-treasury.gov.uk/d/Chapter_23_Supporting_the_Transition_to_a_Low-Carbon_Global_Economy.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 24, Promoting effective international technology co-operation, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-24.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 524312,
+      "hash": "sha256:9cbf7834daf647577450137dea99d156be30d748d708f9d915d39985e9bfcecb",
+      "description": "Replaces the original of October 2006 (media/EB8/F1/Chapter_24__-_technology_cooperation.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_24_Promoting_Effective_International_Technology_Co-operation.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104417id_/http://www.hm-treasury.gov.uk/d/Chapter_24_Promoting_Effective_International_Technology_Co-operation.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 25, Reversing emissions from land use change, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-25.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 564020,
+      "hash": "sha256:d2034beeacc0a60dbe84e20dfdbbce5973fa954e8b3176dc0700ace603d56004",
+      "description": "The only version archived at /d/; no October 2006 original found under /media/.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_25_Reversing_Emissions_from_Land_Use_Change.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104419id_/http://www.hm-treasury.gov.uk/d/Chapter_25_Reversing_Emissions_from_Land_Use_Change.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 26, International support for adaptation, 27 October 2006 (never replaced)",
+      "path": "archive/stern-review-chapter-26.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 337791,
+      "hash": "sha256:3bf6cf02c60eb3f8624a5d04f3be7b3702beccc717afe128a00ec61941572087",
+      "description": "The same file (one digest) as the original at media/8A8/9B/Chapter_26_International_Support.pdf.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_26_International_Support.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104435id_/http://www.hm-treasury.gov.uk/d/Chapter_26_International_Support.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 27, Conclusions: building and sustaining international co-operation on climate change, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-27.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 129135,
+      "hash": "sha256:573ad213a0e28b1657fa783b3386f89282592f6ada53cf418cb73b567cad99eb",
+      "description": "Replaces the original of October 2006 (media/8A8/AB/Chapter_27_Conclusions.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_27_Conclusions.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104451id_/http://www.hm-treasury.gov.uk/d/Chapter_27_Conclusions.pdf"
+        }
+      ]
     }
   ],
   "licenses": [
