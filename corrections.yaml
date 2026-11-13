@@ -266,6 +266,114 @@ corrections:
     where: {volume: 18, printed: 3}
     reason: "Chapter 11, PDF pp.3-4 (printed 255-256): note 5 ends 'to gauge the' at the foot of p.255 and runs over to five lines at the foot of p.256, below the body."
     added: 2026-11-13
+  # Line-end hyphens in Chapters 11, 12 and 14-17 (and their notes and references), kept with a space by the hyphen
+  # reader; each checked against the PDF's line ends (a line ending on the first half, the next opening on the second).
+  - id: c-0051
+    find: "applying policies and re- vamping institutions to"
+    replace: "applying policies and re-vamping institutions to"
+    reason: "Chapter 11: 're-' ends the line and 'vamping' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0052
+    find: "a UK Input-Output case- study"
+    replace: "a UK Input-Output case-study"
+    reason: "Chapter 11: 'case-' ends the line and 'study' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0053
+    find: "& Management, 45(2): 278- 293"
+    replace: "& Management, 45(2): 278-293"
+    reason: "Chapter 11: '278-' ends the line and '293' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0054
+    find: "on clean energy start- ups and other"
+    replace: "on clean energy start-ups and other"
+    reason: "Chapter 12: 'start-' ends the line and 'ups' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0055
+    find: "imply complex and inter- related processes and"
+    replace: "imply complex and inter-related processes and"
+    reason: "Chapter 12: 'inter-' ends the line and 'related' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0056
+    find: "ranging from innovative high- technology start-up firms"
+    replace: "ranging from innovative high-technology start-up firms"
+    reason: "Chapter 12: 'high-' ends the line and 'technology' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0057
+    find: "accelerated timetable for phase- out of the"
+    replace: "accelerated timetable for phase-out of the"
+    reason: "Chapter 12: 'phase-' ends the line and 'out' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0058
+    find: "(2006): available from http://www.hm- treasury.gov.uk/media/5FB/FE/Climate_Change_CASS_final_report.pdf"
+    replace: "(2006): available from http://www.hm-treasury.gov.uk/media/5FB/FE/Climate_Change_CASS_final_report.pdf"
+    reason: "Chapter 12: 'hm-' ends the line and 'treasury' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0059
+    find: "subject to that carbon- price path and"
+    replace: "subject to that carbon-price path and"
+    reason: "Chapter 14: 'carbon-' ends the line and 'price' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0060
+    find: "Economic Studies, 41 (4):477- 491"
+    replace: "Economic Studies, 41 (4):477-491"
+    reason: "Chapter 14: '477-' ends the line and '491' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0061
+    find: "Iogen Corp., an Ottawa- based company that"
+    replace: "Iogen Corp., an Ottawa-based company that"
+    reason: "Chapter 16: 'Ottawa-' ends the line and 'based' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0062
+    find: "learning means that longer- established technologies will"
+    replace: "learning means that longer-established technologies will"
+    reason: "Chapter 16: 'longer-' ends the line and 'established' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0063
+    find: "a comparison of minimum- price and quota"
+    replace: "a comparison of minimum-price and quota"
+    reason: "Chapter 16: 'minimum-' ends the line and 'price' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0064
+    find: "administration cost of £5- 7/tC02."
+    replace: "administration cost of £5-7/tC02."
+    reason: "Chapter 17: '5-' ends the line and '7' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0065
+    find: "public services and state- owned enterprises, including"
+    replace: "public services and state-owned enterprises, including"
+    reason: "Chapter 17: 'state-' ends the line and 'owned' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0066
+    find: "of industry and end- users. Voluntary strategies"
+    replace: "of industry and end-users. Voluntary strategies"
+    reason: "Chapter 17: 'end-' ends the line and 'users' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0067
+    find: "with economic growth. http://www.dti.gov.uk/science/science- funding/framework/page9306.html"
+    replace: "with economic growth. http://www.dti.gov.uk/science/science-funding/framework/page9306.html"
+    reason: "a note: 'science-' ends the line and 'funding' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0068
+    find: "Call for Evidence http://www.hm- treasury.gov.uk/media/F7E/46/climatechange-fisk_1.pdf"
+    replace: "Call for Evidence http://www.hm-treasury.gov.uk/media/F7E/46/climatechange-fisk_1.pdf"
+    reason: "a note: 'hm-' ends the line and 'treasury' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0069
+    find: "publications/e- book/9703011E.PDF"
+    replace: "publications/e-book/9703011E.PDF"
+    reason: "a note: 'e-' ends the line and 'book' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0070
+    find: "Energy Commission (2005): http://www.energy.ca.gov/2005publications/CEC-400-2005-043/CEC-400- 2005-043.PDF"
+    replace: "Energy Commission (2005): http://www.energy.ca.gov/2005publications/CEC-400-2005-043/CEC-400-2005-043.PDF"
+    reason: "a note: '400-' ends the line and '2005' opens the next; one word or range, as printed."
+    added: 2026-11-13
+  - id: c-0071
+    find: "12 January 2006 http://www.hm- treasury.gov.uk/media/B70/64/stern_transportseminar_toyota.pdf"
+    replace: "12 January 2006 http://www.hm-treasury.gov.uk/media/B70/64/stern_transportseminar_toyota.pdf"
+    reason: "a note: 'hm-' ends the line and 'treasury' opens the next; one word or range, as printed."
+    added: 2026-11-13
+
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
