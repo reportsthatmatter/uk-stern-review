@@ -4,7 +4,7 @@ authors: "Nicholas Stern (HM Treasury)"
 published_at: "30 October 2006"
 source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
 pages: 597
-footnotes: 1236
+footnotes: 1237
 corrections: 96
 ---
 
@@ -8112,8 +8112,6 @@ The top right box represents a situation where society fails to adapt to the cha
 
 Adaptation costs and benefits
 
-Adaptation Type Existing Climate (T0) Altered Climate (T1) Adaptation to existing Existing climate. Society is adapted to Altered climate. Society is adapted to climate (A0) existing climate: (T0, A0), or Base Case existing climate: (T1, A0). Adaptation to altered Existing climate. Society is adapted to Altered climate. Society is adapted to climate (A1) altered climate: (T0, A1). altered climate: (T1, A1).
-
 The various costs and benefits of adapting to climate change follow from this, and can be thought of along the following lines:
 
 - Climate change damage is the welfare loss associated with moving from the base climate (top left) to a changed climate without adaptation (top right): W(T1,A0) – W(T0,A0).
@@ -8123,8 +8121,6 @@ The various costs and benefits of adapting to climate change follow from this, a
 Uncertainty over the nature of future climate change is implicit in this framework, and is one of the principal challenges facing climate policy. The second table below therefore modifies the framework to illustrate the trade-offs facing those planning adaptation under uncertainty.[^6] The decision to implement an adaptation strategy should take account of the balance of risks and costs of planning for climate change that does not occur and vice versa.
 
 Where the cost of planning for climate change is low, but the risks posed by climate change are high (top right box), there is a comparatively unambiguous case for adaptation. In contrast, where the costs of adaptation are high but the risks posed by climate change are low (bottom left box), the proposed adaptation responses may be disproportionate to the risks faced. Where the costs of planning for climate change and the risks of climate change are both low (top left box), there is little risk to the situation and the downsides are small, regardless of the choice made. In contrast, where the costs of both 'mistakes' are high, the stakes and risks are very high for the planner.
-
-Cost of planning for Risks of climate change climate change Low High Low Low risk Plan for climate change High Don't plan for climate change High risk
 
 %%page 410%%
 
@@ -8659,11 +8655,9 @@ At the margin, it will be important to ensure that disaster risk assessments tak
 
 ***Governments should also promote risk-sharing approaches, through insurance and pooling of disaster risks.***
 
-Insurance is another area - closely related to disaster preparedness - in which climate-change considerations reinforce what governments should already be doing on developmental grounds.[^14] Well-functioning insurance markets share risk across individuals, regions, and countries, reducing the welfare effects of negative shocks of all types, whether climate-related or not. Risk-based insurance schemes can also reduce the costs of climate change by encouraging good risk-management behaviours, as discussed in Chapter 19. For example, by providing the incentives to meet standards on building design and construction, they encourage action to reduce risk. In addition, insurance may also act as a catalyst for autonomous adaptation by providing information through its measurement and pricing of climate risks. With the expected increase in climate-related shocks, governments now have even more reason to promote well-functioning insurance markets, as described in Chapter 18 and 19. Low-cost micro-insurance options, particularly weather derivatives, could be a mechanism for sharing risk in the poorest countries. Promoting private-sector involvement and investment in disaster risk management in developing countries should be high on the
+Insurance is another area - closely related to disaster preparedness - in which climate-change considerations reinforce what governments should already be doing on developmental grounds.[^14] Well-functioning insurance markets share risk across individuals, regions, and countries, reducing the welfare effects of negative shocks of all types, whether climate-related or not. Risk-based insurance schemes can also reduce the costs of climate change by encouraging good risk-management behaviours, as discussed in Chapter 19. For example, by providing the incentives to meet standards on building design and construction, they encourage action to reduce risk. In addition, insurance may also act as a catalyst for autonomous adaptation by providing information through its measurement and pricing of climate risks. With the expected increase in climate-related shocks, governments now have even more reason to promote well-functioning insurance markets, as described in Chapter 18 and 19. Low-cost micro-insurance options, particularly weather derivatives, could be a mechanism for sharing risk in the poorest countries. Promoting private-sector involvement and investment in disaster risk management in developing countries should be high on the agenda for governments.[^15] Box 20.3 provides examples of innovative programmes in this area.
 
 %%page 435%%
-
-15 agenda for governments. Box 20.3 provides examples of innovative programmes in this area.
 
 Box 20.3 Pilot risk-sharing ventures in the developing world
 
@@ -11014,7 +11008,7 @@ GEF resources (established under the Climate Convention) include:
 
 Least Developed Country Fund (LDCF): The GEF established the LDCF to address the extreme vulnerability and limited adaptive capacity of Least Developed Countries (LDCs). The LDCF initially supported preparation of National Adaptation Programmes of Action (NAPAs). To date, a majority of LDCs have received funds to prepare their NAPAs, many of which are now close to completion. The NAPAs conclude with a list of prioritized project profiles to be subsequently implemented with support from the LDCF. Pledges and contributions to the LDCF amount to $89 million as of April 2006.[^8]
 
-Special Climate Change Fund (SCCF): Adaptation activities to address the adverse impacts of climate change have top priority for funding under the SCCF, which is aimed at supporting activities in adaptation, technology transfer, economic diversification, and energy, transport, industry, agriculture, forestry, and waste management. The SCCF addresses the special needs of developing countries in long-term adaptation, with priorities given to health, agriculture, water and vulnerable ecosystems. To date, $45 million has been pledged in contributions to support adaptation and the transfer of technology.9 There is currently a lack of agreement over the operational guidelines on economic diversification for this fund that has proved to be a constraint.[^10] This issue relates to whether oil-producing countries should be compensated for lost revenues as a result of global agreement on reducing carbon emissions.
+Special Climate Change Fund (SCCF): Adaptation activities to address the adverse impacts of climate change have top priority for funding under the SCCF, which is aimed at supporting activities in adaptation, technology transfer, economic diversification, and energy, transport, industry, agriculture, forestry, and waste management. The SCCF addresses the special needs of developing countries in long-term adaptation, with priorities given to health, agriculture, water and vulnerable ecosystems. To date, $45 million has been pledged in contributions to support adaptation and the transfer of technology.[^9] There is currently a lack of agreement over the operational guidelines on economic diversification for this fund that has proved to be a constraint.[^10] This issue relates to whether oil-producing countries should be compensated for lost revenues as a result of global agreement on reducing carbon emissions.
 
 Neither fund is subject to the resource allocation framework of the main GEF Trust Fund and may receive between $100 million to $200 million per annum in donations.
 
@@ -13764,7 +13758,9 @@ Above all, reducing the risks of climate change requires collective action. It r
 
 [^7]: Key principles include: ownership, alignment, harmonisation, managing for results, accountability and governance. www.oecd.org/dataoecd/11/41/34428351.pdf.
 
-[^8]: World Bank data 9 th World Bank data, as of 25 September, 2006
+[^8]: World Bank data
+
+[^9]: World Bank data, as of 25th September, 2006
 
 [^10]: World Bank (2006a)
 

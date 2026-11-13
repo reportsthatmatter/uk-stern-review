@@ -223,6 +223,37 @@ const RUN_ON_LINES: ReadonlyArray<{ file: string; pdfIndex: number; line: RegExp
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+2\.2% over the same period\.\s*$/ },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+5\.2% per year\.\s*$/ },
 ];
+/**
+ * A note marker the text layer sets on a line of its own, over the line it belongs to: Chapter 20 p.435 prints
+ * "...high on the agenda for governments.15" with the "15" raised, and the text reading sets "15" alone above
+ * "agenda for governments.", where it read as the start of the page. The marker is set back after its word; its
+ * line goes. Chapter 26 p.558 runs "technology.9" into its word, which the layout does not raise: set by hand.
+ */
+const FLOATING_MARKERS: ReadonlyArray<{ file: string; pdfIndex: number; marker: string; after: string }> = [
+  { file: "stern-review-chapter-20.pdf", pdfIndex: 6, marker: "15", after: "agenda for governments." },
+  { file: "stern-review-chapter-26.pdf", pdfIndex: 5, marker: "", after: "transfer of technology.9 There" },
+];
+const floatingMarkers: SourcePass = {
+  name: "floatingMarkers",
+  stage: "source",
+  run(lines, at) {
+    let out = lines;
+    for (const f of FLOATING_MARKERS.filter((x) => vol(x.file) === at.volume && x.pdfIndex === at.pdfIndex)) {
+      const j = out.findIndex((line) => line.includes(f.after));
+      if (j < 0) throw new Error(`floatingMarkers: "${f.after}" not found on ${f.file} PDF p.${f.pdfIndex}`);
+      if (!f.marker) {
+        const m = /^(.*\D)(\d{1,2})( .*)$/.exec(f.after)!;
+        out = out.map((line, k) => (k === j ? line.replace(f.after, `${m[1]}[^${m[2]}]${m[3]}`) : line));
+        continue;
+      }
+      const i = out.findIndex((line, k) => k < j && k >= j - 2 && line.trim() === f.marker);
+      if (i < 0) throw new Error(`floatingMarkers: marker ${f.marker} not found over "${f.after}" on ${f.file} PDF p.${f.pdfIndex}`);
+      out = out.flatMap((line, k) => (k === i ? [] : k === j ? [line.replace(f.after, `${f.after}[^${f.marker}]`)] : [line]));
+    }
+    return out;
+  },
+};
+
 const runOnLines: SourcePass = {
   name: "runOnLines",
   stage: "source",
@@ -349,10 +380,17 @@ const runningTitle: SourcePass = {
  * note was read into the body. The note is set back as the page prints it. A page whose lines are missing throws.
  */
 const CH2 = vol("stern-review-chapter-02.pdf");
+// Chapter 26's note 9 (p.558) the same way: "9   th" over "World Bank data, as of 25 September, 2006".
+const CH26 = vol("stern-review-chapter-26.pdf");
 const ordinalNote: SourcePass = {
   name: "ordinalNote",
   stage: "source",
   run(lines, at) {
+    if (at.volume === CH26 && at.pdfIndex === 5) {
+      const i = lines.findIndex((line) => /^9\s+th\s*$/.test(line));
+      if (i < 0 || !/^\s*World Bank data, as of 25 September, 2006\s*$/.test(lines[i + 1] ?? "")) throw new Error("ordinalNote: note 9's lines not found on Chapter 26 PDF p.5");
+      return [...lines.slice(0, i), "9", lines[i + 1].replace("25 September", "25th September"), ...lines.slice(i + 2)];
+    }
     if (at.volume !== CH2 || at.pdfIndex !== 11) return lines;
     const i = lines.findIndex((line) => /^10\s+th\s*$/.test(line));
     const ok =
@@ -385,10 +423,12 @@ const REGIONS: ReadonlyArray<Region> = [
   // above the page's notes; the chart in Box 24.8 (p.530), titled in the body's face with no figure number.
   { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\.\s*$/, before: /^\s*Figure 21\.2\s/ },
   { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\s*$/, before: /^\s*22\s*$/ },
-  // Table 18.1 (p.406) and Tables 21.1 (p.456) and the survey in Box 21.6 (p.465), with no source line; the three
+  // Table 18.1 (p.406), the two tables in Box 18.2 (p.409) and Tables 21.1 (p.456) and the survey in Box 21.6 (p.465), with no source line; the three
   // diagrams of Box 18.1 (p.408); the chart in Box 21.5 (p.461); the four charts of Chapter 22 (p.475), with no
   // title; Table 24.1's second page (p.529), whose title and note stay on p.528.
   { file: "stern-review-chapter-18.pdf", pdfIndex: 3, after: /^\s*Table 18\.1 Examples of adaptation in practice/, before: /^\s*The distinction between short-run and long-run adaptation/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 6, after: /^\s*Adaptation costs and benefits\s*$/, before: /^\s*The various costs and benefits of adapting to climate change/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 6, from: /^\s*Cost of planning for\s{3,}Risks of climate change/, before: /^\s*5\s*$/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /types of inputs, capital K, variable inputs to production and environmental quality E\.\s*$/, before: /^\s*In the short run . and given a change in E/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /respond only by changing variable inputs \(shown as red in the diagram below\)\.\s*$/, before: /^\s*In contrast, in the long run/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /variable inputs and the capital stock to maximise profits given a change\.\s*$/, before: /^\s{20,}408\s*$/ },
@@ -936,6 +976,7 @@ export default pipeline({
     figureTitleBreak,
     noteMarkers,
     runOnLines,
+    floatingMarkers,
     runningTitle,
     ordinalNote,
     partTitles,
