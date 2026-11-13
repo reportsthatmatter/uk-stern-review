@@ -159,6 +159,91 @@ corrections:
     replace: "happens to non-CO2 greenhouse"
     reason: "Chapter 13 (printed 297): 'non-' ends the line, 'CO2' opens the next; non-CO2 greenhouse gases. (reviewer fixup, review-stern-full-2026-11-12)"
     added: 2026-11-12
+  - id: c-0031
+    find: "help policy- makers decide"
+    replace: "help policy-makers decide"
+    reason: "Chapter 13 (printed 284): 'policy-' ends the line and 'makers' opens the next; the Review spells it 'policy-makers' (16 times in its running text), as this paragraph was served before the second batch's 'summary for policymakers' (the IPCC title) changed the line-end reading."
+    added: 2026-11-13
+  - id: c-0032
+    find: "perfect and policy- makers had"
+    replace: "perfect and policy-makers had"
+    reason: "Chapter 13: as c-0031."
+    added: 2026-11-13
+  - id: c-0033
+    find: "population of sub- Saharan Africa"
+    replace: "population of sub-Saharan Africa"
+    reason: "Chapter 4: 'sub-' ends the line, 'Saharan' opens the next."
+    added: 2026-11-13
+  - id: c-0034
+    find: "In sub- Saharan Africa, for example"
+    replace: "In sub-Saharan Africa, for example"
+    reason: "Chapter 4: as c-0033."
+    added: 2026-11-13
+  - id: c-0035
+    find: "very user- friendly database"
+    replace: "very user-friendly database"
+    reason: "Chapter 7: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0036
+    find: "www.usf.uni- kassel.de"
+    replace: "www.usf.uni-kassel.de"
+    reason: "Chapter 7 references: a web address broken at its hyphen."
+    added: 2026-11-13
+  - id: c-0037
+    find: "fast- and slow- growing economies"
+    replace: "fast- and slow-growing economies"
+    reason: "Chapter 7: 'slow-' ends the line; 'fast-' is a suspended hyphen, as printed."
+    added: 2026-11-13
+  - id: c-0038
+    find: "initiate a self- perpetuating effect"
+    replace: "initiate a self-perpetuating effect"
+    reason: "Chapter 1: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0039
+    find: "plants and re- gasification facilities"
+    replace: "plants and re-gasification facilities"
+    reason: "Chapter 8: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0040
+    find: "Women are 'over- represented'"
+    replace: "Women are 'over-represented'"
+    reason: "Chapter 4: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0041
+    find: "However, over- reliance on abatement"
+    replace: "However, over-reliance on abatement"
+    reason: "Chapter 8: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0042
+    find: "decarbonisation of non- transport energy"
+    replace: "decarbonisation of non-transport energy"
+    reason: "Chapter 8: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0043
+    find: "Trends in Non- Timber Forest Product Use"
+    replace: "Trends in Non-Timber Forest Product Use"
+    reason: "Chapter 4 references: line-end hyphen in a title."
+    added: 2026-11-13
+  - id: c-0044
+    find: "participation in market- based work"
+    replace: "participation in market-based work"
+    reason: "Chapter 4: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0045
+    find: "high-carbon or low- efficiency piece"
+    replace: "high-carbon or low-efficiency piece"
+    reason: "Chapter 8 (Box 8.4): line-end hyphen."
+    added: 2026-11-13
+  - id: c-0046
+    find: "effects through the food- chain"
+    replace: "effects through the food-chain"
+    reason: "Chapter 3: line-end hyphen."
+    added: 2026-11-13
+  - id: c-0047
+    find: "The high-climate- scenario is designed"
+    replace: "The high-climate-scenario is designed"
+    reason: "Chapter 4, note 83: 'high-climate-' ends the line and 'scenario' opens the next, after 'the high-climate-change scenario' in the same note; the hyphen is kept as printed, the space is not."
+    added: 2026-11-13
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }

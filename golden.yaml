@@ -141,9 +141,9 @@ pages:
       - paragraph: {start: "If no action is taken to", end: "how they live their lives."}
       - paragraph: {start: "Even at more moderate levels of", end: "life and on the environment."}
     markers: []
-  # Chapter 2 (vol 6, PDF p.5, printed 27): Figure 2.2's labels (body face) are not served; its title stays; the last paragraph runs on to p.28.
+  # Chapter 2 (vol 7, PDF p.5, printed 27): Figure 2.2's labels (body face) are not served; its title stays; the last paragraph runs on to p.28.
   - pdf: 5
-    volume: 6
+    volume: 7
     printed: 27
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -154,9 +154,9 @@ pages:
       - paragraph: {start: "Dynamics and uncertainty are explored further", end: "2.6 and in Chapter 6."}
       - paragraph: {start: "This important example shows how important", end: "environmental and public economics throughout."}
     markers: []
-  # Chapter 6 opening (vol 8, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
+  # Chapter 6 opening (vol 12, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
   - pdf: 1
-    volume: 8
+    volume: 12
     printed: 143
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -173,9 +173,9 @@ pages:
       - list: {start: "First, including direct impacts on the", end: "by more than one quarter.", items: 3}
       - paragraph: {start: "Putting these three additional factors together", end: "at a far lower cost."}
     markers: []
-  # Table 6.1 (vol 8, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
+  # Table 6.1 (vol 12, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
   - pdf: 21
-    volume: 8
+    volume: 12
     printed: 163
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -187,9 +187,9 @@ pages:
       - paragraph: {start: "Finally, we should discuss where one", end: "of different possible probability distributions."}
     footnotes: [45]
     markers: [45]
-  # Figure 9.2 (vol 10, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
+  # Figure 9.2 (vol 16, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
   - pdf: 11
-    volume: 10
+    volume: 16
     printed: 221
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -202,9 +202,9 @@ pages:
       - list: {start: "On and offshore wind. Wave and", end: "afforestation, crops, and organic wastes.", items: 8}
     footnotes: [28]
     markers: [28]
-  # Chapter 10 (vol 11, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
+  # Chapter 10 (vol 17, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
   - pdf: 8
-    volume: 11
+    volume: 17
     printed: 246
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -216,9 +216,9 @@ pages:
       - paragraph: {start: "Cost-effective planning and substituting activities across", end: "people can plan ahead efficiently."}
     footnotes: [11, 12]
     markers: [11, 12]
-  # Table 13.2 (vol 12, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
+  # Table 13.2 (vol 18, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
   - pdf: 12
-    volume: 12
+    volume: 18
     printed: 295
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
