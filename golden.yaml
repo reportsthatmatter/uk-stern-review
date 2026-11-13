@@ -141,9 +141,9 @@ pages:
       - paragraph: {start: "If no action is taken to", end: "how they live their lives."}
       - paragraph: {start: "Even at more moderate levels of", end: "life and on the environment."}
     markers: []
-  # Chapter 2 (vol 6, PDF p.5, printed 27): Figure 2.2's labels (body face) are not served; its title stays; the last paragraph runs on to p.28.
+  # Chapter 2 (vol 7, PDF p.5, printed 27): Figure 2.2's labels (body face) are not served; its title stays; the last paragraph runs on to p.28.
   - pdf: 5
-    volume: 6
+    volume: 7
     printed: 27
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -154,9 +154,9 @@ pages:
       - paragraph: {start: "Dynamics and uncertainty are explored further", end: "2.6 and in Chapter 6."}
       - paragraph: {start: "This important example shows how important", end: "environmental and public economics throughout."}
     markers: []
-  # Chapter 6 opening (vol 8, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
+  # Chapter 6 opening (vol 12, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
   - pdf: 1
-    volume: 8
+    volume: 12
     printed: 143
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -173,9 +173,9 @@ pages:
       - list: {start: "First, including direct impacts on the", end: "by more than one quarter.", items: 3}
       - paragraph: {start: "Putting these three additional factors together", end: "at a far lower cost."}
     markers: []
-  # Table 6.1 (vol 8, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
+  # Table 6.1 (vol 12, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
   - pdf: 21
-    volume: 8
+    volume: 12
     printed: 163
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -187,9 +187,9 @@ pages:
       - paragraph: {start: "Finally, we should discuss where one", end: "of different possible probability distributions."}
     footnotes: [45]
     markers: [45]
-  # Figure 9.2 (vol 10, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
+  # Figure 9.2 (vol 16, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
   - pdf: 11
-    volume: 10
+    volume: 16
     printed: 221
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -202,9 +202,9 @@ pages:
       - list: {start: "On and offshore wind. Wave and", end: "afforestation, crops, and organic wastes.", items: 8}
     footnotes: [28]
     markers: [28]
-  # Chapter 10 (vol 11, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
+  # Chapter 10 (vol 17, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
   - pdf: 8
-    volume: 11
+    volume: 17
     printed: 246
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -216,9 +216,9 @@ pages:
       - paragraph: {start: "Cost-effective planning and substituting activities across", end: "people can plan ahead efficiently."}
     footnotes: [11, 12]
     markers: [11, 12]
-  # Table 13.2 (vol 12, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
+  # Table 13.2 (vol 18, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
   - pdf: 12
-    volume: 12
+    volume: 18
     printed: 295
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -234,3 +234,32 @@ pages:
       - paragraph: {start: "Our work with the PAGE model", end: "to there leave out more.", notes: [9]}
     footnotes: [9]
     markers: [9]
+  # Box 1.4 (vol 6, Chapter 1, printed 16): the bullets at the margin with the wrapped lines set in further (marginBullets), so the two items are a list and "3 - 4.5°C" is not cut at its line-end dash; the km2 superscript is no marker.
+  - pdf: 15
+    volume: 6
+    printed: 16
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "Box 1.4 Ice sheets and sea", end: "sheets and sea level rise"}
+      - paragraph: {start: "Melting ice sheets are already contributing", end: "projected by current climate models:"}
+      - list: {start: "Greenland Ice Sheet. Measurements of the", end: "5°C, but these remain disputed.", notes: [58, 59, 60, 61, 62, 63, 64], items: 2}
+      - paragraph: {start: "As global temperatures continue to rise,", end: "triggered remain uncertain (Box 1.4).", notes: [65, 66]}
+    footnotes: [58, 59, 60, 61, 62, 63, 64, 65, 66]
+    markers: [58, 59, 60, 61, 62, 63, 64, 65, 66]
+  # Chapter 8 (vol 15, printed 199): the reissue draws lines in pieces out of order ("It" / " is the total warming effect", "8.5 Pathways stabilisation" / "to"), put back by layoutPieces; the stacked key finding is one; note 10 set apart after "CO2e"; Figure 8.2's chart not served, its title, caption and source are.
+  - pdf: 7
+    volume: 15
+    printed: 199
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "It is the total warming effect", end: "total stock of greenhouse gases."}
+      - heading: "8.5 Pathways to stabilisation"
+        level: 4
+      - paragraph: {start: "As discussed above, stabilisation at any", end: "and ambitious action is taken."}
+      - paragraph: {start: "***The rate of emissions cuts required", end: "reductions over the coming decades.***"}
+      - paragraph: {start: "There are a number of possible", end: "stabilisation at 550 ppm CO2e."}
+      - paragraph: {start: "Figure 8.2 Illustrative emissions paths to", end: "stabilise at 550 ppm CO2e."}
+      - paragraph: {start: "The figure below shows six illustrative", end: "reduced from 2.5%/yr to 1.5%/yr."}
+      - paragraph: {start: "Source: Generated with the SiMCaP EQW", end: "model (Meinshausen et al. 2006)"}
+    footnotes: [10]
+    markers: [10]

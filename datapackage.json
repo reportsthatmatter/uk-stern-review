@@ -117,6 +117,29 @@
       ]
     },
     {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 1, The science of climate change, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-01.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 324201,
+      "hash": "sha256:43b94244d01d5c453ada5e2bf7f1ee57119dbfd0d30ea289414dbd65445bcc0b",
+      "description": "The only version found in the Wayback Machine (one digest at /d/, 2008-2012).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_1_The_Science_of_Climate_Change.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104757id_/http://www.hm-treasury.gov.uk/d/Chapter_1_The_Science_of_Climate_Change.pdf"
+        }
+      ]
+    },
+    {
       "title": "Stern Review: The Economics of Climate Change, Chapter 2, Economics, ethics and climate change, HM Treasury reissue of 8 January 2007",
       "path": "archive/stern-review-chapter-02.pdf",
       "format": "pdf",
@@ -163,6 +186,75 @@
       ]
     },
     {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 3, How climate change will affect people around the world, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-03.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 584811,
+      "hash": "sha256:fcae5a880237fe9cd792a826ffb734c29ddab2866a068fc2b1b8a0c1d8b09558",
+      "description": "The only version found in the Wayback Machine (one digest at /d/, 2008-2012).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_3_How_climate_change_will_affect_people_around_the_world_.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104443id_/http://www.hm-treasury.gov.uk/d/Chapter_3_How_climate_change_will_affect_people_around_the_world_.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 4, Implications of climate change for development, 27-28 October 2006",
+      "path": "archive/stern-review-chapter-04.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 900373,
+      "hash": "sha256:cd464a33614cf0bd6e1f3b19e30ed624e0a629ae6cd194cda52ebd3fda6b52dc",
+      "description": "Made 28 October 2006; never reissued (one digest at /d/, 2008-2012).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_4_Implications_of_climate_change_for_development_final_version_on_web_P1-71.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104516id_/http://www.hm-treasury.gov.uk/d/Chapter_4_Implications_of_climate_change_for_development_final_version_on_web_P1-71.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 5, Costs of climate change in developed countries, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-05.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 500364,
+      "hash": "sha256:1a3ec2f29f9a8296c792b1d0b61ee4c4248b84161de0c30e3727ac5fe149a43d",
+      "description": "The only version found in the Wayback Machine (one digest at /d/, 2008-2012). It prints its folios 1-21, where the table of contents sets the chapter at pp.122-142.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_5_Costs_Of_Climate_Change_In_Developed_Countries.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104619id_/http://www.hm-treasury.gov.uk/d/Chapter_5_Costs_Of_Climate_Change_In_Developed_Countries.pdf"
+        }
+      ]
+    },
+    {
       "title": "Stern Review: The Economics of Climate Change, Chapter 6, Economic modelling of climate-change impacts, HM Treasury reissue of 8 January 2007",
       "path": "archive/stern-review-chapter-06.pdf",
       "format": "pdf",
@@ -205,6 +297,52 @@
         {
           "title": "Wayback Machine capture (the copy archived here)",
           "web": "https://web.archive.org/web/20081023104751id_/http://www.hm-treasury.gov.uk/d/Part_III_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 7, Projecting the growth of greenhouse-gas emissions, with Annex 7A, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-07.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 747348,
+      "hash": "sha256:6a345f29718b79c1b7c0082e3660ad4c8b43c1ca7e5c4c252539a371dada8993",
+      "description": "The only version found in the Wayback Machine (one digest at /d/, 2008-2012); it includes Annex 7A (pp.191-192).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_7_Projecting_the_Growth_of_Greenhouse-Gas_Emissions.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104424id_/http://www.hm-treasury.gov.uk/d/Chapter_7_Projecting_the_Growth_of_Greenhouse-Gas_Emissions.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 8, The challenge of stabilisation, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-08.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 475237,
+      "hash": "sha256:49b7b893d4fc253279e080970dfbebec54cbdcdca25dc7aad56c5138681544b7",
+      "description": "The only version found in the Wayback Machine (one digest at /d/, 2008-2012).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_8_The_Challenge_of_Stabilisation.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104432id_/http://www.hm-treasury.gov.uk/d/Chapter_8_The_Challenge_of_Stabilisation.pdf"
         }
       ]
     },
