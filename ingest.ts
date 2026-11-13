@@ -60,6 +60,32 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-16.pdf", sha256: "d77a199021064420b8e7b4f74e0359dcd282f84dc4bbbc9ab472490a2faf5537" },
   // Chapter 17, Beyond carbon markets and technology, 26 pp, 377-402. Reissue of 18 January 2007.
   { path: "archive/stern-review-chapter-17.pdf", sha256: "dcefebeb2c9f391434e7873642662921efbdd24315c0e26781d0cf26a615a2cf" },
+  // Part V introduction, 1 p, 403. 27 October 2006 (one version only; /d/ holds only a 45-page bundle of the Part,
+  // whose first page has the same text).
+  { path: "archive/stern-review-part-5-introduction.pdf", sha256: "61169b23c14ee0028ebbba04f0423bc8d8fe16a35c176dba9c69f4621f001fc9" },
+  // Chapter 18, Understanding the economics of adaptation, 12 pp, 404-415. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-18.pdf", sha256: "b622f17cb88546bdc630131c7984ff004bf51ef2ff3d4d23f6b39e3ac8322ca6" },
+  // Chapter 19, Adaptation in the developed world, 14 pp, 416-429. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-19.pdf", sha256: "b60d28cbc1ac8a8d7633b5a4d956f14778ede3e45d32287d5c084f3905856e6b" },
+  // Chapter 20, Adaptation in the developing world, 18 pp, 430-447. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-20.pdf", sha256: "1d07df402994485e535c07887552d9ba7866ac88ac87c86ed6aac1dbbbd30f38" },
+  // Part VI introduction, 1 p, 449. 27 October 2006 (never replaced).
+  { path: "archive/stern-review-part-6-introduction.pdf", sha256: "3720a0155051be0172b33137926cebbc0e02416bbd98fed53d0877a563c39b9f" },
+  // Chapter 21, Framework for understanding international collective action, 18 pp, 450-467. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-21.pdf", sha256: "c933e42430e49df05d89e7d3c0d69d92249ef82fd280cbd466eab73f98bc5025" },
+  // Chapter 22, Creating a global price for carbon, 23 pp, 468-490. Reissue of 19 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-22.pdf", sha256: "33ae347a8314ef5a1b77e957b5f59a168abaa603ca0a8e041aa3cb67a18fdcf5" },
+  // Chapter 23, Supporting the transition to a low-carbon global economy, 25 pp, 491-515 (printed 1-25). Reissue of
+  // 18 January 2007.
+  { path: "archive/stern-review-chapter-23.pdf", sha256: "4a4c47de882fd5c7d5b6da49c30d12de0cc90e0df9c437eb9096e99457fb8a50" },
+  // Chapter 24, Promoting effective international technology co-operation, 21 pp, 516-536. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-24.pdf", sha256: "9cbf7834daf647577450137dea99d156be30d748d708f9d915d39985e9bfcecb" },
+  // Chapter 25, Reversing emissions from land use change, 17 pp, 537-553. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-25.pdf", sha256: "d2034beeacc0a60dbe84e20dfdbbce5973fa954e8b3176dc0700ace603d56004" },
+  // Chapter 26, International support for adaptation, 18 pp, 554-571. 27 October 2006 (never replaced).
+  { path: "archive/stern-review-chapter-26.pdf", sha256: "3bf6cf02c60eb3f8624a5d04f3be7b3702beccc717afe128a00ec61941572087" },
+  // Chapter 27, Conclusions: building and sustaining international co-operation, 4 pp, 572-575. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-27.pdf", sha256: "573ad213a0e28b1657fa783b3386f89282592f6ada53cf418cb73b567cad99eb" },
 ];
 
 /** The 1-based volume index of a file in VOLUMES (what a pass sees as `at.volume`). */
@@ -675,7 +701,7 @@ const noteTail: SourcePass = {
  * the same top, each starting where the last ends) are put back into one layout line before any pass reads it. The
  * text layer is untouched.
  */
-const PIECED = new Set([vol("stern-review-chapter-08.pdf")]);
+const PIECED = new Set(["08", "24"].map((n) => vol(`stern-review-chapter-${n}.pdf`)));
 const layoutPieces: BodyPass = {
   name: "layoutPieces",
   stage: "body",
