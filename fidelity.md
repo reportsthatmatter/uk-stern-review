@@ -1,6 +1,6 @@
 # Fidelity review — Stern Review: The Economics of Climate Change
 
-Pages: 425  ·  Footnotes: 857  ·  Auto-fixes applied: 24  ·  Human corrections: 48
+Pages: 425  ·  Footnotes: 857  ·  Auto-fixes applied: 24  ·  Human corrections: 49
 
 **105 open**, 17 reviewed and judged correct.
 
@@ -80,9 +80,9 @@ file under `dismissed:` and the entry leaves this queue for good.
 | possible | possible rn/m confusion | `Alternatively` | Vol 10 · PDF p.11 |  example, for secondary education.48,49 Alternatively, to try and avoid permanent destitution |
 | possible | possible rn/m confusion | `governance` | Vol 10 · PDF p.8 | services: Inadequate resources and poor governance (including corruption) often result in  |
 | possible | possible rn/m confusion | `Thornton` | Vol 10 · PDF p.13 | the drier zones of southern Africa (see Thornton et al).61 • Between 250–550 million |
-| possible | possible rn/m confusion | `Learning` | Vol 16 · PDF p.15 |  as measured by cumulative investment. ‘Learning’ is of course an important contributor  |
 | possible | possible rn/m confusion | `turnover` | Vol 24 · PDF p.6 |  R&D intensity (R&D as a share of total turnover) of the power sector was 0.5% compared  |
 | possible | possible rn/m confusion | `Turner` | Vol 2 · PDF p.3 | e, Vincent de Rivaz, James Smith, Adair Turner, and the Corporate Leaders Group. Also |
+| possible | possible rn/m confusion | `Learning` | Vol 16 · PDF p.15 |  as measured by cumulative investment. ‘Learning’ is of course an important contributor  |
 | possible | possible rn/m confusion | `Governor` | Vol 23 · PDF p.6 | details. 22 See announcements by the Governor of the State of Calitornia, www.climate |
 | possible | possible rn/m confusion | `internalise` | Vol 23 · PDF p.12 | , but the extent to which firms have to internalise these costs and therefore suffer reduce |
 | possible | possible rn/m confusion | `Patterns` | Vol 6 · PDF p.7 |  Changing Patterns of human  |

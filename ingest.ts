@@ -389,7 +389,24 @@ const REGIONS: ReadonlyArray<Region> = [
   { file: "stern-review-chapter-03.pdf", pdfIndex: 16, after: /consequences for food production\. The combined effect of several factors could be very damaging\.\s*$/, before: /^\s{20,}71\s*$/ },
   { file: "stern-review-chapter-05.pdf", pdfIndex: 3, after: /environmental quality available in that year\.\s*$/, before: /^\s*Where Y is the output of the economy/, insert: ["Y (t) = F(K,L,E)"] },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 11, after: /such high rates of temperature change\.\s*$/, before: /^\s*Source: redrawn from O.Neill and Oppenheimer/ },
-  { file: "stern-review-chapter-08.pdf", pdfIndex: 13, after: /capital stock\. Examples are given below\.\s*$/, before: /^\s*Source: World Business Council/ },
+  { file: "stern-review-chapter-08.pdf", pdfIndex: 13, after: /capital stock\. Examples are given below\.\s*$/, before: /^\s*Source: World Business Council/ },  // Batch 2b (Chapters 11-12, Part IV): charts set in boxes, or whose source is cited in a note, which
+  // `figureRegions` cannot find: Box 11.1's Figures A and B (p.255, two titles set side by side, set back one after
+  // the other), Box 11.2's oil-price chart (p.258), Box 14.2's diagram (p.316), the EU allowance price chart in
+  // Chapter 15 (p.328) and Figures 16.3, 16.5, 16.6 and 16.8 (pp.353-372).
+  {
+    file: "stern-review-chapter-11.pdf",
+    pdfIndex: 3,
+    from: /^\s*Figure A Share of oil & gas and coal\s+Figure B Product price increases from\s*$/,
+    before: /^\s*The largest users of petroleum-products include agriculture/,
+    insert: ["Figure A Share of oil & gas and coal extraction in variable costs, percent", "Figure B Product price increases from £70/tC pricing (full pass-through), percent"],
+  },
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 6, after: /^\s*The recent rise in the Brent spot price, US \$ per barrel \(2003 prices\)\s*$/, before: /^\s*Source: Ecowin, Stern/ },
+  { file: "stern-review-chapter-14.pdf", pdfIndex: 8, after: /^\s*Box 14\.2: The social cost of carbon and the carbon price\s*$/, before: /^\s*Up to the long-term stabilisation goal, the social cost of carbon will rise/ },
+  { file: "stern-review-chapter-15.pdf", pdfIndex: 5, from: /^\s*The market for EU allowances \(EUAs\) –prices and volumes/, before: /^\s*Source: Data taken from Point Carbon/, insert: ["The market for EU allowances (EUAs) –prices and volumes"] },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 7, after: /^\s*Figure 16\.3\s+Public energy R&D investments as a share of GDP/, before: /^\s*Figure 16\.4\s+Public R&D and public energy R&D investments/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 8, after: /^\s*Figure 16\.5\s+Trends in private sector energy R&D/, before: /^\s*The sector.s characteristics explain the low levels of R&D\s*$/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 13, after: /^\s*Figure 16\.6\s+Interaction between carbon pricing and deployment support/, before: /^\s*This diagram summarises the links between two of the elements of climate policy/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 26, after: /^\s*Figure 16\.8\s+Public energy R&D in IEA countries/, before: /^\s*The directions of the effort should also change\./ },
 ];
 const bodyFaceFigures: SourcePass = {
   name: "bodyFaceFigures",
@@ -554,10 +571,12 @@ const partTitles: SourcePass = {
 // will rise. • Changes in the distribution of heat ..."). Chapter 3's and 5's Key Messages (pp.56, 1), Box 4.6
 // (p.113) and Box 5.2 (pp.7-8) are set the same way, but joined here their lines no longer matched the layout's,
 // and `chartsAndTables` laid the page out again in one paragraph: they are left as they read (PROCESSING.md).
+// Batch 2b: Chapter 12 p.278 (subsidies), Chapter 16's Key Messages (p.347), Box 16.1 (p.357) and p.363 (university
+// funding), Chapter 17 p.381 (regulatory measures).
 const MARGIN_BULLET_PAGES = new Set([
   `${vol("stern-review-chapter-06.pdf")}:1`,
   ...[
-    ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15],
+    ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15], ["16", 11], ["12", 10], ["16", 1], ["16", 17], ["17", 5],
   ].map(([n, p]) => `${vol(`stern-review-chapter-${n}.pdf`)}:${p}`),
 ]);
 const MARGIN_BULLET = /^ ?•(\s+)\S/;
@@ -599,7 +618,9 @@ const marginBullets: SourcePass = {
  * a paragraph of their own (the list item above is not rejoined), so that page is left as it reads.
  */
 // Also Chapter 5 p.124: the Australia item's "...predicted to drop by" over "15% for a 1 – 2°C rise in temperature."
-const CARRIED_ITEM_PAGES = new Set([`${vol("stern-review-chapter-10.pdf")}:8`, `${vol("stern-review-chapter-05.pdf")}:3`]);
+// And Chapter 17 p.395: the item on co-operative structures, "...see Box 17.4 for an outline of Energy" over "Star
+// and Chapter 24 ...", which stood as two paragraphs.
+const CARRIED_ITEM_PAGES = new Set([`${vol("stern-review-chapter-10.pdf")}:8`, `${vol("stern-review-chapter-05.pdf")}:3`, `${vol("stern-review-chapter-17.pdf")}:19`]);
 const carriedItems: SourcePass = {
   name: "carriedItems",
   stage: "source",

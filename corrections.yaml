@@ -251,6 +251,13 @@ corrections:
     replace: "informal arrangements for greater co-ordination and enhanced linkages"
     reason: "PDF p.25 (Executive Summary, printed xxv): 'co-' ends the line and 'ordination' opens the next; the summary spells it co-ordination."
     added: 2026-11-13
+  # A raised zero set for a degree sign: the page prints "2⁰C" (Word's superscript 0), which the text layer reads
+  # on the line as "20C", twenty degrees.
+  - id: c-0049
+    find: "limiting global mean temperature increase to 20C would lead"
+    replace: "limiting global mean temperature increase to 2°C would lead"
+    reason: "Chapter 12, PDF p.8 (printed 276): '2' with a raised '0' for the degree sign, then 'C'; read as a degree, as the Review writes 2°C elsewhere."
+    added: 2026-11-13
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }

@@ -216,9 +216,9 @@ pages:
       - paragraph: {start: "Cost-effective planning and substituting activities across", end: "people can plan ahead efficiently."}
     footnotes: [11, 12]
     markers: [11, 12]
-  # Table 13.2 (vol 18, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
+  # Table 13.2 (vol 20, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
   - pdf: 12
-    volume: 18
+    volume: 20
     printed: 295
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -263,3 +263,38 @@ pages:
       - paragraph: {start: "Source: Generated with the SiMCaP EQW", end: "model (Meinshausen et al. 2006)"}
     footnotes: [10]
     markers: [10]
+  # Chapter 14 (vol 22, printed 320): "14.9 The performance of ... equity" over "and public finance considerations", one wrapped heading (one space after the number in Part IV's text reading, wrappedHeadings); the key finding in bold italic; margin bullets a list.
+  - pdf: 12
+    volume: 22
+    printed: 320
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - heading: "14.8 Co-ordinating action across countries"
+        level: 4
+      - paragraph: {start: "***The mitigation of climate change requires", end: "market-driven financial flows between countries.***"}
+      - paragraph: {start: "Chapter 22 will explore the challenges", end: "drive financial flows between countries."}
+      - paragraph: {start: "In theory, either a tax or", end: "transfer resources to developing countries."}
+      - paragraph: {start: "Under a tradable-quota system, there are", end: "in Chapters 22 and 23."}
+      - paragraph: {start: "In summary, financial flows from developed", end: "national quotas are set appropriately."}
+      - heading: "14.9 The performance of taxation and trading against principles of efficiency, equity and public finance considerations"
+        level: 4
+      - paragraph: {start: "In terms of the criteria discussed", end: "public finance criteria, as they:"}
+      - list: {start: "can contribute to establishing a consistent", end: "total costs of mitigation policy.", items: 3}
+    footnotes: [31]
+    markers: [31]
+  # Chapter 16 (vol 24, printed 372): Figure 16.8's chart not served, its title with note 79 stays; "16.9 Conclusions" (one space after the number) is a heading, not dropped with the chart; notes 78-80, whose 79 opens "Source:", keep their numbers.
+  - pdf: 26
+    volume: 24
+    printed: 372
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 16.8 Public energy R&D in", end: "energy R&D in IEA countries", notes: [79]}
+      - paragraph: {start: "The directions of the effort should", end: "should all be much larger."}
+      - paragraph: {start: "A phased increase in funding, within", end: "Technology Institute (see Box 16.5)."}
+      - paragraph: {start: "Private R&D should rise in response", end: "upswing in private R&D levels.", notes: [80]}
+      - paragraph: {start: "This is not just about the", end: "are explored in Chapter 24."}
+      - heading: "16.9 Conclusions"
+        level: 4
+      - paragraph: {start: "This chapter explores the process of", end: "low-carbon technologies in the future."}
+    footnotes: [78, 79, 80]
+    markers: [78, 79, 80]

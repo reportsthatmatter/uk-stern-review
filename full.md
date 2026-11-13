@@ -5,7 +5,7 @@ published_at: "30 October 2006"
 source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
 pages: 425
 footnotes: 857
-corrections: 48
+corrections: 49
 ---
 
 %%page i%%
@@ -5007,17 +5007,9 @@ The primary users of fossil fuels (oil, gas and coal) as direct inputs include r
 
 Input-Output analysis can trace the impact of carbon pricing on secondary users of oil, gas and coal - defined as those industries that use inputs from the primary oil, gas and coal users such as electricity. Outputs from these sectors are then fed in as inputs to other sectors, and so on. For illustrative purposes, Figure B shows the impact of a carbon price of £70/tC, but the effects are linear with respect to price and so different impacts for different prices can be assessed using the appropriate multiple. Chapter 9 showed that although the average abatement cost may fall as new technologies arise, the marginal abatement cost is likely to rise with time, reflecting the rising social cost of carbon as the atmospheric carbon stock increases. As industry becomes decarbonised, the whole-economy impact is likely to begin to fall. But going the other way will be the rising social cost of carbon and the corresponding marginal abatement cost (this is illustrated in Box 9.6). This will have an increasing impact on costs in remaining carbon-intensive sectors.
 
-Figure A Share of oil & gas and coal
+Figure A Share of oil & gas and coal extraction in variable costs, percent
 
-Figure B Product price increases from extraction in variable costs, percent
-
-£70/tC pricing (full pass-through), percent
-
-- 0 — 0
-
-O Re Fe El G Ce Fi Re Ce Iro Fe El Tr
-
-> il rti ec as ric shin fin e m r e en n an tilis ctri s dis nsp a fin ed lise tri di m en ul g ed mic e cit or cit s tr t tu re pe als t d ste rs y tri t ga pe y ib tro (p b ut s tro (p ut ,f el ro io l ro io or d n tra eum d/ n es m /ds ct ds try pr itr io pr itr od ) n od )
+Figure B Product price increases from £70/tC pricing (full pass-through), percent
 
 The largest users of petroleum-products include agriculture, forestry and fishing, chemicals and the transportation sectors. The main users of coal are electricity and cement. The main users of electricity include the electricity sector itself, a number of manufacturing industries and the utilities supplying gas and water.
 
@@ -5060,10 +5052,6 @@ In practice, costs will be lowered as firms and consumers switch out of more exp
 %%page 6#3%%
 
 The recent rise in the Brent spot price, US $ per barrel (2003 prices)
-
-> Carbon price equivalent £260/TC
-
-Average
 
 Source: Ecowin, Stern
 
@@ -5427,7 +5415,7 @@ But it is inappropriate to deal with poverty by distorting the price of energy. 
 
 Measures to reduce energy use, and to reduce the carbon intensity of energy generation, can have benefits for local air quality. Most obviously, switching from fossil fuels to renewables, or from coal to gas, can significantly the levels of air pollution resulting from fossil fuel burning.
 
-A recent study by the European Environment Agency[^22] showed that the additional benefits of an emissions scenario aimed at limiting global mean temperature increase to 20C would lead to savings on the implementation of existing air pollution control measures of €10 billion per year in Europe, and additional avoided health costs of between €16-46 billion per year.
+A recent study by the European Environment Agency[^22] showed that the additional benefits of an emissions scenario aimed at limiting global mean temperature increase to 2°C would lead to savings on the implementation of existing air pollution control measures of €10 billion per year in Europe, and additional avoided health costs of between €16-46 billion per year.
 
 %%page 277%%
 
@@ -5465,7 +5453,9 @@ Table 12.1 Energy Subsidies by Source $ billion (data for 1995-1998 period)
 
 Source: de Moor (2001) and van Beers and de Moor (2001). Another perspective on subsidies is provided by Myers, N. and J. Kent (1998) 'Perverse Subsidies: Tax $s Undercutting our Economies and Environment Alike', Winnipeg, IISD.
 
-Applied in the form of tax credits and incentives for innovation, subsidies can and do serve an economic purpose. However, the prevailing subsidies are for the most part not applied to this end. The inefficiencies associated with subsidies have been reviewed by economists many times over the past decades, and can be simply stated: • subsidies stimulate unnecessary consumption and waste, and more generally are a source of economic inefficiency in that the low price is associated with low benefits on the margin relative to the cost of production;
+Applied in the form of tax credits and incentives for innovation, subsidies can and do serve an economic purpose. However, the prevailing subsidies are for the most part not applied to this end. The inefficiencies associated with subsidies have been reviewed by economists many times over the past decades, and can be simply stated:
+
+- subsidies stimulate unnecessary consumption and waste, and more generally are a source of economic inefficiency in that the low price is associated with low benefits on the margin relative to the cost of production;
 
 %%page 279%%
 
@@ -6198,10 +6188,6 @@ The framework within which any principles for revisions apply must be clear, cre
 
 Box 14.2: The social cost of carbon and the carbon price
 
-> Social cost of Marginal abatement carbon costs
-
-> Time Emissions reductions
-
 Up to the long-term stabilisation goal, the social cost of carbon will rise over time, because marginal damage costs also rise. This is because atmospheric concentrations are expected to rise, so that temperatures are likely to rise; marginal damage costs are expected to rise with temperature. These effects are assumed to outweigh the declining marginal impact of the stock of gases on global temperature at higher temperatures.
 
 As GHG concentrations move towards the stabilisation goal, the price of carbon should reflect the social cost of carbon. In any given year, abatement should then occur up to where the marginal cost is equal to this price, as set out in the right-hand part of the diagram above. If, over time, technical progress reduces the marginal cost of abatement, then at any given price level there should be more emission reductions.
@@ -6463,23 +6449,7 @@ In Phase One, the scheme covers less than 40% of all EU25 GHG emissions[^9], wit
 
 %%page 328%%
 
-The market for EU allowances (EUAs) –prices and volumes 14000 35 OTC Volume Exchange Volume EUA 2006 Close (€/t)
-
-30 12000
-
-25 10000
-
-Carbon Price €/t Volume '000
-
-- 20 — 8000
-
-- 15 — 6000
-
-- 10 — 4000
-
-- 5 — 2000
-
-- 0 — 0
+The market for EU allowances (EUAs) –prices and volumes
 
 Source: Data taken from Point Carbon, www.pointcarbon.com
 
@@ -6916,9 +6886,17 @@ Effective action on the scale required to tackle climate change requires a wides
 
 The private sector plays the major role in R&D and technology diffusion. But closer collaboration between government and industry will further stimulate the development of a broad portfolio of low carbon technologies and reduce costs. Co-operation can also help overcome longer-term problems, such as the need for energy storage systems, for both stationary applications and transport, to enable the market shares of low-carbon supply technologies to be increased substantially.
 
-Carbon pricing alone will not be sufficient to reduce emissions on the scale and pace required as: • Future pricing policies of governments and international agreements should be made as credible as possible but cannot be 100% credible. • The uncertainties and risks both of climate change, and the development and deployment of the technologies to address it, are of such scale and urgency that the economics of risk points to policies to support the development and use of a portfolio of low-carbon technology options. • The positive externalities of efforts to develop them will be appreciable, and the time periods and uncertainties are such that there can be major difficulties in financing through capital markets.
+Carbon pricing alone will not be sufficient to reduce emissions on the scale and pace required as:
 
-Governments can help foster change in industry and the research community through a range of instruments: • Carbon pricing, through carbon taxes, tradable carbon permits, carbon contracts and/or implicitly through regulation will itself directly support the research for new ways to reduce emissions; • Raising the level of support for R&D and demonstration projects, both in public research institutions and the private sector; • Support for early stage commercialisation investments in some sectors.
+- Future pricing policies of governments and international agreements should be made as credible as possible but cannot be 100% credible.
+- The uncertainties and risks both of climate change, and the development and deployment of the technologies to address it, are of such scale and urgency that the economics of risk points to policies to support the development and use of a portfolio of low-carbon technology options.
+- The positive externalities of efforts to develop them will be appreciable, and the time periods and uncertainties are such that there can be major difficulties in financing through capital markets.
+
+Governments can help foster change in industry and the research community through a range of instruments:
+
+- Carbon pricing, through carbon taxes, tradable carbon permits, carbon contracts and/or implicitly through regulation will itself directly support the research for new ways to reduce emissions;
+- Raising the level of support for R&D and demonstration projects, both in public research institutions and the private sector;
+- Support for early stage commercialisation investments in some sectors.
 
 Such policies should be complemented by tackling institutional and other non-market barriers to the deployment of new technologies.
 
@@ -7035,8 +7013,6 @@ The available data[^17] on energy R&D expenditure show a downward trend in both 
 
 Figure 16.3 Public energy R&D investments as a share of GDP[^18]
 
-- 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 — 2001
-
 Figure 16.4 Public R&D and public energy R&D investments[^19]
 
 Private energy R&D has followed a similar trend and remains below the level of public R&D. The declines in public and private R&D have been attributed to three factors. First, energy R&D budgets had been expanded greatly in the 1970s in response to the oil price shocks in the period , and there was a search for alternatives to imported oil. With the oil price collapse in the 1980s and the generally low energy prices in the 1990s, concerns about energy security diminished, and were mirrored in a relaxation of the R&D effort. Recent rises in oil prices have not, yet, led to a significant increase in energy R&D. Second, following the liberalisation of energy markets in the 1990s, competitive forces shifted the focus from long-term investments such as R&D towards the utilisation of existing plant and deploying well-developed technologies and resources - particularly of natural gas for power and heat, themselves the product of R&D and investment over the previous three decades. Third, there were huge declines in R&D expenditures on nuclear power following the experiences of many countries with cost over-runs, construction delays, and the growth of public concerns about reactor safety, nuclear proliferation and nuclear waste disposal. In 1974, electricity from nuclear fission and fusion accounted for 79% of the public energy R&D budget; it still accounts for 40%. Apart from nuclear technologies, energy R&D budgets decreased across the board (Figure 16.8).
@@ -7044,14 +7020,6 @@ Private energy R&D has followed a similar trend and remains below the level of p
 %%page 354%%
 
 Figure 16.5 Trends in private sector energy R&D[^20]
-
-Oil and nuclear
-
-Utilities
-
-Total energy
-
-1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003
 
 ***The sector's characteristics explain the low levels of R&D***
 
@@ -7101,7 +7069,14 @@ Box 16.1 Hydrogen for transport
 
 Hydrogen could potentially offer complete diversification away from oil and provide very low carbon transport. Hydrogen would be best suited to road vehicles. The main ways of producing hydrogen are by electrolysis of water, or by reforming hydrocarbons. Once produced, hydrogen can be stored as a liquid, a compressed gas, or chemically (bonded within the chemical structure of advanced materials). Hydrogen could release its energy content for use in powering road vehicles by combustion in a hydrogen internal combustion engine or a fuel cell. Fuel cells convert hydrogen and oxygen into water in a process that generates electricity. They are almost silent in operation, highly efficient, and produce only water as a by-product. Hydrogen can produce as little as 5% of the emissions of conventional fuel if produced by low-emission technologies.[^27]
 
-There are several hydrogen projects around the world including: • Norway: plans for a 580km hydrogen corridor between Oslo and Stavanger in a joint project between the private sector, local government and non-government organisations. The first hydrogen station opened in August 2006 • Denmark and Sweden: interested in extending the Norwegian hydrogen corridor • Iceland: home to the first hydrogen fuelling station in April 2003 and it is proposed that Iceland could be a hydrogen economy by 2030 • EU: trial of hydrogen buses • China: hydrogen buses to be used at the Beijing Olympics in 2008 • California: plans to introduce hydrogen in 21 interstate highway filling stations
+There are several hydrogen projects around the world including:
+
+- Norway: plans for a 580km hydrogen corridor between Oslo and Stavanger in a joint project between the private sector, local government and non-government organisations. The first hydrogen station opened in August 2006
+- Denmark and Sweden: interested in extending the Norwegian hydrogen corridor
+- Iceland: home to the first hydrogen fuelling station in April 2003 and it is proposed that Iceland could be a hydrogen economy by 2030
+- EU: trial of hydrogen buses
+- China: hydrogen buses to be used at the Beijing Olympics in 2008
+- California: plans to introduce hydrogen in 21 interstate highway filling stations
 
 ***Innovation will also play a role by addressing emissions in other sectors, reducing demand and enabling adaptation to climate change.***
 
@@ -7142,12 +7117,6 @@ Alongside carbon pricing and the further factors identified in Chapter 17, suppo
 The area in the innovation process between pure research and technologies ready for commercialisation is more complex. Different sectors may justify different types of intervention. In the electricity market, in particular, deployment policies are likely to be required to bring technologies up to scale. How this support is delivered is important and raises issues about how technology neutral policy should be, which will be discussed later in this chapter in Section 16.6.
 
 Figure 16.6 Interaction between carbon pricing and deployment support[^32]
-
-> Marginal New technology cost of Learning Established technology producing realised electricity through Established technology deployment with CO2 price support
-
-Carbon price effect
-
-> Cumulative installation
 
 This diagram summarises the links between two of the elements of climate policy. The introduction of the carbon price reduces the learning cost since the new technology, for example a renewable, in this illustrative figure becomes cost effective at point B rather than point A, reducing the size of the learning cost represented by the dotted area. Earlier in the learning curve, deployment support is required to reduce the costs of the technology to the point where the market will adopt the technology. It is the earlier stages of innovation, research, development and demonstration which develop the technology to the point that deployment can begin.
 
@@ -7207,7 +7176,12 @@ Governments should seek to ensure that, in broad terms, the priorities of public
 
 %%page 363%%
 
-Three types of funding are required for university research funding. • Basic research time and resources for academic staff to pursue research that interests them. • Research programme funding (such as research councils) that directs funding towards important areas. • Funding to encourage the transfer of knowledge outside the institution. The dissemination of information encourages progress to be applied and built on by other researchers and industry and ensures that it not be unnecessarily duplicated elsewhere.
+Three types of funding are required for university research funding.
+
+- Basic research time and resources for academic staff to pursue research that interests them.
+
+- Research programme funding (such as research councils) that directs funding towards important areas.
+- Funding to encourage the transfer of knowledge outside the institution. The dissemination of information encourages progress to be applied and built on by other researchers and industry and ensures that it not be unnecessarily duplicated elsewhere.
 
 Research should cover a broad base and not just focus on what are currently considered key technologies, including basic science and some funding to research the more innovative ideas[^45] to address climate change. Historical examples of technological progress when the research was not directed towards specific economic applications (such as developments in nanotechnology, lasers and the transistor) highlight the importance of open-ended problem specification. There must be an appropriate balance between basic science and applied research projects[^46] . Increases in energy R&D (as discussed in the final section of this chapter) can be complemented by increased funding for science generally. The potential scale of increase in basic science will vary by country depending on their current level and research capabilities[^47] .
 
@@ -7364,26 +7338,6 @@ Though benefits of R&D are difficult to evaluate accurately a diverse range of i
 %%page 372%%
 
 Figure 16.8 Public energy R&D in IEA countries[^79]
-
-25,000
-
-> Other Power & Storage technologies Nuclear Fusion
-
-20,000
-
-> Nuclear Fission Renewable Energy
-
-15,000
-
-> Fossil Fuels Conservation
-
-10,000
-
-5,000
-
--
-
-- 1974 1979 1984 1989 1994 1999 — 2004
 
 The directions of the effort should also change. A generation ago, the focus was on nuclear power and fossil fuels, including synthetic oil fuels from gas and coal, with comparatively few resources expended on conservation and renewable energy. Now the R&D efforts going into carbon capture and storage, conservation, the full range of renewable energy technologies, hydrogen production and use, fuel cells, and energy storage technologies and systems should all be much larger.
 
@@ -7601,10 +7555,9 @@ Shared social and institutional norms are important determinants of behaviour.[^
 
 This section discusses the economic rationale for different types of regulatory policy instruments. As Chapter 14 discussed, regulatory measures are generally less efficient than market mechanisms when applied to perfect markets. However, the existence of market failures and barriers outlined in the previous section mean that there are circumstances in which standards and regulations have an important role to play.
 
-Regulatory measures may be appropriate either instead of, or complementary to, tax or trading instruments, and can be more effective and efficient in a number of important circumstances, in particular to: • Reduce the complexity faced by consumers or firms, by restricting or removing the availability of inefficient (or polluting) technologies, for example through banning of
+Regulatory measures may be appropriate either instead of, or complementary to, tax or trading instruments, and can be more effective and efficient in a number of important circumstances, in particular to:
 
-Chloroflourocarbons (or CFC's) in cooling systems;
-
+- Reduce the complexity faced by consumers or firms, by restricting or removing the availability of inefficient (or polluting) technologies, for example through banning of Chloroflourocarbons (or CFC's) in cooling systems;
 - Cut the transaction costs associated with investments, through measures, for example by simplifying planning rules relating to the installation of micro-generation technologies;
 - Overcome barriers to the transmission of incentives throughout the supply chain, for example, agreements with cable and satellite television providers have resulted in significant improvements in the efficiency of licensed 'set top' boxes;
 - Stimulate competition and innovation, by signaling policy intentions, reducing uncertainty and increasing scale in markets for outputs of technological innovation;
@@ -7847,13 +7800,9 @@ Policies can be mandatory, the subject of a voluntary agreement between public a
 - Political culture of the implementing country: public authorities often prefer to mandate policy to increase certainty around policy delivery. However, countries such as Japan have a strong culture of implementing policy based on voluntary consensus, which has been successful in ensuring high compliance with its Top Runner programme (see Box 17.2);
 - Market structure: Voluntary agreements may be more readily achievable where capacity is concentrated among relatively few producers or retailers (and where there is some form of recognition of that commitment by government in its broader policy). For example, an EU voluntary agreement on set top boxes[^69] has been successful in raising energy efficiency of satellite and cable platforms following support from major service providers. However less complete coverage of the more disparate market for freeview platforms, coupled with tough price competition, has resulted in relatively weaker improvements in standby and operating performance;
 - Implementation cost: Regulatory approaches may be expensive to implement in some sectors. In agriculture, for instance, enforcement of regulations could be costly because sources of emissions are diffuse. Developing countries, in particular, may not have resources to establish or strengthen the required institutional structures or allocate appropriate resources more generally. However, the long run costs of inaction are often higher;
-- Timing: Voluntary or industry led agreements may be quicker to implement, which may be useful where product markets are growing quickly or unexpectedly. Regional or international action may take longer to organize than national action, but may be more powerful. Government objectives may be delivered faster and more efficiently by participating in and influencing established co-operative structures (for instance
+- Timing: Voluntary or industry led agreements may be quicker to implement, which may be useful where product markets are growing quickly or unexpectedly. Regional or international action may take longer to organize than national action, but may be more powerful. Government objectives may be delivered faster and more efficiently by participating in and influencing established co-operative structures (for instance EU adoption of certain Energy Star protocols – see Box 17.4 for an outline of Energy Star and Chapter 24 for details on international policy management);
 
 %%page 395%%
-
-EU adoption of certain Energy Star protocols – see Box 17.4 for an outline of Energy
-
-Star and Chapter 24 for details on international policy management);
 
 - Delivery risk: Information asymmetries between firms and governments on the costs and potential for innovation mean that voluntary and industry led measures may not achieve the full cost effective energy savings potential.[^70] Investment in data collection help support more ambitious, cost-effective policy.[^71]
 
