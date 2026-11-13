@@ -406,6 +406,9 @@ const REGIONS: ReadonlyArray<Region> = [
   { file: "stern-review-chapter-16.pdf", pdfIndex: 7, after: /^\s*Figure 16\.3\s+Public energy R&D investments as a share of GDP/, before: /^\s*Figure 16\.4\s+Public R&D and public energy R&D investments/ },
   { file: "stern-review-chapter-16.pdf", pdfIndex: 8, after: /^\s*Figure 16\.5\s+Trends in private sector energy R&D/, before: /^\s*The sector.s characteristics explain the low levels of R&D\s*$/ },
   { file: "stern-review-chapter-16.pdf", pdfIndex: 13, after: /^\s*Figure 16\.6\s+Interaction between carbon pricing and deployment support/, before: /^\s*This diagram summarises the links between two of the elements of climate policy/ },
+  // Annex table 11A.1's second page (p.268), whose rows are set in the body's face: from the page head to the
+  // table's note on trade intensity, which stays.
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 16, after: /^\s*Part III: The Economics of Stabilisation\s*$/, before: /^\s*\*Trade intensity defined as total and non-EU exports/ },
   { file: "stern-review-chapter-16.pdf", pdfIndex: 26, after: /^\s*Figure 16\.8\s+Public energy R&D in IEA countries/, before: /^\s*The directions of the effort should also change\./ },
 ];
 const bodyFaceFigures: SourcePass = {

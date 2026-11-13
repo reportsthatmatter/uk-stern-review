@@ -2,7 +2,7 @@
 
 Pages: 425  ·  Footnotes: 857  ·  Auto-fixes applied: 24  ·  Human corrections: 49
 
-**105 open**, 17 reviewed and judged correct.
+**104 open**, 17 reviewed and judged correct.
 
 OCR suspects below are a **review queue, not errors**. Whether the text is
 faithful to the scan is a human judgement; these are the places most likely
@@ -113,7 +113,6 @@ file under `dismissed:` and the entry leaves this queue for good.
 | possible | possible rn/m confusion | `mitpressjournals` | Vol 18 · PDF p.12 | (3): 498-510, available from http://www.mitpressjournals.org/doi/abs/10.1162/00346530152480144  |
 | possible | possible rn/m confusion | `internalising` | Vol 18 · PDF p.14 | ry of domestic policy measures aimed at internalising cross-border spillovers adversely affec |
 | possible | possible rn/m confusion | `Furniture` | Vol 18 · PDF p.15 |  65.78 32.83 0.23 Furniture  |
-| possible | possible rn/m confusion | `varnishes` | Vol 18 · PDF p.16 | 9.24 13.36 0.29 Paints, varnishes, printing ink etc 0.74 |
 | possible | possible rn/m confusion | `externalities1` | Vol 22 · PDF p.2 | imate change. In the standard theory of externalities1, there are four ways in which negative  |
 | possible | possible rn/m confusion | `intergovernmental` | Vol 22 · PDF p.3 | change. The Kyoto Protocol established intergovernmental emissions trading for those countries t |
 | possible | possible rn/m confusion | `governing` | Vol 22 · PDF p.9 | It also means announcing the principles governing changes in the policy instrument in adv |
