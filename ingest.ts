@@ -641,19 +641,29 @@ const carriedItems: SourcePass = {
 };
 
 /**
- * Chapter 9's note 17 runs over from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone
- * above note 18 and were read as a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the
- * foot of the body but in the notes' block). The line is taken off p.218 here, and corrections.yaml (c-0005) sets
- * the words back at the end of note 17, where the page prints them.
+ * Notes whose last words run over to the next page and were read as body text there. Chapter 9's note 17 runs over
+ * from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone above note 18 and were read as
+ * a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the foot of the body but in the
+ * notes' block). Chapter 11's note 5 (p.255) runs over to the foot of p.256 in five lines ("rough magnitude of this
+ * higher order indirect impact. ..."), with no number, after the body. The lines are taken off the page here, and
+ * corrections.yaml (c-0005, c-0050) sets the words back at the end of their note, where the pages print them.
  */
+const NOTE_TAILS: ReadonlyArray<{ file: string; pdfIndex: number; first: RegExp; last: RegExp; next?: RegExp }> = [
+  { file: "stern-review-chapter-09.pdf", pdfIndex: 8, first: /^\s*energy-efficiency measures\.\s*$/, last: /^\s*energy-efficiency measures\.\s*$/, next: /^\s*18\s*$/ },
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 4, first: /^\s*rough magnitude of this higher order indirect impact\. Because data disaggregated/, last: /^\s*here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief\.\s*$/ },
+];
 const noteTail: SourcePass = {
   name: "noteTail",
   stage: "source",
   run(lines, at) {
-    if (at.volume !== vol("stern-review-chapter-09.pdf") || at.pdfIndex !== 8) return lines;
-    const i = lines.findIndex((line) => /^\s*energy-efficiency measures\.\s*$/.test(line));
-    if (i < 0 || !/^\s*18\s*$/.test(lines[i + 1] ?? "")) throw new Error("noteTail: note 17's last line not found on Chapter 9 PDF p.8");
-    return [...lines.slice(0, i), ...lines.slice(i + 1)];
+    let out = lines;
+    for (const t of NOTE_TAILS.filter((x) => vol(x.file) === at.volume && x.pdfIndex === at.pdfIndex)) {
+      const i = out.findIndex((line) => t.first.test(line));
+      const j = out.findIndex((line, k) => k >= i && t.last.test(line));
+      if (i < 0 || j < 0 || j - i > 6 || (t.next && !t.next.test(out[j + 1] ?? ""))) throw new Error(`noteTail: a note's last lines not found on ${t.file} PDF p.${t.pdfIndex}`);
+      out = [...out.slice(0, i), ...out.slice(j + 1)];
+    }
+    return out;
   },
 };
 

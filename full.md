@@ -5,7 +5,7 @@ published_at: "30 October 2006"
 source_url: "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
 pages: 425
 footnotes: 857
-corrections: 49
+corrections: 50
 ---
 
 %%page i%%
@@ -5031,8 +5031,6 @@ The forgoing analysis offers an indication of the distribution of static costs a
 
 The dynamic impacts from a transition to a low-GHG economy should be small. The change in relative prices that is likely to result from adopting the social cost of carbon into production activities is well within the 'normal' range of variation in prices experienced in an open economy. Input cost variations from recent fluctuations in the exchange rate and the world oil price, for example, are likely to far exceed the short-run primary energy cost increases from a carbon tax required to reflect the damage from emissions (see Box 11.2).
 
-rough magnitude of this higher order indirect impact. Because data disaggregated to a level commodity output per unit of domestically met final demand has not been published in the UK since 1993, the study has not adopted this approach and has not been able to follow the impact through the entire supply-chain. However, extending the analysis to include more multipliers seems to make little difference to the results, suggesting the numbers presented here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief.
-
 %%page 5#3%%
 
 Box 11.2 Vulnerability to energy shocks: lessons from oil and gas prices
@@ -9066,7 +9064,7 @@ Yunus, M., (1999): 'Banker to the poor: micro-lending and the battle against wor
 
 [^4]: Full industry listings for all 123 Standard Industrial Classification (SIC) sectors are given in annex table 11A.1.
 
-[^5]: It is in theory possible to use older full supply-use Input-Output tables and the inverse Leontief matrix to gauge the
+[^5]: It is in theory possible to use older full supply-use Input-Output tables and the inverse Leontief matrix to gauge the rough magnitude of this higher order indirect impact. Because data disaggregated to a level commodity output per unit of domestically met final demand has not been published in the UK since 1993, the study has not adopted this approach and has not been able to follow the impact through the entire supply-chain. However, extending the analysis to include more multipliers seems to make little difference to the results, suggesting the numbers presented here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief.
 
 [^6]: The exercise assumes that gas prices change in full proportion with oil prices, but that coal prices remain unchanged. In reality oil and gas prices tend to co-move as they are partial substitutes within a fossil fuel energy market and are linked contractually.
 

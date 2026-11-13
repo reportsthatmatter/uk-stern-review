@@ -258,6 +258,14 @@ corrections:
     replace: "limiting global mean temperature increase to 2°C would lead"
     reason: "Chapter 12, PDF p.8 (printed 276): '2' with a raised '0' for the degree sign, then 'C'; read as a degree, as the Review writes 2°C elsewhere."
     added: 2026-11-13
+  # The other half of the ingest.ts pass noteTail for Chapter 11: note 5's last lines, printed at the foot of p.256.
+  # Scoped to its page: note 1 (p.253) opens with the same words.
+  - id: c-0050
+    find: "the inverse Leontief matrix to gauge the"
+    replace: "the inverse Leontief matrix to gauge the rough magnitude of this higher order indirect impact. Because data disaggregated to a level commodity output per unit of domestically met final demand has not been published in the UK since 1993, the study has not adopted this approach and has not been able to follow the impact through the entire supply-chain. However, extending the analysis to include more multipliers seems to make little difference to the results, suggesting the numbers presented here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief."
+    where: {volume: 18, printed: 3}
+    reason: "Chapter 11, PDF pp.3-4 (printed 255-256): note 5 ends 'to gauge the' at the foot of p.255 and runs over to five lines at the foot of p.256, below the body."
+    added: 2026-11-13
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
