@@ -24,6 +24,10 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-01.pdf", sha256: "43b94244d01d5c453ada5e2bf7f1ee57119dbfd0d30ea289414dbd65445bcc0b" },
   // Chapter 2, Economics, ethics and climate change, 18 pp, 23-40. Reissue of 8 January 2007.
   { path: "archive/stern-review-chapter-02.pdf", sha256: "981b41d3315a9d31c4b83d7aa71d95c8c258ee0e7fb9738ffef9102f80b71943" },
+  // Chapter 2 technical annex (2A), Ethical frameworks and intertemporal equity, 14 pp, 41-54. HM Treasury reissue of
+  // 23 September 2008 (replaces the original of 26 October 2006, media/8A3/83/; adds a note on Contraction and
+  // Convergence and a citation, "Meyer, 1990").
+  { path: "archive/stern-review-chapter-02-annex.pdf", sha256: "d80af4eaa4cc82107a6c574607e6de737b8943798c6cd69d7089ad558a0d27d9" },
   // Part II introduction, 1 p, 55. 27 October 2006 (one version only).
   { path: "archive/stern-review-part-2-introduction.pdf", sha256: "c0d803be78e363ed0c3e443cd5b32d27c87749ea12a936c053d5dbf8c9893e6d" },
   // Chapter 3, How climate change will affect people around the world, 36 pp, 56-91. Reissue of 18 January 2007.
@@ -86,6 +90,17 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-26.pdf", sha256: "3bf6cf02c60eb3f8624a5d04f3be7b3702beccc717afe128a00ec61941572087" },
   // Chapter 27, Conclusions: building and sustaining international co-operation, 4 pp, 572-575. Reissue of 18 January 2007.
   { path: "archive/stern-review-chapter-27.pdf", sha256: "573ad213a0e28b1657fa783b3386f89282592f6ada53cf418cb73b567cad99eb" },
+  // After the table of contents' last entry: the Postscript (7 pp, no folios, 1 December 2006) and its Technical
+  // Annex (13 pp, no folios, HM Treasury reissue of 24 January 2007), added to the web edition after publication;
+  // then the web-only technical annexes to Chapter 7, 7.b to 7.g (no folios), which the table of contents does not list.
+  { path: "archive/stern-review-postscript.pdf", sha256: "36239868389f6f5d790d60250bae920211b41a0fbd64973c7a3037b3ef999891" },
+  { path: "archive/stern-review-postscript-technical-annex.pdf", sha256: "fda41443c33391e3a2373b628d80cb03e0a5f6246f2f221fd744e840637658c0" },
+  { path: "archive/stern-review-annex-7b.pdf", sha256: "756947279a7b3c19e5ce4c64e803e731880770c3fd8947e9bf52870355be553a" },
+  { path: "archive/stern-review-annex-7c.pdf", sha256: "876cb39034947a829f2d186be8432242fa701b7e2eddae0cf6d71e41805762e6" },
+  { path: "archive/stern-review-annex-7d.pdf", sha256: "95763a0d054a0b11de6d0d1221f7eb3d2ae20a573c95ed579377470fc2f75fac" },
+  { path: "archive/stern-review-annex-7e.pdf", sha256: "08e613f7e1ca62977003095151bcdde075b3d6e2f6bef5c13c2cf569e56de6bf" },
+  { path: "archive/stern-review-annex-7f.pdf", sha256: "24eb378835c7e13ade31fddb197f2d856c10a9b13654ca1ef5db7da7466b0ad8" },
+  { path: "archive/stern-review-annex-7g.pdf", sha256: "8e2a6378b67b58a2e6ec5dda5dfa8644aecf2304189b24b99137006dcb284b1b" },
 ];
 
 /** The 1-based volume index of a file in VOLUMES (what a pass sees as `at.volume`). */
@@ -96,7 +111,7 @@ const vol = (file: string): number => {
 };
 const ES = vol("stern-review-executive-summary.pdf");
 /** The chapters: numbered sections, footnotes, charts and tables. */
-const CHAPTERS = new Set(VOLUMES.map((v, i) => (/chapter-\d+\.pdf$/.test(v.path) ? i + 1 : 0)).filter(Boolean));
+const CHAPTERS = new Set(VOLUMES.map((v, i) => (/chapter-\d+(?:-annex)?\.pdf$/.test(v.path) ? i + 1 : 0)).filter(Boolean));
 
 /**
  * The labels, axes and legends of the report's charts are live text in the PDF (the charts were drawn in Word and
@@ -190,6 +205,7 @@ const MARKERS: ReadonlyArray<{ file?: string; pdfIndex: number; from: string; to
  * notes reading and are linked afterwards, from the body's lines.
  */
 const LATE_MARKERS: ReadonlyArray<{ file: string; pdfIndex: number; from: string; to: string }> = [
+  { file: "stern-review-annex-7e.pdf", pdfIndex: 3, from: "$25/tCO29.", to: "$25/tCO2[^9]." },
   { file: "stern-review-chapter-07.pdf", pdfIndex: 19, from: "effectiveness51.", to: "effectiveness[^51]." },
 ];
 const lateMarkers: BodyPass = {
@@ -249,6 +265,81 @@ const floatingMarkers: SourcePass = {
       const i = out.findIndex((line, k) => k < j && k >= j - 2 && line.trim() === f.marker);
       if (i < 0) throw new Error(`floatingMarkers: marker ${f.marker} not found over "${f.after}" on ${f.file} PDF p.${f.pdfIndex}`);
       out = out.flatMap((line, k) => (k === i ? [] : k === j ? [line.replace(f.after, `${f.after}[^${f.marker}]`)] : [line]));
+    }
+    return out;
+  },
+};
+
+/**
+ * The web annexes to Chapter 7 (made with Distiller 7) set many note markers so that the text reading lifts them onto
+ * a line of their own above their words, with a space left where they stood: "3" over "trade in 2003 (totalling
+ * $674bn) . Therefore, ..." (Annex 7.g p.2). In those volumes a line holding only a number, set in from the margin
+ * over a line of prose with a gap near that column (a space between a word and a stop, comma or bracket), is that
+ * line's marker:
+ * set back there, its line dropped. Every one is listed in `appendixMarkerLog`.
+ */
+const appendixMarkerLog: string[] = [];
+const appendixMarkers: SourcePass = {
+  name: "appendixMarkers",
+  stage: "source",
+  run(lines, at) {
+    if (!APPENDIX.has(at.volume)) return lines;
+    const out = [...lines];
+    for (let i = out.length - 2; i >= 0; i--) {
+      const m = /^(\s{8,})(\d{1,2})\s*$/.exec(out[i]);
+      if (!m) continue;
+      const next = out[i + 1] ?? "";
+      if ((next.match(/[A-Za-z]{3,}/g) ?? []).length < 4) continue;
+      // The gap the marker left: a space after a word or bracket, before a stop, comma or bracket, the nearest to
+      // the marker's column within nine to its left and three to its right (the text reading drifts the marker
+      // right along a long line: "irrigation )." under a "9" eight columns on, p.3).
+      let col = -1;
+      for (let k = m[1].length - 9; k <= m[1].length + 3; k++)
+        if (next[k] === " " && /[\w)%]/.test(next[k - 1] ?? "") && /[.,;:)]/.test(next[k + 1] ?? "") && (col < 0 || Math.abs(k - m[1].length) < Math.abs(col - m[1].length))) col = k;
+      if (col < 0) continue;
+      out[i + 1] = `${next.slice(0, col)}[^${m[2]}]${next.slice(col + 1)}`;
+      appendixMarkerLog.push(`${VOLUMES[at.volume - 1].path} p.${at.pdfIndex}: ${out[i + 1].trim().slice(0, 70)}`);
+      out.splice(i, 1);
+    }
+    if (process.env.STERN_MARKER_LOG) writeFileSync(process.env.STERN_MARKER_LOG, appendixMarkerLog.join("\n"));
+    return out;
+  },
+};
+
+/**
+ * The web annexes to Chapter 7 number the sources of a sector's emissions as a list set in from the margin, each
+ * item's later lines hanging further in ("1. Direct combustion of fossil fuels in residential and commercial
+ * buildings, amounting to" over "3.3 GtCO21. Almost half ...", Annex 7.e p.1). Read as they are, the hanging lines
+ * stood as paragraphs of their own, and the list's first item ran on to its lead-in, whose line ends "arise
+ * from:-" ("from:1. Direct ..."). Each item is set as one line, after a blank line.
+ */
+const appendixItems: SourcePass = {
+  name: "appendixItems",
+  stage: "source",
+  run(lines, at) {
+    if (!APPENDIX.has(at.volume)) return lines;
+    // Annex 7.g p.2 opens on the last two lines of a bulleted item from p.1, hanging at the item's indent, which
+    // read as a quotation: set at the margin, so the page join carries them on to their item.
+    if (at.volume === vol("stern-review-annex-7g.pdf") && at.pdfIndex === 2) {
+      if (!/^\s{12,}emissions from the industry, power, and transport sectors/.test(lines[0] ?? "")) throw new Error("appendixItems: Annex 7.g p.2 does not open on its carried item");
+      lines = lines.map((line, i) => (i < 2 ? line.trimStart() : line));
+    }
+    const out: string[] = [];
+    let item = -1;
+    for (const line of lines) {
+      const indent = line.length - line.trimStart().length;
+      if (/^\s{2,6}\d\.\s+\S/.test(line)) {
+        if (out.length && out[out.length - 1].trim()) out.push("");
+        out.push(line);
+        item = indent;
+        continue;
+      }
+      if (item >= 0 && line.trim() && indent > item && indent <= item + 8) {
+        out[out.length - 1] = `${out[out.length - 1].trimEnd()} ${line.trim()}`;
+        continue;
+      }
+      item = -1;
+      out.push(line);
     }
     return out;
   },
@@ -382,6 +473,7 @@ const runningTitle: SourcePass = {
 const CH2 = vol("stern-review-chapter-02.pdf");
 // Chapter 26's note 9 (p.558) the same way: "9   th" over "World Bank data, as of 25 September, 2006".
 const CH26 = vol("stern-review-chapter-26.pdf");
+const CH2A = vol("stern-review-chapter-02-annex.pdf");
 const ordinalNote: SourcePass = {
   name: "ordinalNote",
   stage: "source",
@@ -426,6 +518,28 @@ const REGIONS: ReadonlyArray<Region> = [
   // Table 18.1 (p.406), the two tables in Box 18.2 (p.409) and Tables 21.1 (p.456) and the survey in Box 21.6 (p.465), with no source line; the three
   // diagrams of Box 18.1 (p.408); the chart in Box 21.5 (p.461); the four charts of Chapter 22 (p.475), with no
   // title; Table 24.1's second page (p.529), whose title and note stay on p.528.
+  // Batch 3b: the Technical Annex to the Postscript's Figure PA.1 (its p.3) and Tables PA.1-PA.3 (pp.6, 9, 11), and
+  // the charts of the web annexes to Chapter 7, none with a source line under it (each cites its source in a note).
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 3, after: /^\s*between 1 and 3\.\s*$/, before: /^\s*The disaggregated impacts analysis brought together in Part II/ },
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 6, after: /^\s*Table PA\.1 Implication of pure time discount rate/, before: /^\s*Many previous studies have used higher pure rates of time preference/ },
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 9, after: /holding the pure time discount rate at 0\.1% \(original Review estimate in italics\)\.\s*$/, before: /^ {60}9$/ },
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 11, after: /marginal utility of consumption at one \(original Review estimate in italics\)\.\s*$/, before: /^\s*Dr Chris Hope, the author of the PAGE2002 model/ },
+  { file: "stern-review-chapter-02-annex.pdf", pdfIndex: 7, after: /^\s*Table 2A\.1\s*$/, before: /^\s*For δ=0\.1 per cent there is an almost 10% chance/ },
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 8, after: /^\s*Figure PA\.2 Percentage losses in GDP per capita\.\s*$/, before: /^ {60}8$/ },
+  { file: "stern-review-postscript-technical-annex.pdf", pdfIndex: 9, from: /^\s+2000\s+2050\s+2100\s+2150/, before: /^\s*Next we consider the effect of changes to the ethical values/ },
+  { file: "stern-review-annex-7b.pdf", pdfIndex: 2, after: /^\s*Figure 2 Power sector CO2 emissions by country 1990-2030/, before: /^\s*Under business as usual conditions, total power sector emissions/ },
+  { file: "stern-review-annex-7d.pdf", pdfIndex: 2, after: /^\s*Figure 2 Direct CO2 emissions from manufacturing and construction 1990-2030/, before: /^\s*Drivers of emissions growth\s*$/ },
+  { file: "stern-review-annex-7g.pdf", pdfIndex: 1, after: /^\s*Figure 1 Sources of non-CO2 emissions from the agriculture sector/, before: /^\s*•\s+Agriculture is a producer of CO2 emissions via soil/ },
+  { file: "stern-review-annex-7g.pdf", pdfIndex: 2, after: /^\s*Figure 2 Agriculture non-CO2 emissions by country/, before: /^\s*Drivers behind emissions growth\s*$/ },
+  { file: "stern-review-annex-7c.pdf", pdfIndex: 1, after: /^\s*Figure 1 Transport CO2 emissions by mode in 2000/, before: /^\s*In addition to direct CO2 emissions from road vehicles/ },
+  { file: "stern-review-annex-7c.pdf", pdfIndex: 2, after: /^\s*Figure 2 Transport emissions by country, 1990-2030/, before: /^\s*In 2050, transport emissions are expected to reach/ },
+  { file: "stern-review-annex-7d.pdf", pdfIndex: 1, after: /^\s*Figure 1 Direct CO2 emissions from manufacturing and construction/, before: /^\s*Direct emissions from industry and upstream emissions from the power/ },
+  { file: "stern-review-annex-7e.pdf", pdfIndex: 1, after: /^\s*by fuel, 2003/, before: /^\s*Buildings provide or host a range of different energy services/ },
+  { file: "stern-review-annex-7e.pdf", pdfIndex: 2, after: /^\s*emissions for 2030 and 2050\s*$/, before: /^\s*On business as usual trends, direct and upstream CO2 emissions from buildings/ },
+  { file: "stern-review-annex-7f.pdf", pdfIndex: 1, after: /natural response to the rising concentration of carbon dioxide in the atmosphere\.\s*$/, before: /^1\s*$/ },
+  { file: "stern-review-annex-7f.pdf", pdfIndex: 2, after: /^\s*Figure 2\s*6? Sources of emissions from global land use change in 2000/, before: /^2\s*$/ },
+  { file: "stern-review-annex-7f.pdf", pdfIndex: 4, after: /^\s*fires in Indonesia\.\s*$/, before: /^\s*Drivers for emissions\s*$/ },
+  { file: "stern-review-annex-7f.pdf", pdfIndex: 5, after: /^\s*projections of future emissions\s*$/, before: /^\s*Current estimates suggest that the land-use sector offers significant/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 3, after: /^\s*Table 18\.1 Examples of adaptation in practice/, before: /^\s*The distinction between short-run and long-run adaptation/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 6, after: /^\s*Adaptation costs and benefits\s*$/, before: /^\s*The various costs and benefits of adapting to climate change/ },
   { file: "stern-review-chapter-18.pdf", pdfIndex: 6, from: /^\s*Cost of planning for\s{3,}Risks of climate change/, before: /^\s*5\s*$/ },
@@ -540,7 +654,7 @@ const REGION_END = /^\s*(?:Sources?|Notes?)\s*:/;
 // A numbered section line ends a region: set with a tab ("7.4   Emissions ...") or, in Part IV, a single space
 // ("16.9 Conclusions", p.372, under Figure 16.8, whose source is cited in a note: read to that note's "Source:",
 // the region took the heading).
-const SECTION_LINE = /^\s*\d{1,2}\.\d{1,2}(?:\s{2,}\S|\s[A-Z])/;
+const SECTION_LINE = /^\s*\d{1,2}A?\.\d{1,2}(?:\s{2,}\S|\s[A-Z])/;
 const prose = (block: string[]): boolean => {
   const text = block.map((l) => l.trim());
   if (text.some((t) => /\S\s{3,}\S/.test(t))) return false;
@@ -598,7 +712,7 @@ const figureRegions: SourcePass = {
  */
 // Part IV's text reading sets one space after the number ("14.9 The performance of taxation and trading against
 // principles of efficiency, equity" over "and public finance considerations", p.320), the earlier chapters a tab.
-const SECTION_HEAD = /^(\s*)(\d{1,2}\.\d{1,2})(\s{2,}|\s(?=[A-Z]))(\S.*)$/;
+const SECTION_HEAD = /^(\s*)(\d{1,2}A?\.\d{1,2})(\s{2,}|\s(?=[A-Z]))(\S.*)$/;
 const wrappedHeadings: SourcePass = {
   name: "wrappedHeadings",
   stage: "source",
@@ -643,6 +757,85 @@ const wrappedHeadings: SourcePass = {
  * (Parts I and III, whose lines happen to be read together, came out as headings). The two lines are set flush, so
  * every Part title reads as one.
  */
+/**
+ * The Postscript, its Technical Annex and the web annexes to Chapter 7 (7.b to 7.g) print no page numbers and no
+ * running heads. Each page is numbered by its place in its own PDF, as `pdfPageNumbers` would number a whole
+ * report (the Postscript's p.3 is "3", shown after the Review's own pages of that number as "3#n"): a folio line is
+ * set at the foot of each page for the folio reader. Their titles and section heads are set in black bold, as the
+ * body's bold lead-ins are, so they are named here, volume by volume, read off the pages: the title ("Postscript",
+ * "Annex 7.b Emissions from the power sector") a Part-level heading, the Technical Annex a chapter under the
+ * Postscript, and the section heads ("The case for urgent action", "Now", "Drivers", "References") sections.
+ */
+const APPENDIX_HEADS: Record<string, { title: string; level: 2 | 3; sections: string[] }> = {
+  "stern-review-postscript.pdf": { title: "Postscript", level: 2, sections: ["The case for urgent action", "Responding to the challenge", "Conclusions"] },
+  "stern-review-postscript-technical-annex.pdf": {
+    title: "Technical Annex to Postscript",
+    level: 3,
+    sections: ["The role of Integrated Assessment Models (IAMs)", "Integrated Assessment Modelling in the Stern Review", "Sensitivity Analysis", "References"],
+  },
+  "stern-review-annex-7b.pdf": { title: "Annex 7.b Emissions from the power sector", level: 2, sections: ["Now", "Historical and BAU projected trends", "Drivers", "Prospects for emission savings", "References"] },
+  "stern-review-annex-7c.pdf": {
+    title: "Annex 7.c Emissions from the transport sector",
+    level: 2,
+    sections: ["Now", "Historical and projected business as usual trends", "Drivers of emissions growth", "Prospects for cutting emissions", "References"],
+  },
+  "stern-review-annex-7d.pdf": {
+    title: "Annex 7.d Emissions from the industry sector",
+    level: 2,
+    sections: ["Now", "Historical and business as usual trends", "Drivers of emissions growth", "Prospects for cutting emissions"],
+  },
+  "stern-review-annex-7e.pdf": {
+    title: "Annex 7.e Emissions from buildings sector",
+    level: 2,
+    sections: ["Now", "Historical and business as usual projected trends", "Drivers of emissions growth", "Prospects for cutting emissions", "References"],
+  },
+  "stern-review-annex-7f.pdf": {
+    title: "Annex 7.f Emissions from the land-use change and forestry sector",
+    level: 2,
+    sections: [
+      "Natural carbon cycle",
+      "Sources of (man made) land-use change emissions now",
+      "Historical emission trends",
+      "Drivers for emissions",
+      "Business-as-usual emission projections",
+      "Prospects for emissions savings",
+      "References",
+    ],
+  },
+  "stern-review-annex-7g.pdf": {
+    title: "Annex 7.g Emissions from the agriculture sector",
+    level: 2,
+    sections: ["Now", "Historic and Business as Usual Projected Trends", "Drivers behind emissions growth", "Prospects for cutting emissions", "References"],
+  },
+};
+const APPENDIX = new Map(Object.entries(APPENDIX_HEADS).map(([file, heads]) => [vol(file), heads]));
+const appendixFolios: SourcePass = {
+  name: "appendixFolios",
+  stage: "source",
+  run(lines, at) {
+    if (!APPENDIX.has(at.volume)) return lines;
+    return [...lines, "", `${" ".repeat(60)}${at.pdfIndex}`];
+  },
+};
+const PART_FACE = "Arial,Bold|18|#000065|b";
+const appendixHeadings: BodyPass = {
+  name: "appendixHeadings",
+  stage: "body",
+  run(lines, context, at) {
+    const layout = context?.layout;
+    const heads = at && APPENDIX.get(at.volume);
+    if (!layout || !at || !heads) return lines;
+    const squash = (text: string) => text.replace(/\s+/g, " ").trim();
+    for (const line of layout.lines(at.volume, at.pdfIndex)) {
+      if (!/^Arial(?:,Bold)?\|1[568]\|#000000\|b$/.test(line.font)) continue;
+      const text = squash(line.text).replace(/\d+$/, "");
+      if (at.pdfIndex === 1 && text === heads.title) (line as { font: string }).font = heads.level === 2 ? PART_FACE : CHAPTER_FACE;
+      else if (heads.sections.includes(text)) (line as { font: string }).font = SECTION_FACE;
+    }
+    return lines;
+  },
+};
+
 const PART_INTROS = new Set(VOLUMES.map((v, i) => (/part-\d+-introduction\.pdf$/.test(v.path) ? i + 1 : 0)).filter(Boolean));
 const partTitles: SourcePass = {
   name: "partTitles",
@@ -905,7 +1098,7 @@ const SECTION_FACE = "Arial,Bold|15|#000065|b";
 // the body's size ("20 Adaptation in the developing world", "20.2 Adaptation prospects ...", pp.430-431); Chapter 26
 // (27 October 2006) sets its section 26.5 in the navy of its page foot ("26.5 Risk management and risk preparedness:
 // ...", p.566), and its References in black (p.569).
-const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b", "Arial|15|#33339a|b", "Arial,Bold|15|#000080|b"]);
+const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b", "Arial|15|#33339a|b", "Arial,Bold|15|#000080|b", "ArialMT|16|#000065"]);
 const chapterHeadingFaces: BodyPass = {
   name: "chapterHeadingFaces",
   stage: "body",
@@ -913,12 +1106,15 @@ const chapterHeadingFaces: BodyPass = {
     const layout = context?.layout;
     if (!layout || !at || !CHAPTERS.has(at.volume)) return lines;
     const page = layout.lines(at.volume, at.pdfIndex);
+    // The Chapter 2 technical annex numbers itself "2A" and its sections "2A.1" (p.41), and sets its title in a
+    // regular navy at 16 ("ArialMT|16|#000065").
+    const a = at.volume === CH2A ? "A?" : "";
     const faceOf = (text: string) =>
-      /^\d{1,2}\s+\S/.test(text) ? CHAPTER_FACE : /^\d{1,2}\.\d{1,2}\s+\S/.test(text) || text === "References" ? SECTION_FACE : undefined;
+      new RegExp(`^\\d{1,2}${a}\\s+\\S`).test(text) ? CHAPTER_FACE : new RegExp(`^\\d{1,2}${a}\\.\\d{1,2}\\s+\\S`).test(text) || text === "References" ? SECTION_FACE : undefined;
     // A section heading's second line (`wrappedHeadings`) is set on its first in the layout too, so the heading
     // reader takes the whole heading.
     if (REGION_VOLUMES.has(at.volume))
-      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}(?:\.\d{1,2})?\s+\S/.test(l.text.trim()))) {
+      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}A?(?:\.\d{1,2})?\s+\S/.test(l.text.trim()))) {
         const next = page.find((l) => l.font === head.font && l.top > head.top && l.top - head.top <= 1.5 * head.height && l.left > head.left);
         if (!next || next.text.trim().length >= 50) continue;
         Object.assign(head, { text: `${head.text.trimEnd()} ${next.text.trim()}` });
@@ -927,6 +1123,14 @@ const chapterHeadingFaces: BodyPass = {
     // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
     // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
     for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
+    // Its "2A.3" is a layout line apart from its title, "Conclusions", at the same height (p.52): joined.
+    if (at.volume === CH2A)
+      for (const num of page.filter((l) => NAVY.has(l.font) && /^2A\.\d+$/.test(l.text.trim()))) {
+        const title = page.find((l) => l !== num && l.font === num.font && Math.abs(l.top - num.top) <= 2 && l.left > num.left);
+        if (!title) continue;
+        Object.assign(num, { text: `${num.text.trim()} ${title.text.trim()}` });
+        page.splice(page.indexOf(title), 1);
+      }
     if (at.volume === CH26)
       for (const line of page) {
         if (line.font === "Arial,Bold|15|#000000|b" && line.text.trim() === "References") (line as { font: string }).font = SECTION_FACE;
@@ -990,7 +1194,10 @@ export default pipeline({
     noteMarkers,
     runOnLines,
     floatingMarkers,
+    appendixMarkers,
+    appendixItems,
     runningTitle,
+    appendixFolios,
     ordinalNote,
     partTitles,
     marginBullets,
@@ -1003,6 +1210,7 @@ export default pipeline({
     chartsAndTables,
     chemicalSubscripts,
     chapterHeadingFaces,
+    appendixHeadings,
     prefaceParts,
     // Each chapter numbers its footnotes from 1 (Chapter 2's run 1-13 from p.23, Chapter 6's 1-45 from p.143), after
     // the Executive Summary's 1-5. A chapter's first page offers only its note 1 or 1-2 to read, and without this

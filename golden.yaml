@@ -154,9 +154,9 @@ pages:
       - paragraph: {start: "Dynamics and uncertainty are explored further", end: "2.6 and in Chapter 6."}
       - paragraph: {start: "This important example shows how important", end: "environmental and public economics throughout."}
     markers: []
-  # Chapter 6 opening (vol 12, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
+  # Chapter 6 opening (vol 13, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
   - pdf: 1
-    volume: 12
+    volume: 13
     printed: 143
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -173,9 +173,9 @@ pages:
       - list: {start: "First, including direct impacts on the", end: "by more than one quarter.", items: 3}
       - paragraph: {start: "Putting these three additional factors together", end: "at a far lower cost."}
     markers: []
-  # Table 6.1 (vol 12, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
+  # Table 6.1 (vol 13, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
   - pdf: 21
-    volume: 12
+    volume: 13
     printed: 163
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -187,9 +187,9 @@ pages:
       - paragraph: {start: "Finally, we should discuss where one", end: "of different possible probability distributions."}
     footnotes: [45]
     markers: [45]
-  # Figure 9.2 (vol 16, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
+  # Figure 9.2 (vol 17, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
   - pdf: 11
-    volume: 16
+    volume: 17
     printed: 221
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -202,9 +202,9 @@ pages:
       - list: {start: "On and offshore wind. Wave and", end: "afforestation, crops, and organic wastes.", items: 8}
     footnotes: [28]
     markers: [28]
-  # Chapter 10 (vol 17, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
+  # Chapter 10 (vol 18, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
   - pdf: 8
-    volume: 17
+    volume: 18
     printed: 246
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -216,9 +216,9 @@ pages:
       - paragraph: {start: "Cost-effective planning and substituting activities across", end: "people can plan ahead efficiently."}
     footnotes: [11, 12]
     markers: [11, 12]
-  # Table 13.2 (vol 20, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
+  # Table 13.2 (vol 21, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
   - pdf: 12
-    volume: 20
+    volume: 21
     printed: 295
     verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
     blocks:
@@ -246,9 +246,9 @@ pages:
       - paragraph: {start: "As global temperatures continue to rise,", end: "triggered remain uncertain (Box 1.4).", notes: [65, 66]}
     footnotes: [58, 59, 60, 61, 62, 63, 64, 65, 66]
     markers: [58, 59, 60, 61, 62, 63, 64, 65, 66]
-  # Chapter 8 (vol 15, printed 199): the reissue draws lines in pieces out of order ("It" / " is the total warming effect", "8.5 Pathways stabilisation" / "to"), put back by layoutPieces; the stacked key finding is one; note 10 set apart after "CO2e"; Figure 8.2's chart not served, its title, caption and source are.
+  # Chapter 8 (vol 16, printed 199): the reissue draws lines in pieces out of order ("It" / " is the total warming effect", "8.5 Pathways stabilisation" / "to"), put back by layoutPieces; the stacked key finding is one; note 10 set apart after "CO2e"; Figure 8.2's chart not served, its title, caption and source are.
   - pdf: 7
-    volume: 15
+    volume: 16
     printed: 199
     verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
     blocks:
@@ -263,9 +263,9 @@ pages:
       - paragraph: {start: "Source: Generated with the SiMCaP EQW", end: "model (Meinshausen et al. 2006)"}
     footnotes: [10]
     markers: [10]
-  # Chapter 14 (vol 22, printed 320): "14.9 The performance of ... equity" over "and public finance considerations", one wrapped heading (one space after the number in Part IV's text reading, wrappedHeadings); the key finding in bold italic; margin bullets a list.
+  # Chapter 14 (vol 23, printed 320): "14.9 The performance of ... equity" over "and public finance considerations", one wrapped heading (one space after the number in Part IV's text reading, wrappedHeadings); the key finding in bold italic; margin bullets a list.
   - pdf: 12
-    volume: 22
+    volume: 23
     printed: 320
     verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
     blocks:
@@ -282,9 +282,9 @@ pages:
       - list: {start: "can contribute to establishing a consistent", end: "total costs of mitigation policy.", items: 3}
     footnotes: [31]
     markers: [31]
-  # Chapter 16 (vol 24, printed 372): Figure 16.8's chart not served, its title with note 79 stays; "16.9 Conclusions" (one space after the number) is a heading, not dropped with the chart; notes 78-80, whose 79 opens "Source:", keep their numbers.
+  # Chapter 16 (vol 25, printed 372): Figure 16.8's chart not served, its title with note 79 stays; "16.9 Conclusions" (one space after the number) is a heading, not dropped with the chart; notes 78-80, whose 79 opens "Source:", keep their numbers.
   - pdf: 26
-    volume: 24
+    volume: 25
     printed: 372
     verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
     blocks:
@@ -298,9 +298,9 @@ pages:
       - paragraph: {start: "This chapter explores the process of", end: "low-carbon technologies in the future."}
     footnotes: [78, 79, 80]
     markers: [78, 79, 80]
-  # Chapter 20 (vol 29, printed 431): the reissue's lighter-navy section heading (Distiller 7) read as a heading; a key finding in bold italic; a list with notes 1 and 2
+  # Chapter 20 (vol 30, printed 431): the reissue's lighter-navy section heading (Distiller 7) read as a heading; a key finding in bold italic; a list with notes 1 and 2
   - pdf: 2
-    volume: 29
+    volume: 30
     printed: 431
     verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
     blocks:
@@ -315,9 +315,9 @@ pages:
       - paragraph: {start: "Governments have an important potential role", end: "discussed in more detail below."}
     footnotes: [1, 2]
     markers: [1, 2]
-  # Chapter 21 (vol 31, printed 459): Figures 21.1 and 21.2, two charts with no source line, served as their titles only; notes 22 and 23 in the paragraph run over from p.458 (the "2" of CO2e in note 22 is a subscript)
+  # Chapter 21 (vol 32, printed 459): Figures 21.1 and 21.2, two charts with no source line, served as their titles only; notes 22 and 23 in the paragraph run over from p.458 (the "2" of CO2e in note 22 is a subscript)
   - pdf: 10
-    volume: 31
+    volume: 32
     printed: 459
     verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
     blocks:
@@ -325,3 +325,40 @@ pages:
       - paragraph: {start: "Figure 21.2 Emissions reductions in developed", end: "their 1990 emissions by 2050"}
     footnotes: [22, 23]
     markers: [22, 23]
+  # Chapter 2 technical annex (vol 8, printed 41): its title "2A ..." (regular navy) and "2A.1" are headings; bold-italic findings; notes 1-6, note 5 at the end of a finding
+  - pdf: 1
+    volume: 8
+    printed: 41
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - heading: "2A Ethical Frameworks and Intertemporal Equity"
+        level: 3
+      - heading: "2A.1 Ethical frameworks for climate change"
+        level: 4
+      - paragraph: {start: "***The 'consequentialist' and 'welfarist' approach, the", end: "the ethics of climate change.***"}
+      - paragraph: {start: "In Section 2.3 we described the", end: "the economics of climate change."}
+      - paragraph: {start: "For many applications of the standard", end: "political decisions are actually taken."}
+      - paragraph: {start: "***Nevertheless, questions such as 'what do", end: "to different perspectives on ethics.***"}
+      - paragraph: {start: "Economics, together with the other social", end: "opportunity), empowerment, or social inclusion.", notes: [1, 2, 3, 4]}
+      - paragraph: {start: "Whilst such perspectives are indeed different,", end: "a range of ethical approaches."}
+      - paragraph: {start: "***Impacts of climate change on future", end: "to liberty, freedom and justice.***", notes: [5]}
+      - paragraph: {start: "Protection from harm is also expressed", end: "as compensation for its consequences.", notes: [6]}
+    footnotes: [1, 2, 3, 4, 5, 6]
+    markers: [1, 2, 3, 4, 5, 6]
+  # Postscript (vol 39, no folio: numbered 1 by its place in its PDF): its title a Part-level heading, a section head in black bold a heading; no notes
+  - pdf: 1
+    volume: 39
+    printed: 1
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - heading: "Postscript"
+        level: 2
+      - paragraph: {start: "The Review on the Economics of", end: "Commission and the African Union."}
+      - paragraph: {start: "In this postscript, we offer some", end: "adverse impacts of climate change."}
+      - heading: "The case for urgent action"
+        level: 4
+      - paragraph: {start: "Two key conclusions from our analyses", end: "the case for urgent action."}
+      - paragraph: {start: "First, under a business-as-usual scenario, the", end: "the following decades (Chapter 1)."}
+      - paragraph: {start: "In Part II of the report", end: "how we live our lives."}
+      - paragraph: {start: "The analyses presented in Chapters 3", end: "many parts of the world."}
+    markers: []

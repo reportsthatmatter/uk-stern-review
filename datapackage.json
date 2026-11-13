@@ -851,6 +851,213 @@
           "web": "https://web.archive.org/web/20081023104451id_/http://www.hm-treasury.gov.uk/d/Chapter_27_Conclusions.pdf"
         }
       ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 2 technical annex (2A), Ethical frameworks and intertemporal equity, HM Treasury reissue of 23 September 2008",
+      "path": "archive/stern-review-chapter-02-annex.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 190099,
+      "hash": "sha256:d80af4eaa4cc82107a6c574607e6de737b8943798c6cd69d7089ad558a0d27d9",
+      "description": "Replaces the original of 26 October 2006 (media/8A3/83/Chapter_2_A_-_Technical_Annex.pdf); adds note 7 (Contraction and Convergence) and a citation (Meyer, 1990).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_2_Technical_Annex.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104429id_/http://www.hm-treasury.gov.uk/d/Chapter_2_Technical_Annex.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Postscript, 1 December 2006 (never replaced; no page numbers)",
+      "path": "archive/stern-review-postscript.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 138237,
+      "hash": "sha256:36239868389f6f5d790d60250bae920211b41a0fbd64973c7a3037b3ef999891",
+      "description": "One digest at /d/ and media/3DD/35/ from 2006. Added to the web edition after publication; not in the table of contents.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Postscript.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023084405id_/http://www.hm-treasury.gov.uk/d/Postscript.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Technical Annex to Postscript, HM Treasury reissue of 24 January 2007 (no page numbers)",
+      "path": "archive/stern-review-postscript-technical-annex.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 193676,
+      "hash": "sha256:fda41443c33391e3a2373b628d80cb03e0a5f6246f2f221fd744e840637658c0",
+      "description": "Replaces the original of 1 December 2006 (media/3DD/43/Technical_annex_to_postscript.pdf), which differs in the spacing of its note markers.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Technical_annex_to_the_postscript_P1-6.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023084416id_/http://www.hm-treasury.gov.uk/d/Technical_annex_to_the_postscript_P1-6.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.b, Emissions from the power sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7b.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 26774,
+      "hash": "sha256:756947279a7b3c19e5ce4c64e803e731880770c3fd8947e9bf52870355be553a",
+      "description": "The same file (one digest) at /d/ and at media/3F9/CD/, archived from 2006.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/7b_power_sector_annex_p1-7.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104634id_/http://www.hm-treasury.gov.uk/d/7b_power_sector_annex_p1-7.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.c, Emissions from the transport sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7c.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 139187,
+      "hash": "sha256:876cb39034947a829f2d186be8432242fa701b7e2eddae0cf6d71e41805762e6",
+      "description": "The same file (one digest) at /d/ and at media/3DD/5D/, archived from 2006.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Transport_annex.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104632id_/http://www.hm-treasury.gov.uk/d/Transport_annex.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.d, Emissions from the industry sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7d.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 29353,
+      "hash": "sha256:95763a0d054a0b11de6d0d1221f7eb3d2ae20a573c95ed579377470fc2f75fac",
+      "description": "The same file (one digest) at /d/ and at media/3F9/DF/, archived from 2006.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/7d_industry_annex_p1.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104705id_/http://www.hm-treasury.gov.uk/d/7d_industry_annex_p1.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.e, Emissions from the buildings sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7e.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 58736,
+      "hash": "sha256:08e613f7e1ca62977003095151bcdde075b3d6e2f6bef5c13c2cf569e56de6bf",
+      "description": "The same file (one digest) at /d/ and at media/7B9/8B/, archived from 2007.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/annex7e_buildings.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104622id_/http://www.hm-treasury.gov.uk/d/annex7e_buildings.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.f, Emissions from the land-use change and forestry sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7f.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 94089,
+      "hash": "sha256:24eb378835c7e13ade31fddb197f2d856c10a9b13654ca1ef5db7da7466b0ad8",
+      "description": "The same file (one digest) at /d/ and at media/774/1D/, archived from 2007.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/annex7f_land_use.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104626id_/http://www.hm-treasury.gov.uk/d/annex7f_land_use.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Annex 7.g, Emissions from the agriculture sector (web annex to Chapter 7; no page numbers)",
+      "path": "archive/stern-review-annex-7g.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 46985,
+      "hash": "sha256:8e2a6378b67b58a2e6ec5dda5dfa8644aecf2304189b24b99137006dcb284b1b",
+      "description": "The capture of 2008-10-23 at this URL is a copy of Annex 7.f; this capture (digest AMENK6NM…, every capture from 2008-11-13) and the original at media/7CB/0E/ are the agriculture annex.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/annex7g_agriculture.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081113040835id_/http://www.hm-treasury.gov.uk/d/annex7g_agriculture.pdf"
+        }
+      ]
     }
   ],
   "licenses": [
