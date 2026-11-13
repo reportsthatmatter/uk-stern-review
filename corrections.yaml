@@ -244,6 +244,13 @@ corrections:
     replace: "The high-climate-scenario is designed"
     reason: "Chapter 4, note 83: 'high-climate-' ends the line and 'scenario' opens the next, after 'the high-climate-change scenario' in the same note; the hyphen is kept as printed, the space is not."
     added: 2026-11-13
+  # As c-0004: with Part IV added, the line-end hyphen reader sees more "coordination" (Chapters 15-17) and joins
+  # this one; the Executive Summary prints "co-ordination" and keeps the paragraph as served since 8 November.
+  - id: c-0048
+    find: "informal arrangements for greater co- ordination and enhanced linkages"
+    replace: "informal arrangements for greater co-ordination and enhanced linkages"
+    reason: "PDF p.25 (Executive Summary, printed xxv): 'co-' ends the line and 'ordination' opens the next; the summary spells it co-ordination."
+    added: 2026-11-13
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }

@@ -44,8 +44,22 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-09.pdf", sha256: "d4a55e6b0ae41c7d63e99f08f57ecb0274d56573df475f408e41d1914ec8119b" },
   // Chapter 10, Macroeconomic models of costs, 14 pp, 239-252. Reissue of 8 January 2007.
   { path: "archive/stern-review-chapter-10.pdf", sha256: "ca5aa33b1fde330f2dc907425e641db0c9cceb2e7d485e969c9c816e58fe2415" },
+  // Chapter 11, Structural change and competitiveness, 16 pp, 253-268 (printed 1-16). Reissue of 8 January 2007.
+  { path: "archive/stern-review-chapter-11.pdf", sha256: "d722c35dc7c0e8f4722c7c10b71ac455631e26babc2113fb65ca6cf631f7410b" },
+  // Chapter 12, Opportunities and wider benefits from climate policies, 15 pp, 269-283. Reissue of 8 January 2007.
+  { path: "archive/stern-review-chapter-12.pdf", sha256: "fb5c2a2b3358908ddc99b6c720cde13639983721074a56f7d10e70b3f5e67b21" },
   // Chapter 13, Towards a goal for climate-change policy, 25 pp, 284-308. Reissue of 8 January 2007.
   { path: "archive/stern-review-chapter-13.pdf", sha256: "c643dd510e52d2db2e2db679799b0ae588dfc67241278b8c18fb279578fbec07" },
+  // Part IV introduction, 1 p, 308. 27 October 2006 (one version only; /d/ holds only a 95-page bundle of the Part).
+  { path: "archive/stern-review-part-4-introduction.pdf", sha256: "ca8de6a12458f21d2b9ffbf9633bd1e41bf96a048345b97813267a235869c891" },
+  // Chapter 14, Harnessing markets for mitigation, 15 pp, 309-323. 26 October 2006 (never replaced).
+  { path: "archive/stern-review-chapter-14.pdf", sha256: "55595fac26166007222b51cd37243bbad88f0d793e1e7537bec2d5d168989ce2" },
+  // Chapter 15, Carbon pricing and emissions markets in practice, 23 pp, 324-346. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-15.pdf", sha256: "f7c8dffd7a8fd281cd542b50b0c10804cffc053e87fbf282e918c7840db47cab" },
+  // Chapter 16, Accelerating technological innovation, 30 pp, 347-376. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-16.pdf", sha256: "d77a199021064420b8e7b4f74e0359dcd282f84dc4bbbc9ab472490a2faf5537" },
+  // Chapter 17, Beyond carbon markets and technology, 26 pp, 377-402. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-17.pdf", sha256: "dcefebeb2c9f391434e7873642662921efbdd24315c0e26781d0cf26a615a2cf" },
 ];
 
 /** The 1-based volume index of a file in VOLUMES (what a pass sees as `at.volume`). */
@@ -417,7 +431,10 @@ const REGION_VOLUMES = new Set([...CHAPTERS].filter((v) => !BATCH_ONE.has(v)));
 const REGION_TITLE = /^\s*(?:Figure|Table)\s+\d{1,2}[A-Z]?\.\d{1,2}[a-z]?\s+(?:[A-Z‘’'“"(]|\d)/;
 const ANY_TITLE = /^\s*(?:Figure|Table|Box)\s+\d{1,2}[A-Z]?\.\d{1,2}[a-z]?\s+(?:[A-Z‘’'“"(]|\d)/;
 const REGION_END = /^\s*(?:Sources?|Notes?)\s*:/;
-const SECTION_LINE = /^\s*\d{1,2}\.\d{1,2}\s{2,}\S/;
+// A numbered section line ends a region: set with a tab ("7.4   Emissions ...") or, in Part IV, a single space
+// ("16.9 Conclusions", p.372, under Figure 16.8, whose source is cited in a note: read to that note's "Source:",
+// the region took the heading).
+const SECTION_LINE = /^\s*\d{1,2}\.\d{1,2}(?:\s{2,}\S|\s[A-Z])/;
 const prose = (block: string[]): boolean => {
   const text = block.map((l) => l.trim());
   if (text.some((t) => /\S\s{3,}\S/.test(t))) return false;
@@ -434,13 +451,18 @@ const figureRegions: SourcePass = {
     for (let start = 0; start < out.length; start++) {
       if (!REGION_TITLE.test(out[start])) continue;
       let end = -1;
+      // Where the "Source:" found is a footnote's (Chapter 16 p.354: Figure 16.3 cites its source in note 18, whose
+      // text opens "Source: IEA R&D database"), the region ends where the notes begin, a note number alone at the
+      // margin over its indented text, so the note keeps its number; the chart's lines above still go.
+      let notes = -1;
       for (let i = start + 1; i < out.length; i++) {
-        if (REGION_END.test(out[i])) { end = i; break; }
+        if (REGION_END.test(out[i])) { end = notes >= 0 ? notes : i; break; }
         if (ANY_TITLE.test(out[i]) || SECTION_LINE.test(out[i])) break;
+        if (notes < 0 && /^\d{1,3}\s*$/.test(out[i]) && /^\s+\S/.test(out[i + 1] ?? "")) notes = i;
       }
       if (end < 0) continue;
       out[start] = out[start].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
-      out[end] = out[end].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
+      if (end !== notes) out[end] = out[end].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
       // A title wrapped onto a second line, set directly under it as one run of words, is the title's.
       let i = start + 1;
       if (out[i]?.trim() && !/\S\s{3,}\S/.test(out[i].trim()) && out[i].trim().length < 70) i++;
@@ -468,7 +490,9 @@ const figureRegions: SourcePass = {
  * as a paragraph. A heading line followed directly by a short line set in to its text's column is one heading:
  * the second line is set on the first. The second batch's chapters only.
  */
-const SECTION_HEAD = /^(\s*)(\d{1,2}\.\d{1,2})(\s{2,})(\S.*)$/;
+// Part IV's text reading sets one space after the number ("14.9 The performance of taxation and trading against
+// principles of efficiency, equity" over "and public finance considerations", p.320), the earlier chapters a tab.
+const SECTION_HEAD = /^(\s*)(\d{1,2}\.\d{1,2})(\s{2,}|\s(?=[A-Z]))(\S.*)$/;
 const wrappedHeadings: SourcePass = {
   name: "wrappedHeadings",
   stage: "source",
@@ -755,6 +779,9 @@ const chapterHeadingFaces: BodyPass = {
         Object.assign(head, { text: `${head.text.trimEnd()} ${next.text.trim()}` });
         page.splice(page.indexOf(next), 1);
       }
+    // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
+    // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
+    for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
     const navy = page.filter((line) => NAVY.has(line.font) && !/^STERN REVIEW:|^\d+$/.test(line.text.trim()));
     const numbered = navy.filter((line) => faceOf(line.text.trim()));
     for (const line of navy) {
