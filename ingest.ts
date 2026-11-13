@@ -619,6 +619,13 @@ const wrappedHeadings: SourcePass = {
       const column = m ? m[1].length + m[2].length + m[3].length : -1;
       const indent = next.length - next.trimStart().length;
       if (m && next.trim() && Math.abs(indent - column) <= 3 && next.trim().length < 50 && !/[.:]$/.test(m[4].trim())) {
+        // Chapter 26 ends one heading with a full stop ("26.5 Risk management ... resettling" over "refugees.",
+        // p.566), which the heading reader takes for a sentence: served without it (and so in the layout, below).
+        if (at.volume === CH26 && m[2] === "26.5") {
+          out.push(`${lines[i].trimEnd()} ${next.trim().replace(/\.$/, "")}`);
+          i++;
+          continue;
+        }
         out.push(`${lines[i].trimEnd()} ${next.trim()}`);
         i++;
         continue;
@@ -917,8 +924,11 @@ const chapterHeadingFaces: BodyPass = {
     // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
     // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
     for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
-    if (at.volume === vol("stern-review-chapter-26.pdf"))
-      for (const line of page) if (line.font === "Arial,Bold|15|#000000|b" && line.text.trim() === "References") (line as { font: string }).font = SECTION_FACE;
+    if (at.volume === CH26)
+      for (const line of page) {
+        if (line.font === "Arial,Bold|15|#000000|b" && line.text.trim() === "References") (line as { font: string }).font = SECTION_FACE;
+        if (/^26\.5 .*refugees\.\s*$/.test(line.text.trim())) Object.assign(line, { text: line.text.replace(/\.(\s*)$/, "$1") });
+      }
     const navy = page.filter((line) => NAVY.has(line.font) && !/^STERN REVIEW:|^\d+$/.test(line.text.trim()));
     const numbered = navy.filter((line) => faceOf(line.text.trim()));
     for (const line of navy) {
