@@ -501,6 +501,13 @@ corrections:
     replace: "Decades of under-investment, however"
     reason: "Chapter 12 (printed 275): 'under-' ends the line and 'investment' opens the next. Since Parts V and VI were added, the line-end hyphen reader sees 'underinvestment' (a note in Chapter 23) and joined it; the Review's running text spells it 'under-investment' (three times mid-line), as this paragraph was served before."
     added: 2026-11-13
+  # The other half of the ingest.ts pass noteTail for Chapter 25: note 4's last two lines, printed at the head of
+  # p.538's notes. Numbered out of sequence (c-0200) so it does not collide with batch 3b's c-0097 onward.
+  - id: c-0200
+    find: "the Third Assessment Report of IPCC which estimates emissions from land"
+    replace: "the Third Assessment Report of IPCC which estimates emissions from land use change within the range equivalent to 2.2 to 9.9 GtCO2,, with a central estimate of 6.2 GtCO2. A fuller discussion setting out the range of estimates can be found in Baumert KA et al. (2005)."
+    reason: "Chapter 25, PDF pp.1-2 (printed 537-538): note 4 ends 'estimates emissions from land' at the foot of p.537 and runs over to two lines at the head of p.538's notes, above note 5 (the double comma as printed)."
+    added: 2026-11-13
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
   - { match: "1m", reason: "PDF p.7: 'a 1m rise in sea levels' (one metre), as printed.", added: 2026-11-08 }

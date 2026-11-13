@@ -749,12 +749,15 @@ const carriedItems: SourcePass = {
  * from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone above note 18 and were read as
  * a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the foot of the body but in the
  * notes' block). Chapter 11's note 5 (p.255) runs over to the foot of p.256 in five lines ("rough magnitude of this
- * higher order indirect impact. ..."), with no number, after the body. The lines are taken off the page here, and
- * corrections.yaml (c-0005, c-0050) sets the words back at the end of their note, where the pages print them.
+ * higher order indirect impact. ..."), with no number, after the body. Chapter 25's note 4 (p.537) runs over to
+ * the head of p.538's notes in two lines ("use change within the range ... Baumert KA et al. (2005)."), read as
+ * the end of Figure 25.1's source line. The lines are taken off the page here, and corrections.yaml (c-0005,
+ * c-0050, c-0200) sets the words back at the end of their note, where the pages print them.
  */
 const NOTE_TAILS: ReadonlyArray<{ file: string; pdfIndex: number; first: RegExp; last: RegExp; next?: RegExp }> = [
   { file: "stern-review-chapter-09.pdf", pdfIndex: 8, first: /^\s*energy-efficiency measures\.\s*$/, last: /^\s*energy-efficiency measures\.\s*$/, next: /^\s*18\s*$/ },
   { file: "stern-review-chapter-11.pdf", pdfIndex: 4, first: /^\s*rough magnitude of this higher order indirect impact\. Because data disaggregated/, last: /^\s*here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief\.\s*$/ },
+  { file: "stern-review-chapter-25.pdf", pdfIndex: 2, first: /^\s*use change within the range equivalent to 2\.2 to 9\.9 GtCO2,, with a central estimate/, last: /^\s*setting out the range of estimates can be found in Baumert KA et al\. \(2005\)\.\s*$/, next: /^\s*5\s*$/ },
 ];
 const noteTail: SourcePass = {
   name: "noteTail",
