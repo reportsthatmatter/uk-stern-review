@@ -525,7 +525,17 @@ const partTitles: SourcePass = {
 // further, so a wrapped "- 4.5°C" read as an item of its own and the bullets stood as text) is the same style.
 // Chapter 8's Box 8.3 (p.204) is too, but joined here its lines no longer matched the layout's and the page's
 // opening paragraphs were lost; its three cut lines are set back by `runOnLines` instead.
-const MARGIN_BULLET_PAGES = new Set([`${vol("stern-review-chapter-06.pdf")}:1`, `${vol("stern-review-chapter-01.pdf")}:15`]);
+// The second batch sets more lists so: Chapter 1's Key Messages (p.2) and Box 1.2 (p.10), Chapter 3 p.65 and
+// Chapter 4's regional boxes (pp.104-106); read as they are, their bullets stood as text inside one paragraph ("...
+// will rise. • Changes in the distribution of heat ..."). Chapter 3's and 5's Key Messages (pp.56, 1), Box 4.6
+// (p.113) and Box 5.2 (pp.7-8) are set the same way, but joined here their lines no longer matched the layout's,
+// and `chartsAndTables` laid the page out again in one paragraph: they are left as they read (PROCESSING.md).
+const MARGIN_BULLET_PAGES = new Set([
+  `${vol("stern-review-chapter-06.pdf")}:1`,
+  ...[
+    ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15],
+  ].map(([n, p]) => `${vol(`stern-review-chapter-${n}.pdf`)}:${p}`),
+]);
 const MARGIN_BULLET = /^ ?•(\s+)\S/;
 const marginBullets: SourcePass = {
   name: "marginBullets",

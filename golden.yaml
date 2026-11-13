@@ -234,3 +234,32 @@ pages:
       - paragraph: {start: "Our work with the PAGE model", end: "to there leave out more.", notes: [9]}
     footnotes: [9]
     markers: [9]
+  # Box 1.4 (vol 6, Chapter 1, printed 16): the bullets at the margin with the wrapped lines set in further (marginBullets), so the two items are a list and "3 - 4.5°C" is not cut at its line-end dash; the km2 superscript is no marker.
+  - pdf: 15
+    volume: 6
+    printed: 16
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "Box 1.4 Ice sheets and sea", end: "sheets and sea level rise"}
+      - paragraph: {start: "Melting ice sheets are already contributing", end: "projected by current climate models:"}
+      - list: {start: "Greenland Ice Sheet. Measurements of the", end: "5°C, but these remain disputed.", notes: [58, 59, 60, 61, 62, 63, 64], items: 2}
+      - paragraph: {start: "As global temperatures continue to rise,", end: "triggered remain uncertain (Box 1.4).", notes: [65, 66]}
+    footnotes: [58, 59, 60, 61, 62, 63, 64, 65, 66]
+    markers: [58, 59, 60, 61, 62, 63, 64, 65, 66]
+  # Chapter 8 (vol 15, printed 199): the reissue draws lines in pieces out of order ("It" / " is the total warming effect", "8.5 Pathways stabilisation" / "to"), put back by layoutPieces; the stacked key finding is one; note 10 set apart after "CO2e"; Figure 8.2's chart not served, its title, caption and source are.
+  - pdf: 7
+    volume: 15
+    printed: 199
+    verified_by: "Claude (Opus 5.5), 2026-11-13, against the page image"
+    blocks:
+      - paragraph: {start: "It is the total warming effect", end: "total stock of greenhouse gases."}
+      - heading: "8.5 Pathways to stabilisation"
+        level: 4
+      - paragraph: {start: "As discussed above, stabilisation at any", end: "and ambitious action is taken."}
+      - paragraph: {start: "***The rate of emissions cuts required", end: "reductions over the coming decades.***"}
+      - paragraph: {start: "There are a number of possible", end: "stabilisation at 550 ppm CO2e."}
+      - paragraph: {start: "Figure 8.2 Illustrative emissions paths to", end: "stabilise at 550 ppm CO2e."}
+      - paragraph: {start: "The figure below shows six illustrative", end: "reduced from 2.5%/yr to 1.5%/yr."}
+      - paragraph: {start: "Source: Generated with the SiMCaP EQW", end: "model (Meinshausen et al. 2006)"}
+    footnotes: [10]
+    markers: [10]

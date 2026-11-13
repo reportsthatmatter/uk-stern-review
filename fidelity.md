@@ -20,7 +20,7 @@ file under `dismissed:` and the entry leaves this queue for good.
 | likely | digit inside a word | `5th` | Vol 12 · PDF p.13 | f estimates in each year taken from the 5th and 95th percentile damage estimates ov |
 | likely | known OCR artefact | `THC` | Vol 6 · PDF p.14 | orth Atlantic Thermohaline Circulation (THC). In the North Atlantic, the Gulf Strea |
 | likely | digit inside a word | `5m` | Vol 6 · PDF p.15 | lly et al. (2006) 65 Based on 7m and 5m from the Greenland and West Antarctic i |
-| likely | known OCR artefact | `arid` | Vol 10 · PDF p.13 | limate change, including the mixed arid-semiarid systems in the Sahel, arid-sem |
+| likely | known OCR artefact | `arid` | Vol 10 · PDF p.13 |  by climate change, including the mixed arid-semiarid systems in the Sahel, arid-sem |
 | likely | digit inside a word | `5ppm` | Vol 6 · PDF p.11 | ample, 45 years at 2.5 ppm/yr gives 112.5ppm. Added to the current level, this gives |
 | likely | digit inside a word | `7A` | Vol 14 · PDF p.23 | : The Economics of Stabilisation Annex 7A Climate Change and the Environmental Ku |
 | likely | digit inside a word | `C4MIP` | Vol 6 · PDF p.18 | n cycle feedback analysis: results from C4MIP model intercomparison', Journal of Clim |
@@ -62,7 +62,7 @@ file under `dismissed:` and the entry leaves this queue for good.
 | possible | possible rn/m confusion | `burning` | Vol 6 · PDF p.2 | gure 1.1), predominantly as a result of burning fossil fuels, deforestation, and other  |
 | possible | possible rn/m confusion | `concerned` | Vol 14 · PDF p.14 | exaggerated. Henderson and Castles were concerned that this would lead to an over-estima |
 | possible | case break inside a word | `kWh` | Vol 16 · PDF p.10 | t the consumption of coal was 10-25 lbs/kWh in 1891, 5 lbs/kWh in the first decade  |
-| possible | possible rn/m confusion | `Thornton` | Vol 10 · PDF p.13 | rier zones of southern Africa (see Thornton et al).61 • Between 250–550 million  |
+| possible | possible rn/m confusion | `Thornton` | Vol 10 · PDF p.13 | the drier zones of southern Africa (see Thornton et al).61 • Between 250–550 million |
 | possible | possible rn/m confusion | `governance` | Vol 10 · PDF p.8 | services: Inadequate resources and poor governance (including corruption) often result in  |
 | possible | possible rn/m confusion | `Turner` | Vol 2 · PDF p.3 | e, Vincent de Rivaz, James Smith, Adair Turner, and the Corporate Leaders Group. Also |
 | possible | possible rn/m confusion | `concerns` | Vol 12 · PDF p.22 | zard a guess. The second type of issue concerns the fact that we are unsure of which pr |
