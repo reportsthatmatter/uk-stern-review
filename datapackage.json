@@ -393,6 +393,52 @@
       ]
     },
     {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 11, Structural change and competitiveness, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-11.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 411830,
+      "hash": "sha256:d722c35dc7c0e8f4722c7c10b71ac455631e26babc2113fb65ca6cf631f7410b",
+      "description": "Replaces the original of 26 October 2006 (media/8A7/9E/Chapter_11_-_Consequences_of_transition_and_competitiveness.pdf), with some sentences reworded. The reissue prints its pages 1-16, where the table of contents sets the chapter at pp.253-268.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_11_Structural_Change_and_Competitiveness.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104733id_/http://www.hm-treasury.gov.uk/d/Chapter_11_Structural_Change_and_Competitiveness.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 12, Opportunities and wider benefits from climate policies, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-12.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 382056,
+      "hash": "sha256:fb5c2a2b3358908ddc99b6c720cde13639983721074a56f7d10e70b3f5e67b21",
+      "description": "Replaces the original of 27 October 2006 (media/8A7/A6/Chapter_12_Opportunities_and_co-benefits_of_mitigation.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_12_Opportunities_and_Wider_Benefits_from_Climate_Policies.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104800id_/http://www.hm-treasury.gov.uk/d/Chapter_12_Opportunities_and_Wider_Benefits_from_Climate_Policies.pdf"
+        }
+      ]
+    },
+    {
       "title": "Stern Review: The Economics of Climate Change, Chapter 13, Towards a goal for climate-change policy, HM Treasury reissue of 8 January 2007",
       "path": "archive/stern-review-chapter-13.pdf",
       "format": "pdf",
@@ -412,6 +458,121 @@
         {
           "title": "Wayback Machine capture (the copy archived here)",
           "web": "https://web.archive.org/web/20081023104745id_/http://www.hm-treasury.gov.uk/d/Chapter_13_Towards_a_Goal_for_Climate-Change_Policy.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part IV introduction, 27 October 2006 (one version only)",
+      "path": "archive/stern-review-part-4-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 56112,
+      "hash": "sha256:ca8de6a12458f21d2b9ffbf9633bd1e41bf96a048345b97813267a235869c891",
+      "description": "One digest in every capture, 2006-2008 (also at media/F/D/). HM Treasury's /d/ listing carries only Part_IV_Introduction_group.pdf, a 95-page bundle of the introduction and Chapters 14-17.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/media/8A7/F4/Part_IV_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20061209034439id_/http://www.hm-treasury.gov.uk/media/8A7/F4/Part_IV_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 14, Harnessing markets for mitigation – the role of taxation and trading, 26 October 2006 (never replaced)",
+      "path": "archive/stern-review-chapter-14.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 196787,
+      "hash": "sha256:55595fac26166007222b51cd37243bbad88f0d793e1e7537bec2d5d168989ce2",
+      "description": "The same file (one digest) as the original at media/8A7/FB/Chapter14_Harnessing_markets.pdf.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter14_Harnessing_markets.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104536id_/http://www.hm-treasury.gov.uk/d/Chapter14_Harnessing_markets.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 15, Carbon pricing and emissions markets in practice, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-15.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 550403,
+      "hash": "sha256:f7c8dffd7a8fd281cd542b50b0c10804cffc053e87fbf282e918c7840db47cab",
+      "description": "The only version found in the Wayback Machine.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_15_Carbon_Pricing_and_Emissions_Markets_in_Practice.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104742id_/http://www.hm-treasury.gov.uk/d/Chapter_15_Carbon_Pricing_and_Emissions_Markets_in_Practice.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 16, Accelerating technological innovation, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-16.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 303058,
+      "hash": "sha256:d77a199021064420b8e7b4f74e0359dcd282f84dc4bbbc9ab472490a2faf5537",
+      "description": "The only version found in the Wayback Machine.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_16_Accelerating_Technological_Innovation.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104456id_/http://www.hm-treasury.gov.uk/d/Chapter_16_Accelerating_Technological_Innovation.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 17, Beyond carbon markets and technology, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-17.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 660567,
+      "hash": "sha256:dcefebeb2c9f391434e7873642662921efbdd24315c0e26781d0cf26a615a2cf",
+      "description": "Replaces the original of 26 October 2006 (media/8A8/16/Chapter_17_Beyond_cabron_markets.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_17_Beyond_Carbon_Markets_and_Technology.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104506id_/http://www.hm-treasury.gov.uk/d/Chapter_17_Beyond_Carbon_Markets_and_Technology.pdf"
         }
       ]
     }

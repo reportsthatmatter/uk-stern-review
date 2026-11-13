@@ -1,8 +1,8 @@
 # Fidelity review — Stern Review: The Economics of Climate Change
 
-Pages: 299  ·  Footnotes: 553  ·  Auto-fixes applied: 20  ·  Human corrections: 47
+Pages: 425  ·  Footnotes: 857  ·  Auto-fixes applied: 24  ·  Human corrections: 71
 
-**73 open**, 17 reviewed and judged correct.
+**104 open**, 17 reviewed and judged correct.
 
 OCR suspects below are a **review queue, not errors**. Whether the text is
 faithful to the scan is a human judgement; these are the places most likely
@@ -16,13 +16,15 @@ file under `dismissed:` and the entry leaves this queue for good.
 
 | Confidence | Pattern | Text | Where | Context |
 | --- | --- | --- | --- | --- |
-| likely | digit inside a word | `tCO2e` | Vol 16 · PDF p.5 | their cost per unit of GHG reduction ($/tCO2e), both at present and through time. In  |
 | likely | digit inside a word | `5th` | Vol 12 · PDF p.13 | f estimates in each year taken from the 5th and 95th percentile damage estimates ov |
+| likely | digit inside a word | `tCO2e` | Vol 16 · PDF p.5 | their cost per unit of GHG reduction ($/tCO2e), both at present and through time. In  |
 | likely | known OCR artefact | `THC` | Vol 6 · PDF p.14 | orth Atlantic Thermohaline Circulation (THC). In the North Atlantic, the Gulf Strea |
 | likely | digit inside a word | `5m` | Vol 6 · PDF p.15 | lly et al. (2006) 65 Based on 7m and 5m from the Greenland and West Antarctic i |
 | likely | known OCR artefact | `arid` | Vol 10 · PDF p.13 |  by climate change, including the mixed arid-semiarid systems in the Sahel, arid-sem |
 | likely | digit inside a word | `5ppm` | Vol 6 · PDF p.11 | ample, 45 years at 2.5 ppm/yr gives 112.5ppm. Added to the current level, this gives |
+| likely | digit inside a word | `2nd` | Vol 7 · PDF p.17 |  ‘Individual Values and Social Choice’, 2nd edition, New York: Wiley. Beckerman, W |
 | likely | digit inside a word | `7A` | Vol 14 · PDF p.23 | : The Economics of Stabilisation Annex 7A Climate Change and the Environmental Ku |
+| likely | digit inside a word | `MtCO2e` | Vol 19 · PDF p.7 | elated emissions amounted to nearly 300 MtCO2e of GHG, including 43 MtCO2e from the 15 |
 | likely | digit inside a word | `C4MIP` | Vol 6 · PDF p.18 | n cycle feedback analysis: results from C4MIP model intercomparison', Journal of Clim |
 | likely | digit inside a word | `5a` | Vol 12 · PDF p.13 | changes to the climate system (Figure 6.5a). In this scenario, the mean loss in gl |
 | likely | digit inside a word | `5b` | Vol 12 · PDF p.14 | ge on Growth and Development Figures 6.5b to d demonstrate the loss in global GDP |
@@ -32,13 +34,14 @@ file under `dismissed:` and the entry leaves this queue for good.
 | likely | digit inside a word | `3ppm` | Vol 14 · PDF p.8 | rrently at around 430ppm CO2e, adding 2-3ppm a year. Emissions are rising. But suppo |
 | likely | digit inside a word | `1kg` | Vol 15 · PDF p.6 | warming affect (radiative forcing) from 1kg of a greenhouse gas to 1kg of carbon di |
 | likely | digit inside a word | `E3MG` | Vol 17 · PDF p.3 | exhausted. At the opposite extreme, the E3MG global econometric model assumes market |
+| likely | digit inside a word | `E4tech` | Vol 24 · PDF p.11 |  efficiency in more detail. 27 E4tech, (2006)  |
+| likely | digit inside a word | `5bn` | Vol 24 · PDF p.26 | ies fell in recent times from around $8.5bn at the end of the 1980s to around $4.5b |
 | likely | digit inside a word | `2ppm` | Vol 4 · PDF p.2 | 2e today, and it is rising at more than 2ppm each year. Stabilisation in this range  |
 | likely | digit inside a word | `7m` | Vol 6 · PDF p.15 |  Zwally et al. (2006) 65 Based on 7m and 5m from the Greenland and West Anta |
 | likely | digit inside a word | `3m` | Vol 6 · PDF p.15 | ontribution to sea level rise of 1m and 3m over 1000 years (1mm/yr and 3mm/yr), re |
 | likely | digit inside a word | `1mm` | Vol 6 · PDF p.15 | evel rise of 1m and 3m over 1000 years (1mm/yr and 3mm/yr), respectively. Possible  |
 | likely | digit inside a word | `3mm` | Vol 6 · PDF p.15 | f 1m and 3m over 1000 years (1mm/yr and 3mm/yr), respectively. Possible contributio |
 | likely | digit inside a word | `5mm` | Vol 6 · PDF p.15 |  possible on a thousand-year timescale (5mm/yr), but that this contribution is unli |
-| likely | digit inside a word | `2nd` | Vol 7 · PDF p.17 |  ‘Individual Values and Social Choice’, 2nd edition, New York: Wiley. Beckerman, W |
 | likely | digit inside a word | `4th` | Vol 7 · PDF p.18 | C. (1932): 'The Economics of Welfare', (4th ed), London: Macmillan. Ramsey, F.P. ( |
 | likely | digit inside a word | `3anwaral` | Vol 9 · PDF p.30 | e from http://www.survas.mdx.ac.uk/pdfs/3anwaral.pdf Anthoff, D., R. Nicholls, R.S.J. T |
 | likely | digit inside a word | `4a` | Vol 11 · PDF p.10 | on-flooded areas (15%) (Box 5.4a). More than half the people in flooded  |
@@ -56,23 +59,42 @@ file under `dismissed:` and the entry leaves this queue for good.
 | likely | digit inside a word | `5toe` | Vol 17 · PDF p.8 | n very energy- and carbon-intensive (12.5toe/$GDP and 840tc/$GDP respectively for Uz |
 | likely | digit inside a word | `1ppt` | Vol 17 · PDF p.8 | the potential to reduce OECD costs by 0.1ppt to 0.9ppt by as early as 2010. 12 Fo |
 | likely | digit inside a word | `9ppt` | Vol 17 · PDF p.8 | ial to reduce OECD costs by 0.1ppt to 0.9ppt by as early as 2010. 12 For example, |
-| possible | possible rn/m confusion | `sternreview` | Vol 2 · PDF p.2 | work and links to the papers are at www.sternreview.org.uk Acknowledgements The team was  |
-| possible | possible rn/m confusion | `externalities` | Vol 3 · PDF p.2 | that together distinguish it from other externalities. It is global in its causes and consequ |
+| likely | digit inside a word | `6KEN` | Vol 18 · PDF p.11 |  -0.6KEN GRC  |
+| likely | digit inside a word | `8bn` | Vol 19 · PDF p.3 | ly with the EU ETS accounting for over $8bn of this11. Expansions of the EU ETS to  |
+| likely | digit inside a word | `4MtC` | Vol 19 · PDF p.5 |  the organisation contributed a further 4MtC of emission reductions through ene |
+| likely | digit inside a word | `5FB` | Vol 19 · PDF p.14 |  http://www.hm- treasury.gov.uk/media/5FB/FE/Climate_Change_CASS_final_report.pdf |
+| likely | digit inside a word | `4billion` | Vol 24 · PDF p.21 | g existing nuclear energy and around $6.4billion 64 is spent each year supporting biofue |
+| likely | digit inside a word | `2Epdf` | Vol 24 · PDF p.28 | 26%20Innovation%20Polici es%20%28pdf%29%2Epdf Amin, A-L. (2000): 'The power of netwo |
+| likely | digit inside a word | `F7E` | Vol 25 · PDF p.5 | ce http://www.hm- treasury.gov.uk/media/F7E/46/climatechange-fisk_1.pdf 13 This  |
+| likely | digit inside a word | `3A` | Vol 25 · PDF p.6 | ook/9703011E.PDF#search=%22OECD%20study%3A%20Environmentally%20Sustainable%20Build |
+| likely | digit inside a word | `2B` | Vol 25 · PDF p.8 | Report/7154.pdf#search=%22greenpeace%20%2B%20micro generation%22 33 Unlocking  |
+| likely | digit inside a word | `1st` | Vol 25 · PDF p.11 |  2003 1st 3 months  |
+| likely | digit inside a word | `1million` | Vol 25 · PDF p.19 | data collection costs of approximately $1million to support revision of performance stan |
 | possible | possible rn/m confusion | `California` | Vol 4 · PDF p.3 | ions are taking action already: the EU, California and China are among those with the most |
-| possible | possible rn/m confusion | `burning` | Vol 6 · PDF p.2 | gure 1.1), predominantly as a result of burning fossil fuels, deforestation, and other  |
-| possible | possible rn/m confusion | `concerned` | Vol 14 · PDF p.14 | exaggerated. Henderson and Castles were concerned that this would lead to an over-estima |
+| possible | possible rn/m confusion | `externalities` | Vol 3 · PDF p.2 | that together distinguish it from other externalities. It is global in its causes and consequ |
+| possible | possible rn/m confusion | `sternreview` | Vol 2 · PDF p.2 | work and links to the papers are at www.sternreview.org.uk Acknowledgements The team was  |
 | possible | case break inside a word | `kWh` | Vol 16 · PDF p.10 | t the consumption of coal was 10-25 lbs/kWh in 1891, 5 lbs/kWh in the first decade  |
-| possible | possible rn/m confusion | `Thornton` | Vol 10 · PDF p.13 | the drier zones of southern Africa (see Thornton et al).61 • Between 250–550 million |
-| possible | possible rn/m confusion | `governance` | Vol 10 · PDF p.8 | services: Inadequate resources and poor governance (including corruption) often result in  |
-| possible | possible rn/m confusion | `Turner` | Vol 2 · PDF p.3 | e, Vincent de Rivaz, James Smith, Adair Turner, and the Corporate Leaders Group. Also |
 | possible | possible rn/m confusion | `concerns` | Vol 12 · PDF p.22 | zard a guess. The second type of issue concerns the fact that we are unsure of which pr |
+| possible | possible rn/m confusion | `concerned` | Vol 14 · PDF p.14 | exaggerated. Henderson and Castles were concerned that this would lead to an over-estima |
+| possible | possible rn/m confusion | `burning` | Vol 6 · PDF p.2 | gure 1.1), predominantly as a result of burning fossil fuels, deforestation, and other  |
+| possible | possible rn/m confusion | `Alternatively` | Vol 10 · PDF p.11 |  example, for secondary education.48,49 Alternatively, to try and avoid permanent destitution |
+| possible | possible rn/m confusion | `governance` | Vol 10 · PDF p.8 | services: Inadequate resources and poor governance (including corruption) often result in  |
+| possible | possible rn/m confusion | `Thornton` | Vol 10 · PDF p.13 | the drier zones of southern Africa (see Thornton et al).61 • Between 250–550 million |
+| possible | possible rn/m confusion | `turnover` | Vol 24 · PDF p.6 |  R&D intensity (R&D as a share of total turnover) of the power sector was 0.5% compared  |
+| possible | possible rn/m confusion | `Turner` | Vol 2 · PDF p.3 | e, Vincent de Rivaz, James Smith, Adair Turner, and the Corporate Leaders Group. Also |
+| possible | possible rn/m confusion | `Learning` | Vol 16 · PDF p.15 |  as measured by cumulative investment. ‘Learning’ is of course an important contributor  |
+| possible | possible rn/m confusion | `Governor` | Vol 23 · PDF p.6 | details. 22 See announcements by the Governor of the State of Calitornia, www.climate |
+| possible | possible rn/m confusion | `internalise` | Vol 23 · PDF p.12 | , but the extent to which firms have to internalise these costs and therefore suffer reduce |
 | possible | possible rn/m confusion | `Patterns` | Vol 6 · PDF p.7 |  Changing Patterns of human  |
 | possible | possible rn/m confusion | `undernourishment` | Vol 9 · PDF p.17 | inimum maintenance requirement to avoid undernourishment). 42 Links between changes in income |
 | possible | possible rn/m confusion | `earnings` | Vol 10 · PDF p.4 | lic derives more than 50% of its export earnings from cotton alone (1997/99). Commission |
 | possible | possible rn/m confusion | `warning` | Vol 10 · PDF p.8 | oor provision of public services. Early warning systems for extreme weather conditions, |
-| possible | possible rn/m confusion | `Alternatively` | Vol 10 · PDF p.11 |  example, for secondary education.48,49 Alternatively, to try and avoid permanent destitution |
 | possible | possible rn/m confusion | `fairness` | Vol 10 · PDF p.30 | ): 'paying for health care: quantifying fairness, catastrophe, and impoverishment with a |
 | possible | possible rn/m confusion | `Melbourne` | Vol 11 · PDF p.8 | big cities will become more difficult – Melbourne’s could fall by 7 – 35% with only 2° |
+| possible | possible rn/m confusion | `journey` | Vol 16 · PDF p.9 | uction in GHG emissions and also reduce journey time for motorists and bus users). But  |
+| possible | possible rn/m confusion | `Harnessing` | Vol 22 · PDF p.1 | IV: Policy Responses for Mitigation 14 Harnessing Markets for Mitigation – the role of ta |
+| possible | possible rn/m confusion | `turns` | Vol 22 · PDF p.5 | Responses for Mitigation tax rate than turns out to have been warranted is given by  |
+| possible | possible rn/m confusion | `Californian` | Vol 25 · PDF p.12 | omers able to reduce peak level demand, Californian utilities recovered over 90% o |
 | possible | possible rn/m confusion | `Vernon` | Vol 2 · PDF p.2 | h, Michelle Stock, Chris Taylor, Tamsin Vernon, Hannah Wanjie, and Dimitri Zenghelis.  |
 | possible | possible rn/m confusion | `Cairncross` | Vol 2 · PDF p.3 | uttes, Richard Boyd, Alan Budd, Frances Cairncross, Daniel Cullenward, Larry Dale, Victor  |
 | possible | possible rn/m confusion | `overturning` | Vol 6 · PDF p.17 | 5): 'Slowing of the Atlantic meridional overturning circulation at 25°N', Nature 438: 655-6 |
@@ -86,6 +108,15 @@ file under `dismissed:` and the entry leaves this queue for good.
 | possible | possible rn/m confusion | `internally` | Vol 10 · PDF p.21 | flict across the developing world, both internally and cross-border. Long periods of droug |
 | possible | possible rn/m confusion | `Cairns` | Vol 11 · PDF p.12 | Australia’s East Coast from Victoria to Cairns could rise by 25 – 30% with only a 2°C  |
 | possible | possible rn/m confusion | `corner` | Vol 12 · PDF p.8 | because the impacts in the bottom right corner of the matrix are surrounded by the gre |
-| possible | possible rn/m confusion | `journey` | Vol 16 · PDF p.9 | uction in GHG emissions and also reduce journey time for motorists and bus users). But  |
-| possible | possible rn/m confusion | `Learning` | Vol 16 · PDF p.15 |  as measured by cumulative investment. ‘Learning’ is of course an important contributor  |
 | possible | possible rn/m confusion | `burnt` | Vol 16 · PDF p.18 | hotosynthesis process; when the crop is burnt, the carbon is released again. Biomass  |
+| possible | possible rn/m confusion | `alternatively` | Vol 18 · PDF p.5 |  £260/tC ($132/tCO2) carbon price6. Or, alternatively, a £70/tC ($30/tCO2) carbon resource co |
+| possible | possible rn/m confusion | `mitpressjournals` | Vol 18 · PDF p.12 | (3): 498-510, available from http://www.mitpressjournals.org/doi/abs/10.1162/00346530152480144  |
+| possible | possible rn/m confusion | `internalising` | Vol 18 · PDF p.14 | ry of domestic policy measures aimed at internalising cross-border spillovers adversely affec |
+| possible | possible rn/m confusion | `Furniture` | Vol 18 · PDF p.15 |  65.78 32.83 0.23 Furniture  |
+| possible | possible rn/m confusion | `externalities1` | Vol 22 · PDF p.2 | imate change. In the standard theory of externalities1, there are four ways in which negative  |
+| possible | possible rn/m confusion | `intergovernmental` | Vol 22 · PDF p.3 | change. The Kyoto Protocol established intergovernmental emissions trading for those countries t |
+| possible | possible rn/m confusion | `governing` | Vol 22 · PDF p.9 | It also means announcing the principles governing changes in the policy instrument in adv |
+| possible | possible rn/m confusion | `Calitornia` | Vol 23 · PDF p.6 | cements by the Governor of the State of Calitornia, www.climatechange.ca.gov 23 See But |
+| possible | possible rn/m confusion | `Internationally` | Vol 23 · PDF p.18 | e of carbon pricing instrument complex. Internationally coordinated taxes are difficult to impl |
+| possible | possible rn/m confusion | `internet` | Vol 24 · PDF p.2 |  every other branch of the economy, the internet is an example. 1 DTI (2003) 2  |
+| possible | possible rn/m confusion | `ornl` | Vol 24 · PDF p.30 | , available from http://feedstockreview.ornl.gov/pdf/billion_ton_vision.pdf  |

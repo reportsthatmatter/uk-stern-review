@@ -44,8 +44,22 @@ const VOLUMES = [
   { path: "archive/stern-review-chapter-09.pdf", sha256: "d4a55e6b0ae41c7d63e99f08f57ecb0274d56573df475f408e41d1914ec8119b" },
   // Chapter 10, Macroeconomic models of costs, 14 pp, 239-252. Reissue of 8 January 2007.
   { path: "archive/stern-review-chapter-10.pdf", sha256: "ca5aa33b1fde330f2dc907425e641db0c9cceb2e7d485e969c9c816e58fe2415" },
+  // Chapter 11, Structural change and competitiveness, 16 pp, 253-268 (printed 1-16). Reissue of 8 January 2007.
+  { path: "archive/stern-review-chapter-11.pdf", sha256: "d722c35dc7c0e8f4722c7c10b71ac455631e26babc2113fb65ca6cf631f7410b" },
+  // Chapter 12, Opportunities and wider benefits from climate policies, 15 pp, 269-283. Reissue of 8 January 2007.
+  { path: "archive/stern-review-chapter-12.pdf", sha256: "fb5c2a2b3358908ddc99b6c720cde13639983721074a56f7d10e70b3f5e67b21" },
   // Chapter 13, Towards a goal for climate-change policy, 25 pp, 284-308. Reissue of 8 January 2007.
   { path: "archive/stern-review-chapter-13.pdf", sha256: "c643dd510e52d2db2e2db679799b0ae588dfc67241278b8c18fb279578fbec07" },
+  // Part IV introduction, 1 p, 308. 27 October 2006 (one version only; /d/ holds only a 95-page bundle of the Part).
+  { path: "archive/stern-review-part-4-introduction.pdf", sha256: "ca8de6a12458f21d2b9ffbf9633bd1e41bf96a048345b97813267a235869c891" },
+  // Chapter 14, Harnessing markets for mitigation, 15 pp, 309-323. 26 October 2006 (never replaced).
+  { path: "archive/stern-review-chapter-14.pdf", sha256: "55595fac26166007222b51cd37243bbad88f0d793e1e7537bec2d5d168989ce2" },
+  // Chapter 15, Carbon pricing and emissions markets in practice, 23 pp, 324-346. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-15.pdf", sha256: "f7c8dffd7a8fd281cd542b50b0c10804cffc053e87fbf282e918c7840db47cab" },
+  // Chapter 16, Accelerating technological innovation, 30 pp, 347-376. Reissue of 18 January 2007 (the only one archived).
+  { path: "archive/stern-review-chapter-16.pdf", sha256: "d77a199021064420b8e7b4f74e0359dcd282f84dc4bbbc9ab472490a2faf5537" },
+  // Chapter 17, Beyond carbon markets and technology, 26 pp, 377-402. Reissue of 18 January 2007.
+  { path: "archive/stern-review-chapter-17.pdf", sha256: "dcefebeb2c9f391434e7873642662921efbdd24315c0e26781d0cf26a615a2cf" },
 ];
 
 /** The 1-based volume index of a file in VOLUMES (what a pass sees as `at.volume`). */
@@ -375,7 +389,27 @@ const REGIONS: ReadonlyArray<Region> = [
   { file: "stern-review-chapter-03.pdf", pdfIndex: 16, after: /consequences for food production\. The combined effect of several factors could be very damaging\.\s*$/, before: /^\s{20,}71\s*$/ },
   { file: "stern-review-chapter-05.pdf", pdfIndex: 3, after: /environmental quality available in that year\.\s*$/, before: /^\s*Where Y is the output of the economy/, insert: ["Y (t) = F(K,L,E)"] },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 11, after: /such high rates of temperature change\.\s*$/, before: /^\s*Source: redrawn from O.Neill and Oppenheimer/ },
-  { file: "stern-review-chapter-08.pdf", pdfIndex: 13, after: /capital stock\. Examples are given below\.\s*$/, before: /^\s*Source: World Business Council/ },
+  { file: "stern-review-chapter-08.pdf", pdfIndex: 13, after: /capital stock\. Examples are given below\.\s*$/, before: /^\s*Source: World Business Council/ },  // Batch 2b (Chapters 11-12, Part IV): charts set in boxes, or whose source is cited in a note, which
+  // `figureRegions` cannot find: Box 11.1's Figures A and B (p.255, two titles set side by side, set back one after
+  // the other), Box 11.2's oil-price chart (p.258), Box 14.2's diagram (p.316), the EU allowance price chart in
+  // Chapter 15 (p.328) and Figures 16.3, 16.5, 16.6 and 16.8 (pp.353-372).
+  {
+    file: "stern-review-chapter-11.pdf",
+    pdfIndex: 3,
+    from: /^\s*Figure A Share of oil & gas and coal\s+Figure B Product price increases from\s*$/,
+    before: /^\s*The largest users of petroleum-products include agriculture/,
+    insert: ["Figure A Share of oil & gas and coal extraction in variable costs, percent", "Figure B Product price increases from £70/tC pricing (full pass-through), percent"],
+  },
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 6, after: /^\s*The recent rise in the Brent spot price, US \$ per barrel \(2003 prices\)\s*$/, before: /^\s*Source: Ecowin, Stern/ },
+  { file: "stern-review-chapter-14.pdf", pdfIndex: 8, after: /^\s*Box 14\.2: The social cost of carbon and the carbon price\s*$/, before: /^\s*Up to the long-term stabilisation goal, the social cost of carbon will rise/ },
+  { file: "stern-review-chapter-15.pdf", pdfIndex: 5, from: /^\s*The market for EU allowances \(EUAs\) –prices and volumes/, before: /^\s*Source: Data taken from Point Carbon/, insert: ["The market for EU allowances (EUAs) –prices and volumes"] },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 7, after: /^\s*Figure 16\.3\s+Public energy R&D investments as a share of GDP/, before: /^\s*Figure 16\.4\s+Public R&D and public energy R&D investments/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 8, after: /^\s*Figure 16\.5\s+Trends in private sector energy R&D/, before: /^\s*The sector.s characteristics explain the low levels of R&D\s*$/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 13, after: /^\s*Figure 16\.6\s+Interaction between carbon pricing and deployment support/, before: /^\s*This diagram summarises the links between two of the elements of climate policy/ },
+  // Annex table 11A.1's second page (p.268), whose rows are set in the body's face: from the page head to the
+  // table's note on trade intensity, which stays.
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 16, after: /^\s*Part III: The Economics of Stabilisation\s*$/, before: /^\s*\*Trade intensity defined as total and non-EU exports/ },
+  { file: "stern-review-chapter-16.pdf", pdfIndex: 26, after: /^\s*Figure 16\.8\s+Public energy R&D in IEA countries/, before: /^\s*The directions of the effort should also change\./ },
 ];
 const bodyFaceFigures: SourcePass = {
   name: "bodyFaceFigures",
@@ -417,7 +451,10 @@ const REGION_VOLUMES = new Set([...CHAPTERS].filter((v) => !BATCH_ONE.has(v)));
 const REGION_TITLE = /^\s*(?:Figure|Table)\s+\d{1,2}[A-Z]?\.\d{1,2}[a-z]?\s+(?:[A-Z‘’'“"(]|\d)/;
 const ANY_TITLE = /^\s*(?:Figure|Table|Box)\s+\d{1,2}[A-Z]?\.\d{1,2}[a-z]?\s+(?:[A-Z‘’'“"(]|\d)/;
 const REGION_END = /^\s*(?:Sources?|Notes?)\s*:/;
-const SECTION_LINE = /^\s*\d{1,2}\.\d{1,2}\s{2,}\S/;
+// A numbered section line ends a region: set with a tab ("7.4   Emissions ...") or, in Part IV, a single space
+// ("16.9 Conclusions", p.372, under Figure 16.8, whose source is cited in a note: read to that note's "Source:",
+// the region took the heading).
+const SECTION_LINE = /^\s*\d{1,2}\.\d{1,2}(?:\s{2,}\S|\s[A-Z])/;
 const prose = (block: string[]): boolean => {
   const text = block.map((l) => l.trim());
   if (text.some((t) => /\S\s{3,}\S/.test(t))) return false;
@@ -434,13 +471,18 @@ const figureRegions: SourcePass = {
     for (let start = 0; start < out.length; start++) {
       if (!REGION_TITLE.test(out[start])) continue;
       let end = -1;
+      // Where the "Source:" found is a footnote's (Chapter 16 p.354: Figure 16.3 cites its source in note 18, whose
+      // text opens "Source: IEA R&D database"), the region ends where the notes begin, a note number alone at the
+      // margin over its indented text, so the note keeps its number; the chart's lines above still go.
+      let notes = -1;
       for (let i = start + 1; i < out.length; i++) {
-        if (REGION_END.test(out[i])) { end = i; break; }
+        if (REGION_END.test(out[i])) { end = notes >= 0 ? notes : i; break; }
         if (ANY_TITLE.test(out[i]) || SECTION_LINE.test(out[i])) break;
+        if (notes < 0 && /^\d{1,3}\s*$/.test(out[i]) && /^\s+\S/.test(out[i + 1] ?? "")) notes = i;
       }
       if (end < 0) continue;
       out[start] = out[start].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
-      out[end] = out[end].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
+      if (end !== notes) out[end] = out[end].replace(/(\S)\s{3,}(?=\S)/g, "$1 ");
       // A title wrapped onto a second line, set directly under it as one run of words, is the title's.
       let i = start + 1;
       if (out[i]?.trim() && !/\S\s{3,}\S/.test(out[i].trim()) && out[i].trim().length < 70) i++;
@@ -468,7 +510,9 @@ const figureRegions: SourcePass = {
  * as a paragraph. A heading line followed directly by a short line set in to its text's column is one heading:
  * the second line is set on the first. The second batch's chapters only.
  */
-const SECTION_HEAD = /^(\s*)(\d{1,2}\.\d{1,2})(\s{2,})(\S.*)$/;
+// Part IV's text reading sets one space after the number ("14.9 The performance of taxation and trading against
+// principles of efficiency, equity" over "and public finance considerations", p.320), the earlier chapters a tab.
+const SECTION_HEAD = /^(\s*)(\d{1,2}\.\d{1,2})(\s{2,}|\s(?=[A-Z]))(\S.*)$/;
 const wrappedHeadings: SourcePass = {
   name: "wrappedHeadings",
   stage: "source",
@@ -530,10 +574,12 @@ const partTitles: SourcePass = {
 // will rise. • Changes in the distribution of heat ..."). Chapter 3's and 5's Key Messages (pp.56, 1), Box 4.6
 // (p.113) and Box 5.2 (pp.7-8) are set the same way, but joined here their lines no longer matched the layout's,
 // and `chartsAndTables` laid the page out again in one paragraph: they are left as they read (PROCESSING.md).
+// Batch 2b: Chapter 12 p.278 (subsidies), Chapter 16's Key Messages (p.347), Box 16.1 (p.357) and p.363 (university
+// funding), Chapter 17 p.381 (regulatory measures).
 const MARGIN_BULLET_PAGES = new Set([
   `${vol("stern-review-chapter-06.pdf")}:1`,
   ...[
-    ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15],
+    ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15], ["16", 11], ["12", 10], ["16", 1], ["16", 17], ["17", 5],
   ].map(([n, p]) => `${vol(`stern-review-chapter-${n}.pdf`)}:${p}`),
 ]);
 const MARGIN_BULLET = /^ ?•(\s+)\S/;
@@ -575,7 +621,9 @@ const marginBullets: SourcePass = {
  * a paragraph of their own (the list item above is not rejoined), so that page is left as it reads.
  */
 // Also Chapter 5 p.124: the Australia item's "...predicted to drop by" over "15% for a 1 – 2°C rise in temperature."
-const CARRIED_ITEM_PAGES = new Set([`${vol("stern-review-chapter-10.pdf")}:8`, `${vol("stern-review-chapter-05.pdf")}:3`]);
+// And Chapter 17 p.395: the item on co-operative structures, "...see Box 17.4 for an outline of Energy" over "Star
+// and Chapter 24 ...", which stood as two paragraphs.
+const CARRIED_ITEM_PAGES = new Set([`${vol("stern-review-chapter-10.pdf")}:8`, `${vol("stern-review-chapter-05.pdf")}:3`, `${vol("stern-review-chapter-17.pdf")}:19`]);
 const carriedItems: SourcePass = {
   name: "carriedItems",
   stage: "source",
@@ -593,19 +641,29 @@ const carriedItems: SourcePass = {
 };
 
 /**
- * Chapter 9's note 17 runs over from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone
- * above note 18 and were read as a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the
- * foot of the body but in the notes' block). The line is taken off p.218 here, and corrections.yaml (c-0005) sets
- * the words back at the end of note 17, where the page prints them.
+ * Notes whose last words run over to the next page and were read as body text there. Chapter 9's note 17 runs over
+ * from p.217 to p.218, where its last words, "energy-efficiency measures.", sit alone above note 18 and were read as
+ * a paragraph of the body (`noteFaceRunOver` does not take them: they are not at the foot of the body but in the
+ * notes' block). Chapter 11's note 5 (p.255) runs over to the foot of p.256 in five lines ("rough magnitude of this
+ * higher order indirect impact. ..."), with no number, after the body. The lines are taken off the page here, and
+ * corrections.yaml (c-0005, c-0050) sets the words back at the end of their note, where the pages print them.
  */
+const NOTE_TAILS: ReadonlyArray<{ file: string; pdfIndex: number; first: RegExp; last: RegExp; next?: RegExp }> = [
+  { file: "stern-review-chapter-09.pdf", pdfIndex: 8, first: /^\s*energy-efficiency measures\.\s*$/, last: /^\s*energy-efficiency measures\.\s*$/, next: /^\s*18\s*$/ },
+  { file: "stern-review-chapter-11.pdf", pdfIndex: 4, first: /^\s*rough magnitude of this higher order indirect impact\. Because data disaggregated/, last: /^\s*here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief\.\s*$/ },
+];
 const noteTail: SourcePass = {
   name: "noteTail",
   stage: "source",
   run(lines, at) {
-    if (at.volume !== vol("stern-review-chapter-09.pdf") || at.pdfIndex !== 8) return lines;
-    const i = lines.findIndex((line) => /^\s*energy-efficiency measures\.\s*$/.test(line));
-    if (i < 0 || !/^\s*18\s*$/.test(lines[i + 1] ?? "")) throw new Error("noteTail: note 17's last line not found on Chapter 9 PDF p.8");
-    return [...lines.slice(0, i), ...lines.slice(i + 1)];
+    let out = lines;
+    for (const t of NOTE_TAILS.filter((x) => vol(x.file) === at.volume && x.pdfIndex === at.pdfIndex)) {
+      const i = out.findIndex((line) => t.first.test(line));
+      const j = out.findIndex((line, k) => k >= i && t.last.test(line));
+      if (i < 0 || j < 0 || j - i > 6 || (t.next && !t.next.test(out[j + 1] ?? ""))) throw new Error(`noteTail: a note's last lines not found on ${t.file} PDF p.${t.pdfIndex}`);
+      out = [...out.slice(0, i), ...out.slice(j + 1)];
+    }
+    return out;
   },
 };
 
@@ -755,6 +813,9 @@ const chapterHeadingFaces: BodyPass = {
         Object.assign(head, { text: `${head.text.trimEnd()} ${next.text.trim()}` });
         page.splice(page.indexOf(next), 1);
       }
+    // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
+    // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
+    for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
     const navy = page.filter((line) => NAVY.has(line.font) && !/^STERN REVIEW:|^\d+$/.test(line.text.trim()));
     const numbered = navy.filter((line) => faceOf(line.text.trim()));
     for (const line of navy) {
