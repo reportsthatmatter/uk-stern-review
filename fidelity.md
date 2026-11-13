@@ -1,6 +1,6 @@
 # Fidelity review — Stern Review: The Economics of Climate Change
 
-Pages: 597  ·  Footnotes: 1236  ·  Auto-fixes applied: 30  ·  Human corrections: 71
+Pages: 597  ·  Footnotes: 1236  ·  Auto-fixes applied: 30  ·  Human corrections: 96
 
 **141 open**, 17 reviewed and judged correct.
 

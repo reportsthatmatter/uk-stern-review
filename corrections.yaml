@@ -375,6 +375,132 @@ corrections:
     added: 2026-11-13
 
 # Suspects read against the page and judged right as served; they leave the review queue.
+  # Batch 3a (Parts V and VI): compounds and URLs hyphenated at a line end, each read off the page as one hyphenated word.
+  - id: c-0072
+    find: "to protect homes.[^14] Willingness- to-pay research suggests"
+    replace: "to protect homes.[^14] Willingness-to-pay research suggests"
+    reason: "Chapter 18: 'Willingness-' ends the line and 'to' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0073
+    find: "collaborating to promote good- practice in warning"
+    replace: "collaborating to promote good-practice in warning"
+    reason: "Chapter 19: 'good-' ends the line and 'practice' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0074
+    find: "an essential but non- substitutable resource, such"
+    replace: "an essential but non-substitutable resource, such"
+    reason: "Chapter 19: 'non-' ends the line and 'substitutable' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0075
+    find: "Office, available from http://www.nao.org.uk/pn/03- 04/0304161.htm"
+    replace: "Office, available from http://www.nao.org.uk/pn/03-04/0304161.htm"
+    reason: "Chapter 19: '03-' ends the line and '04' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0076
+    find: "Foundation, available from http://www.rics.org/NR/rdonlyres/DFDBBBEB-7F01-42FA-B338- 2860945C4DAE/0/Effect_of_flooding_report.pdf"
+    replace: "Foundation, available from http://www.rics.org/NR/rdonlyres/DFDBBBEB-7F01-42FA-B338-2860945C4DAE/0/Effect_of_flooding_report.pdf"
+    reason: "Chapter 19: 'B338-' ends the line and '2860945C4DAE' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0077
+    find: "and 53.2% in Sub- Saharan Africa, compared"
+    replace: "and 53.2% in Sub-Saharan Africa, compared"
+    reason: "Chapter 20: 'Sub-' ends the line and 'Saharan' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0078
+    find: "establishing groups of like- minded countries was"
+    replace: "establishing groups of like-minded countries was"
+    reason: "Chapter 21: 'like-' ends the line and 'minded' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0079
+    find: "others, politicians, scientists, Non- Governmental Organisations (NGOs),"
+    replace: "others, politicians, scientists, Non-Governmental Organisations (NGOs),"
+    reason: "Chapter 21: 'Non-' ends the line and 'Governmental' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0080
+    find: "policy and measures (SD- PAMs) has attracted"
+    replace: "policy and measures (SD-PAMs) has attracted"
+    reason: "Chapter 22: 'SD-' ends the line and 'PAM' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0081
+    find: "countries alike. An SD- PAM would be"
+    replace: "countries alike. An SD-PAM would be"
+    reason: "Chapter 22: 'SD-' ends the line and 'PAM' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0082
+    find: "(options include domestic, intra- EU, all flights"
+    replace: "(options include domestic, intra-EU, all flights"
+    reason: "Chapter 22: 'intra-' ends the line and 'EU' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0083
+    find: "approach to the post- 2012 climate change"
+    replace: "approach to the post-2012 climate change"
+    reason: "Chapter 22: 'post-' ends the line and '2012' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0084
+    find: "been sustainable and self- financing. An evaluation"
+    replace: "been sustainable and self-financing. An evaluation"
+    reason: "Chapter 23: 'self-' ends the line and 'financing' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0085
+    find: "and audits of energy- users to improve"
+    replace: "and audits of energy-users to improve"
+    reason: "Chapter 23: 'energy-' ends the line and 'users' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0086
+    find: "Bank, available from http://www- wds.worldbank.org/servlet/WDSContentServer/WDSP/IB/2000/06/17/000094946_000617060809 72/Rendered/PDF/multi_page.pdf"
+    replace: "Bank, available from http://www-wds.worldbank.org/servlet/WDSContentServer/WDSP/IB/2000/06/17/000094946_000617060809 72/Rendered/PDF/multi_page.pdf"
+    reason: "Chapter 23: 'www-' ends the line and 'wds' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0087
+    find: "(India), (in press): 'UK- India collaboration to"
+    replace: "(India), (in press): 'UK-India collaboration to"
+    reason: "Chapter 23: 'UK-' ends the line and 'India' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0088
+    find: "biofuels (and the flexi- automobile engines which"
+    replace: "biofuels (and the flexi-automobile engines which"
+    reason: "Chapter 24: 'flexi-' ends the line and 'automobile' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0089
+    find: "and in some non- OECD countries such"
+    replace: "and in some non-OECD countries such"
+    reason: "Chapter 24: 'non-' ends the line and 'OECD' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0090
+    find: "post-conflict situations (Emergency Post- Conflict Assistance, or"
+    replace: "post-conflict situations (Emergency Post-Conflict Assistance, or"
+    reason: "Chapter 26: 'Post-' ends the line and 'Conflict' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0091
+    find: "while low and medium- risk projects undergo"
+    replace: "while low and medium-risk projects undergo"
+    reason: "a note: 'medium-' ends the line and 'risk' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0092
+    find: "SD-PAMS is available on- line at www.wri.org."
+    replace: "SD-PAMS is available on-line at www.wri.org."
+    reason: "a note: 'on-' ends the line and 'line' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0093
+    find: "look at specific SD- PAMs in detail;"
+    replace: "look at specific SD-PAMs in detail;"
+    reason: "a note: 'SD-' ends the line and 'PAM' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0094
+    find: "Sharma (2005), at http://www.scidev.net/content/opinions/eng/trade-tactic-could-unlock-climate- negotiations.cfm."
+    replace: "Sharma (2005), at http://www.scidev.net/content/opinions/eng/trade-tactic-could-unlock-climate-negotiations.cfm."
+    reason: "a note: 'climate-' ends the line and 'negotiations' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0095
+    find: "the residential sector http://perso.club- internet.fr/sidler/index.html."
+    replace: "the residential sector http://perso.club-internet.fr/sidler/index.html."
+    reason: "a note: 'club-' ends the line and 'internet' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0096
+    find: "Decades of under- investment, however"
+    replace: "Decades of under-investment, however"
+    reason: "Chapter 12 (printed 275): 'under-' ends the line and 'investment' opens the next. Since Parts V and VI were added, the line-end hyphen reader sees 'underinvestment' (a note in Chapter 23) and joined it; the Review's running text spells it 'under-investment' (three times mid-line), as this paragraph was served before."
+    added: 2026-11-13
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
   - { match: "1m", reason: "PDF p.7: 'a 1m rise in sea levels' (one metre), as printed.", added: 2026-11-08 }
