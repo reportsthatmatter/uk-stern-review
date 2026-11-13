@@ -213,6 +213,9 @@ const lateMarkers: BodyPass = {
  * and note 5, as its text. A page whose lines are missing throws.
  */
 const RUN_ON_LINES: ReadonlyArray<{ file: string; pdfIndex: number; line: RegExp }> = [
+  // Chapter 26's References (p.569): Adger (2005)'s second line opens on an editor's initial, "F. Berkhout, M. Leach
+  // and I. Scoones (eds.)", which read as a lettered heading.
+  { file: "stern-review-chapter-26.pdf", pdfIndex: 16, line: /^\s*F\. Berkhout, M\. Leach and I\. Scoones \(eds\.\)/ },
   { file: "stern-review-chapter-08.pdf", pdfIndex: 5, line: /^9GtCO2 per year by around 2150 - 2300/ },
   // Box 8.3's items (p.204): each one's last line, opening on a capital or a number, stood as a paragraph.
   { file: "stern-review-chapter-08.pdf", pdfIndex: 12, line: /^\s+125% increase in electricity demand\. The reduction in total fossil fuel related emissions\s*$/ },
@@ -378,6 +381,23 @@ const ordinalNote: SourcePass = {
  */
 type Region = { file: string; pdfIndex: number; after?: RegExp; from?: RegExp; before: RegExp; insert?: string[] };
 const REGIONS: ReadonlyArray<Region> = [
+  // Batch 3a (Parts V and VI): Figures 21.1 and 21.2 (p.459), two charts with no source line, one under the other
+  // above the page's notes; the chart in Box 24.8 (p.530), titled in the body's face with no figure number.
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\.\s*$/, before: /^\s*Figure 21\.2\s/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 10, after: /^\s*by 2050\s*$/, before: /^\s*22\s*$/ },
+  // Table 18.1 (p.406) and Tables 21.1 (p.456) and the survey in Box 21.6 (p.465), with no source line; the three
+  // diagrams of Box 18.1 (p.408); the chart in Box 21.5 (p.461); the four charts of Chapter 22 (p.475), with no
+  // title; Table 24.1's second page (p.529), whose title and note stay on p.528.
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 3, after: /^\s*Table 18\.1 Examples of adaptation in practice/, before: /^\s*The distinction between short-run and long-run adaptation/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /types of inputs, capital K, variable inputs to production and environmental quality E\.\s*$/, before: /^\s*In the short run . and given a change in E/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /respond only by changing variable inputs \(shown as red in the diagram below\)\.\s*$/, before: /^\s*In contrast, in the long run/ },
+  { file: "stern-review-chapter-18.pdf", pdfIndex: 5, after: /variable inputs and the capital stock to maximise profits given a change\.\s*$/, before: /^\s{20,}408\s*$/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 7, after: /^\s*Table 21\.1 Goals on climate change and clean energy/, before: /^\s*The majority of the world.s largest economies now have goals/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 12, after: /employment and regional development\.\s*$/, before: /^\s*Shared notions of responsible and collaborative behaviour/ },
+  { file: "stern-review-chapter-21.pdf", pdfIndex: 16, after: /^\s*Global Warming Concerns\s*$/, before: /^\s*21\.5\s+Conclusions/ },
+  { file: "stern-review-chapter-22.pdf", pdfIndex: 8, after: /^\s*criterion\.\s*$/, before: /^\s*22\.4\s+Putting efficiency and equity together/ },
+  { file: "stern-review-chapter-24.pdf", pdfIndex: 14, from: /^\s*Imputed carbon price,\s*$/, before: /^\s*More formal co-ordination of deployment support/ },
+  { file: "stern-review-chapter-24.pdf", pdfIndex: 15, after: /^\s*Impact of carbon and energy prices on CCS deployment/, before: /^\s*Alternatively, international agreement could focus on a regulatory/ },
   { file: "stern-review-chapter-02.pdf", pdfIndex: 5, after: /^\s*Figure 2\.2 How the path for the social cost of carbon drives the extent of abatement\s*$/, before: /^\s*This illustrates how important it is that the dynamics/ },
   { file: "stern-review-chapter-02.pdf", pdfIndex: 13, after: /^\s*term\s*$/, before: /^\s*The issues are represented schematically in Figure 2\.4/ },
   { file: "stern-review-chapter-06.pdf", pdfIndex: 4, after: /human system, there will be feedbacks between many links in the chain\.\s*$/, before: /^\s*Source: Hope \(2005\)\.\s*$/ },
@@ -546,8 +566,16 @@ const wrappedHeadings: SourcePass = {
     if (!REGION_VOLUMES.has(at.volume)) return lines;
     const out: string[] = [];
     for (let i = 0; i < lines.length; i++) {
-      const m = SECTION_HEAD.exec(lines[i]);
       const next = lines[i + 1] ?? "";
+      // A chapter title set over two lines on the chapter's first page ("21 Framework for Understanding International
+      // Collective Action for Climate" over "Change", p.450; Chapter 27, p.572) is one heading.
+      const title = at.pdfIndex === 1 ? /^\s*(\d{1,2})\s+[A-Z]/.exec(lines[i]) : null;
+      if (title && VOLUMES[at.volume - 1].path.endsWith(`chapter-${title[1].padStart(2, "0")}.pdf`) && /^\s*[A-Z][a-z]+(?: [A-Za-z]+)?\s*$/.test(next) && !/^\s*Key Messages\s*$/.test(next)) {
+        out.push(`${lines[i].trimEnd()} ${next.trim()}`);
+        i++;
+        continue;
+      }
+      const m = SECTION_HEAD.exec(lines[i]);
       const column = m ? m[1].length + m[2].length + m[3].length : -1;
       const indent = next.length - next.trimStart().length;
       if (m && next.trim() && Math.abs(indent - column) <= 3 && next.trim().length < 50 && !/[.:]$/.test(m[4].trim())) {
@@ -606,6 +634,9 @@ const MARGIN_BULLET_PAGES = new Set([
   `${vol("stern-review-chapter-06.pdf")}:1`,
   ...[
     ["01", 1], ["01", 8], ["01", 15], ["03", 10], ["04", 13], ["04", 14], ["04", 15], ["16", 11], ["12", 10], ["16", 1], ["16", 17], ["17", 5],
+    // Batch 3a: lists in boxes and in the running text, Chapters 18 (p.409), 19 (pp.419, 424), 20 (p.435), 23 (p.496),
+    // 24 (p.525) and 26 (pp.554, 558, 564).
+    ["18", 6], ["19", 4], ["19", 9], ["20", 6], ["23", 6], ["24", 10], ["26", 1], ["26", 5], ["26", 11],
   ].map(([n, p]) => `${vol(`stern-review-chapter-${n}.pdf`)}:${p}`),
 ]);
 const MARGIN_BULLET = /^ ?•(\s+)\S/;
@@ -701,7 +732,7 @@ const noteTail: SourcePass = {
  * the same top, each starting where the last ends) are put back into one layout line before any pass reads it. The
  * text layer is untouched.
  */
-const PIECED = new Set(["08", "24"].map((n) => vol(`stern-review-chapter-${n}.pdf`)));
+const PIECED = new Set(["08", "22", "24"].map((n) => vol(`stern-review-chapter-${n}.pdf`)));
 const layoutPieces: BodyPass = {
   name: "layoutPieces",
   stage: "body",
@@ -820,7 +851,11 @@ const chemicalSubscripts: BodyPass = {
  */
 const CHAPTER_FACE = "Arial,Bold|16|#000065|b";
 const SECTION_FACE = "Arial,Bold|15|#000065|b";
-const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b"]);
+// Chapter 20 (the reissue of 18 January 2007, made with Distiller 7) sets its title and sections in a lighter navy at
+// the body's size ("20 Adaptation in the developing world", "20.2 Adaptation prospects ...", pp.430-431); Chapter 26
+// (27 October 2006) sets its section 26.5 in the navy of its page foot ("26.5 Risk management and risk preparedness:
+// ...", p.566), and its References in black (p.569).
+const NAVY = new Set(["Arial,Bold|16|#000065|b", "Arial|16|#000065|b", "Arial,Bold|15|#000065|b", "Arial|15|#000065|b", "Arial|15|#33339a|b", "Arial,Bold|15|#000080|b"]);
 const chapterHeadingFaces: BodyPass = {
   name: "chapterHeadingFaces",
   stage: "body",
@@ -833,7 +868,7 @@ const chapterHeadingFaces: BodyPass = {
     // A section heading's second line (`wrappedHeadings`) is set on its first in the layout too, so the heading
     // reader takes the whole heading.
     if (REGION_VOLUMES.has(at.volume))
-      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}\.\d{1,2}\s+\S/.test(l.text.trim()))) {
+      for (const head of page.filter((l) => NAVY.has(l.font) && /^\d{1,2}(?:\.\d{1,2})?\s+\S/.test(l.text.trim()))) {
         const next = page.find((l) => l.font === head.font && l.top > head.top && l.top - head.top <= 1.5 * head.height && l.left > head.left);
         if (!next || next.text.trim().length >= 50) continue;
         Object.assign(head, { text: `${head.text.trimEnd()} ${next.text.trim()}` });
@@ -842,6 +877,8 @@ const chapterHeadingFaces: BodyPass = {
     // Chapter 12 sets its title in the Part title's 18px face ("12 Opportunities and Wider Benefits from Climate
     // Policies", p.269), so it stood as a Part of its own: a chapter number and a title in that face is a chapter.
     for (const line of page) if (line.font === "Arial,Bold|18|#000065|b" && /^\d{1,2}\s+\S/.test(line.text.trim())) (line as { font: string }).font = CHAPTER_FACE;
+    if (at.volume === vol("stern-review-chapter-26.pdf"))
+      for (const line of page) if (line.font === "Arial,Bold|15|#000000|b" && line.text.trim() === "References") (line as { font: string }).font = SECTION_FACE;
     const navy = page.filter((line) => NAVY.has(line.font) && !/^STERN REVIEW:|^\d+$/.test(line.text.trim()));
     const numbered = navy.filter((line) => faceOf(line.text.trim()));
     for (const line of navy) {

@@ -8076,14 +8076,6 @@ In contrast, policy-driven adaptation can be defined as the result of a delibera
 
 Table 18.1 Examples of adaptation in practice
 
-Type of response to Autonomous Policy-driven climate change Short-run Making short-run adjustments, Developing greater understanding
-
-> e.g. changing crop planting dates of climate risks, e.g. researching Spreading the loss, e.g. pooling risks and carrying out a risk through insurance vulnerability assessment Improving emergency response, e.g. early-warning systems
-
-Long-run Investing in climate resilience if Investing to create or modify
-
-> future effects relatively well major infrastructure, e.g. larger understood and benefits easy to reservoir storage, increased capture fully, e.g. localised drainage capacity, higher sea- irrigation on farms walls Avoiding the impacts, e.g. land use planning to restrict development in floodplains or in areas of increasing aridity.
-
 The distinction between short-run and long-run adaptation is linked to the appropriate pace and flexibility of adaptation options (Box 18.1). In the short run, the decision maker's response to climate change and variability is constrained by a fixed capital stock (e.g. physical infrastructure), so that the principal options available are restricted to variable inputs to production. For example, a farmer can switch crops and postpone or bring forward planting dates in response to forecasts about the forthcoming growing season. On the other hand, major investments in irrigation infrastructure cannot be made reactively on such a timescale. Evaluating such investments requires expectations to be formed on costs and benefits over several decades, which places a challenging requirement on climate and weather forecasting. If the climate changes faster than expected, infrastructure could become obsolete before its planned design-life or require a costly retrofit to increase resilience.
 
 %%page 407%%
@@ -8104,21 +8096,9 @@ An appraisal of any particular method of adaptation should compare the benefits 
 
 Box 18.1 Adaptation actions with fixed and variable capital stock
 
-The difference between short-run and long-run adaptation decisions can be explained using the following illustrative diagram. In any given year, the output of an economy is generated using three types of inputs, capital K, variable inputs to production and environmental quality E. Output produced
-
-Capital (e.g. Variable Environ- buildings, inputs (e.g. mental machinery) crops) quality
-
-In the short run – and given a change in E due to climatic change and variability over a short period of time (e.g. one year) – the decision maker, who seeks to maximise the net profits of production, can respond only by changing variable inputs (shown as red in the diagram below).
-
-> Output produced
-
-Capital (e.g. Variable Environ- buildings, inputs (e.g. mental machinery) crops) quality
+The difference between short-run and long-run adaptation decisions can be explained using the following illustrative diagram. In any given year, the output of an economy is generated using three types of inputs, capital K, variable inputs to production and environmental quality E. In the short run – and given a change in E due to climatic change and variability over a short period of time (e.g. one year) – the decision maker, who seeks to maximise the net profits of production, can respond only by changing variable inputs (shown as red in the diagram below).
 
 In contrast, in the long run (e.g. over 30 years), the decision maker can respond by changing both variable inputs and the capital stock to maximise profits given a change.
-
-> Output produced
-
-Capital (e.g. Variable Environ- buildings, inputs (e.g. mental machinery) crops) quality
 
 %%page 409%%
 
@@ -8134,7 +8114,11 @@ Adaptation costs and benefits
 
 Adaptation Type Existing Climate (T0) Altered Climate (T1) Adaptation to existing Existing climate. Society is adapted to Altered climate. Society is adapted to climate (A0) existing climate: (T0, A0), or Base Case existing climate: (T1, A0). Adaptation to altered Existing climate. Society is adapted to Altered climate. Society is adapted to climate (A1) altered climate: (T0, A1). altered climate: (T1, A1).
 
-The various costs and benefits of adapting to climate change follow from this, and can be thought of along the following lines: • Climate change damage is the welfare loss associated with moving from the base climate (top left) to a changed climate without adaptation (top right): W(T1,A0) – W(T0,A0). • Net benefits of adaptation are the reduction in damage achieved by adapting to the changed climate (net of the costs of doing so), subtracting the top right box from the bottom right box: W(T1,A1) – W(T1,A0). • Climate change damage after adaptation is the difference between social welfare in the bottom right box and in the top left box: W(T1,A1) – W(T0,A0).
+The various costs and benefits of adapting to climate change follow from this, and can be thought of along the following lines:
+
+- Climate change damage is the welfare loss associated with moving from the base climate (top left) to a changed climate without adaptation (top right): W(T1,A0) – W(T0,A0).
+- Net benefits of adaptation are the reduction in damage achieved by adapting to the changed climate (net of the costs of doing so), subtracting the top right box from the bottom right box: W(T1,A1) – W(T1,A0).
+- Climate change damage after adaptation is the difference between social welfare in the bottom right box and in the top left box: W(T1,A1) – W(T0,A0).
 
 Uncertainty over the nature of future climate change is implicit in this framework, and is one of the principal challenges facing climate policy. The second table below therefore modifies the framework to illustrate the trade-offs facing those planning adaptation under uncertainty.[^6] The decision to implement an adaptation strategy should take account of the balance of risks and costs of planning for climate change that does not occur and vice versa.
 
@@ -8337,7 +8321,14 @@ High-quality climate information is an important starting point for adaptation, 
 
 Box 19.1 UKCIP Adaptation Wizard
 
-The Government has established the UK Climate Impacts Programme (UKCIP) to provide individuals and organisations with the necessary tools and information on climate impacts to allow them to adapt successfully to the changing climate. The UKCIP (2005) Adaptation Wizard has been set up to help organisations move from a simple understanding of climate change to integration of climate change into decision-making. The Wizard draws heavily on Willows and Connell (2003) and provides web-based tools for four stages of adaptation: • Scoping the impacts • Quantifying risks • Decision-making and action planning • Adaptation strategy review. One of the most valuable UKCIP tools is an up-to-date set of climate change scenarios that are available free of charge and used by a wide range of stakeholders, including local authorities, public agencies, and businesses. New scenarios will be published in 2008 that quantify risks and uncertainties in a more robust and quantitative manner to help stakeholders plan adaptation strategies. UKCIP has further tools on handling uncertainty and costing the impacts.
+The Government has established the UK Climate Impacts Programme (UKCIP) to provide individuals and organisations with the necessary tools and information on climate impacts to allow them to adapt successfully to the changing climate. The UKCIP (2005) Adaptation Wizard has been set up to help organisations move from a simple understanding of climate change to integration of climate change into decision-making. The Wizard draws heavily on Willows and Connell (2003) and provides web-based tools for four stages of adaptation:
+
+- Scoping the impacts
+- Quantifying risks
+- Decision-making and action planning
+- Adaptation strategy review.
+
+One of the most valuable UKCIP tools is an up-to-date set of climate change scenarios that are available free of charge and used by a wide range of stakeholders, including local authorities, public agencies, and businesses. New scenarios will be published in 2008 that quantify risks and uncertainties in a more robust and quantitative manner to help stakeholders plan adaptation strategies. UKCIP has further tools on handling uncertainty and costing the impacts.
 
 Source: UKCIP (2005)
 
@@ -8426,7 +8417,16 @@ Source: ONERC (2005)
 
 (b) Philadelphia Heat Health Warning System
 
-The system forecasts periods up to two days in advance when there is a high risk of a weather-system associated with heat-related mortality (more than four deaths expected). Once a warning is issued, the city of Philadelphia and its public agencies put in place a series of actions to minimise the dangers of the heatwave, including: • TV, radio stations and newspapers are asked to publicised the upcoming conditions, along with information on how to avoid heat-related illnesses. • Promotion of a "buddy" system – media announcements encourage friends, relatives and neighbours to visit elderly people during the hot weather and make sure they have sufficient water and proper ventilation to cope with the weather. • Telephone "Heatline" to provide information and counselling to the public on avoidance of heat stress. • Department of Public Health mobile field teams make home visits to vulnerable households. • Nursing homes advised on how best to protect their residents, supported by visits from field teams. • Emergency services increase staffing levels. • Homeless agency increases outreach activities to assist those on the streets. • Air-conditioned shelter facilities set up for high-risk individuals.
+The system forecasts periods up to two days in advance when there is a high risk of a weather-system associated with heat-related mortality (more than four deaths expected). Once a warning is issued, the city of Philadelphia and its public agencies put in place a series of actions to minimise the dangers of the heatwave, including:
+
+- TV, radio stations and newspapers are asked to publicised the upcoming conditions, along with information on how to avoid heat-related illnesses.
+- Promotion of a "buddy" system – media announcements encourage friends, relatives and neighbours to visit elderly people during the hot weather and make sure they have sufficient water and proper ventilation to cope with the weather.
+- Telephone "Heatline" to provide information and counselling to the public on avoidance of heat stress.
+- Department of Public Health mobile field teams make home visits to vulnerable households.
+- Nursing homes advised on how best to protect their residents, supported by visits from field teams.
+- Emergency services increase staffing levels.
+- Homeless agency increases outreach activities to assist those on the streets.
+- Air-conditioned shelter facilities set up for high-risk individuals.
 
 Source: Acclimatise (2006)
 
@@ -8535,7 +8535,7 @@ Willows, R.I. and R.K. Connell (eds.) (2003): 'Climate adaptation: risk, uncerta
 
 %%page 430%%
 
-20 Adaptation in the developing world
+### 20 Adaptation in the developing world
 
 Key Messages
 
@@ -8556,7 +8556,7 @@ Adaptation costs are hard to estimate, because of uncertainty about the precise 
 
 Without global action to mitigate climate change, both the impacts and adaptation costs will be much larger, and so will be the need for richer countries to help the poorer and most exposed countries. The costs of climate change can be reduced through both adaptation and mitigation, but adaptation is the only way to cope with impacts of climate change over the next few decades.
 
-20.1 Introduction
+#### 20.1 Introduction
 
 It is the countries with fewest resources which are most likely to bear the greatest burden of climate change in terms of loss of life, adverse effect on income and growth, and damage to living standards generally. Developing countries - and especially the low-income countries in tropical and sub-tropical regions - are expected to suffer most, and soonest, from climate change. They are especially vulnerable to the effects of climate change, because of their existing exposure to an already fragile environment and their economic and social sensitivity to climate change. And their poverty reduces their capacity to adapt (discussed in Chapter 4).
 
@@ -8572,7 +8572,7 @@ Governments will also have a specific role in establishing the policy frameworks
 
 The application of these principles is context specific and will vary from country to country. Developing countries face additional constraints and obstacles that will require even greater effort by governments, as discussed in Section 20.4. Section 20.5 sets out a range of estimated costs of adaptation in developing countries. The chapter concludes with a preview of the necessity of international assistance for adaptation (discussed in detail in Chapter 26).
 
-20.2 Adaptation prospects in the developing world
+#### 20.2 Adaptation prospects in the developing world
 
 ***Individuals, firms and civil society will respond to a changing climate as far as their knowledge and resources allow. But they will require support from their government to overcome barriers and increase adaptive capacity.***
 
@@ -8600,7 +8600,7 @@ As discussed above, development itself is the most effective way to promote adap
 
 Source: Adapted from Sperling (2003)
 
-20.3 The foundations of the policy response: building on good development practice
+#### 20.3 The foundations of the policy response: building on good development practice
 
 Much of what governments should do in relation to adaptation is what they should be doing anyway - that is, implementing good development practice. This is key to reducing the vulnerability of developing countries to climate change and raising their capacity to adapt. Climate change concerns simply lend greater urgency to these core tasks of government and, as discussed in Chapter 26, the role of the international community in supporting adaptation in developing countries. This was noted in Chapter 4 where rapid growth, as being experienced in China and India for example, will equip these countries with the economic resources to invest in appropriate policies and tools to better manage the effects of climate change. In some circumstances, there may be additional costs which the international community will have a role in helping to finance (see Chapter 26), bearing in mind the differences in income and historical responsibility for the bulk of past emissions.
 
@@ -8667,7 +8667,13 @@ Insurance is another area - closely related to disaster preparedness - in which 
 
 Box 20.3 Pilot risk-sharing ventures in the developing world
 
-A number of recent initiatives have pioneered micro-insurance and weather derivative instruments in the developing world: • A weather insurance initiative was launched in 2003 in India by a group of companies called BASIX. It has already grown from 230 farmers in one state to 6,703 customers across six states for 2005, and it has generated much broader interest in weather-related insurance in India, with other insurance companies now beginning to offer the product;[^16] • The World Food Programme has a pilot drought insurance project in Ethiopia. The WFP secured contingency funding through a Paris-based reinsurer to set this up, and ensured data availability through capacity-building at the National Meteorological Agency. A drought index now tracks agricultural seasonal development through 26 weather stations reporting daily;[^17] • DFID is launching two pilot projects in Bangladesh to offer weather-based index insurance at the community level. These projects illustrate the possible convergence of micro-finance and complementary community-based programmes with more sophisticated market-based financial instruments; • In Malawi, an index-based weather derivative is offered to groundnut farmers as part of a loan package organised by the National Smallholder Farmers Association (with technical assistance from the World Bank and Swiss development cooperation); • In the coastal Andhra Pradesh region of India, micro-insurance services have been provided as part of the voluntary Disaster Preparedness Programme to groups of women with a minimum size of 250 members. The Oriental Insurance Company offers affordable cover to poor communities through cross-subsidy with the wider insurance market. In addition, Oxfam pays half the premium.
+A number of recent initiatives have pioneered micro-insurance and weather derivative instruments in the developing world:
+
+- A weather insurance initiative was launched in 2003 in India by a group of companies called BASIX. It has already grown from 230 farmers in one state to 6,703 customers across six states for 2005, and it has generated much broader interest in weather-related insurance in India, with other insurance companies now beginning to offer the product;[^16]
+- The World Food Programme has a pilot drought insurance project in Ethiopia. The WFP secured contingency funding through a Paris-based reinsurer to set this up, and ensured data availability through capacity-building at the National Meteorological Agency. A drought index now tracks agricultural seasonal development through 26 weather stations reporting daily;[^17]
+- DFID is launching two pilot projects in Bangladesh to offer weather-based index insurance at the community level. These projects illustrate the possible convergence of micro-finance and complementary community-based programmes with more sophisticated market-based financial instruments;
+- In Malawi, an index-based weather derivative is offered to groundnut farmers as part of a loan package organised by the National Smallholder Farmers Association (with technical assistance from the World Bank and Swiss development cooperation);
+- In the coastal Andhra Pradesh region of India, micro-insurance services have been provided as part of the voluntary Disaster Preparedness Programme to groups of women with a minimum size of 250 members. The Oriental Insurance Company offers affordable cover to poor communities through cross-subsidy with the wider insurance market. In addition, Oxfam pays half the premium.
 
 However, as noted in Chapter 4, these insurance markets will often fail to emerge autonomously in developing countries through poorly developed financial markets, low income levels with which to purchase the insurance and lack of robust information. While approximately a third of natural-disaster losses are insured in high-income countries, less than 3% of such losses to households and businesses are insured in developing countries.[^18] And only a small number of schemes offering weather derivatives or micro-insurance for disaster risks have been implemented in developing countries to date.[^19] For insurance markets to work effectively, insurance companies need access to accurate forecasts of climate change effects and the damage it may cause. This is currently a major constraint in developing countries that will have to be addressed if insurance provision is to play an important role in disaster risk management. There is also a limit to the ability of insurance companies to spread risk as they will be unwilling or unable to insure against an event with a very high probability of occurring. In some cases the price of individual premiums will become unaffordable because of the high risks. At the same time, if risks increase in several insurance markets at once, then insurance companies may find it harder to spread risks and therefore be less willing to provide insurance at affordable rates.
 
@@ -8675,7 +8681,7 @@ However, as noted in Chapter 4, these insurance markets will often fail to emerg
 
 Effective social safety nets will also be important to protect those who are most vulnerable and cannot afford protection. One example is the set of safety net programmes that were announced in Indonesia in response to the economic, natural and political crisis between 1997-98. The employment creation programmes - which relied on self-selection targeting - were found to be far more effective in reaching the most vulnerable households than programmes based on health subsidies and subsidised rice sales.[^20] Equally, the Employment Guarantee Scheme (EPG) in the Indian state of Maharashtra has provided wage labour opportunities since the 1970s that help buffer households from the effects of poor harvests and other negative shocks.[^21]
 
-20.4 New policies focused on climate change
+#### 20.4 New policies focused on climate change
 
 ***Investing in climate resilience has implications for each country's investments in natural, physical, human, technological, and social capital.***
 
@@ -8789,7 +8795,7 @@ Both the dam and water market options individually have similarly large projecte
 
 Source: Callaway et al. (2006)
 
-20.5 Adaptation costs in the developing world
+#### 20.5 Adaptation costs in the developing world
 
 ***Adaptation is projected to cost developing countries many billions of dollars a year, increasing pressure on development budgets.***
 
@@ -8811,13 +8817,13 @@ Another source of information is the NAPAs, which five countries have completed 
 
 Information and knowledge about the additional costs of adaptation is very limited. This knowledge is essential in facilitating countries to integrate climate change risks and adaptation needs into their longer-term plans and budgets. More work is needed to arrive at more precise measures.
 
-20.6 International assistance for adaptation
+#### 20.6 International assistance for adaptation
 
 Just as individuals, communities, and firms in developing countries will require help from their governments to adapt efficiently to climate change, so these governments may need support from the international community. Chapter 26 will discuss how the international community can help to promote adaptation in developing countries. Nonetheless, it should be clear from the discussion above that adaptation will require coordinated efforts on many fronts. Donors and other international development partners should reorient their strategies to match national efforts and help to remove barriers to interventions that prove cost effective once climate risk management is interpreted into development programmes. This would also help to mainstream adaptation into national development and planning processes and so promote sustainable development.
 
 Equally, given that the most affected countries are often among the poorest, there is a real need for the international community to fully honour the commitments, made at Monterrey in 2002, the EU in June 2005, and at the G8 summit in Gleneagles in July 2005, to increase sharply the flows of aid to developing countries, with the EU confirming and setting a timetable to 0.7% of GDP for ODA. Chapter 26 explores in detail the question of international support for countries facing the challenge of adaptation.
 
-20.7 Conclusion
+#### 20.7 Conclusion
 
 The climate will continue to change over the next few decades, whatever the world manages to achieve on the mitigation side. But the costs of adaptation will rise exponentially if efforts to mitigate emissions are not successful. It is an unfortunate twist of fate that those affected most immediately and hardest are often the countries that contributed little to the problem and that are least able to afford the costs of adaptation. They can afford even less not to adapt, however. Adaptation efforts are already underway, but they must be accelerated. Much of the adaptation is and will have to be autonomous, driven by market forces and by the needs and devices of households and firms. Governments should assist this process.
 
@@ -8971,9 +8977,7 @@ Part VI is structured as follows:
 
 %%page 450%%
 
-### 21 Framework for Understanding International Collective Action for Climate
-
-Change
+### 21 Framework for Understanding International Collective Action for Climate Change
 
 Key Messages
 
@@ -9091,42 +9095,6 @@ National initiatives and policy measures designed to foster national and interna
 
 Table 21.1 Goals on climate change and clean energy adopted by 10 largest economies
 
-Brazil National objective to increase the share of alternative renewable energy
-
-> sources (biomass, wind and small hydro) to 10% by 2030 Programmes to protect public forests from deforestation by designating some areas that must remain unaltered and others only for sustainable use
-
-China The 11th Five Year Plan contains stringent national objectives including
-
-> 20% reduction in energy intensity of GDP from 2005 to 2010 10% reduction in emission of air pollutants 15% of energy from renewables within the next ten years
-
-France Kyoto Protocol commitment to cap GHG emissions at 1990 levels by the
-
-> period 2008-2012 National objective for 25% reduction from 1990 levels of GHGs by 2020 and fourfold reduction (75-80%) by 2050
-
-Germany Kyoto Protocol commitment to reduce GHG emissions by 21% on 1990
-
-> levels by the period 2008-2012 Offered to set a target of 40% reduction below 1990 levels by 2020 if EU accepts a 30% reduction target National objective to supply 20% of electricity from renewable sources by
-
-2020 India The 11th Five Year Plan contains mandatory and voluntary measures to
-
-> increase efficiency in power generation and distribution, increase the use of nuclear power and renewable energy, and encourage mass transit programmes. The Integrated Energy Policy15 estimates that these initiatives could reduce the GHG intensity of the economy by as much as one third.
-
-Italy Kyoto Protocol commitment to reduce GHG emissions by 6.5% on 1990
-
-> levels by the period 2008-2012 National objective to increase share of electricity from renewable resources to 20% by 2010
-
-Japan Kyoto Protocol commitment to reduce GHG emissions by 6% on 1990 levels
-
-> by the period 2008-2012 National objective for 30% reduction in energy intensity of GDP from 2003 to
-
-2030 Russian Kyoto Protocol commitment to cap GHG emissions at 1990 levels by the Federation period 2008-2012 United Kyoto Protocol commitment to reduce GHG emissions by 12.5% on 1990 Kingdom levels by the period 2008-2012
-
-> National objectives to reduce CO2 emissions by 20% on 1990 levels by 2010 and by 60% on 2000 levels by 2050
-
-United States Voluntary federal objective to reduce GHG intensity level by 18% on 2002 of America
-
-> levels by 2012 California, the largest state, in the USA, has an objective to reduce CO2 emissions by 80% on 1990 levels by 2050. States in the North-East and mid-Atlantic have set up the Regional Greenhouse Gas Initiative to cut emissions to 2005 levels between 2009 and 2015, and by a further 10% between 2015 and 2018.
-
 The majority of the world's largest economies now have goals in place to reduce carbon emissions, or to decrease energy intensity increase renewable energy and decrease deforestation. Countries have adopted a range of goals; if they can successfully deliver these, emissions will be reduced significantly below their 'business as usual' path. Table 21.1 summarises some of the relevant goals adopted by countries that account for around two thirds of the global economy and emissions.
 
 %%page 457%%
@@ -9171,21 +9139,7 @@ It is essential that all major developed countries participate in this action. H
 
 Figure 21.1 Emissions reductions in developed and developing countries, where developed countries take responsibility for cuts equal to 60% of their 1990 emissions by 2050.
 
-non-Annex I
-
-## Annex I: Emissions
-
-> BAU (falling to 450ppm
-
-450ppm CO2e
-
-Figure 21.2 Emissions reductions in developed and developing countries, where developed countries take responsibility for cuts equal to 90% of their 1990 emissions by 2050 non-Annex I
-
-## Annex I: Emissions
-
-> BAU (falling to 450ppm
-
-450ppm CO2e
+Figure 21.2 Emissions reductions in developed and developing countries, where developed countries take responsibility for cuts equal to 90% of their 1990 emissions by 2050
 
 %%page 460%%
 
@@ -9208,12 +9162,6 @@ Designing arrangements that are compatible with the underlying incentives of the
 Box 21.5 Drivers for participating in international collective action on climate change
 
 There are a number of drivers for participation in international collective action for both developed and developing countries. For example, an analysis of drivers for China's participation carried out by the Chinese Academy of Social Sciences (2006) shows a range of short and medium-term goals, including improving energy efficiency and financing the development and deployment of low carbon technology. Co-benefits include reducing air pollution and improvements to industrial structure, employment and regional development.
-
-In-direct
-
-Direct
-
-Short-term Mid-and Long-term
 
 ***Shared notions of responsible and collaborative behaviour, within and outside governments, create the conditions in which countries honour international commitments.***
 
@@ -9279,7 +9227,7 @@ Box 21.6 Public attitudes to climate change around the world[^38]
 
 A poll by the Pew Center presented a snapshot of attitudes in 2006. Even in countries with limited formal participation in international action, at least half of the population now thinks that climate change matters a fair amount or a great deal.
 
-> Global Warming Concerns A great A fair Only a little/ deal amount Not at all DK % % % % United States 19 34 47 1 Great Britain 26 41 32 1 Spain 51 34 14 2 France 46 41 14 0 Germany 30 34 36 1 Russia 34 31 34 1 Indonesia 28 48 23 1 Egypt 24 51 23 1 Jordan 26 40 34 0 Turkey 41 29 23 8 Pakistan 31 25 39 5 Nigeria 45 33 20 2 Japan 66 27 7 0 India 65 20 13 2 China 20 41 37 2 Based on those who have heard about the "environmental problem of global warming
+Global Warming Concerns
 
 #### 21.5 Conclusions
 
@@ -9487,10 +9435,6 @@ Multi-stage approach: Countries would start at and move between different types 
 
 The four graphs below show the results for both developed and developing countries or regions of 450ppm CO2e and 550ppm CO2e stabilisation goals combined with the four methods for sharing out the emissions reductions – here illustrated relative to 1990 levels alongside a reference scenario of business as usual emissions[^23] . They do not incorporate international emissions trading. The results show that for developed countries, it is the overall stabilisation goal that is the main driver of the effort required – for all developed countries, action to meet a 450ppm CO2e goal would require quotas to be set in line with a reduction in emissions of 70-90% on 1990 levels by 2050, and for a 550ppm CO2e goal the reduction would be at least 60%. It is a similar story for the middle-income economies of Latin America, Central and East Asia and the Middle East, where all methodologies allow for a modest increase or very small decrease over current emissions by 2050. For Africa and South Asia, where both income and per capita emissions are currently very low, the allocation methodology makes a significant difference. Africa and South Asia have the greatest allocation under the methodologies that most closely relate to the 'ability-to-pay' equity criterion.
 
-> Developing 450 countries ppmv 2 050
-
-> Developing countrie
-
 #### 22.4 Putting efficiency and equity together: The experience of Kyoto
 
 A global carbon price applied to emissions from all countries and sectors allows for efficient mitigation, and flows between countries allow for an equitable division of effort. Creating a framework that provides for both an efficient and equitable response is an urgent challenge for international collective action. This section explores how economic analysis might guide the development of such a framework for mitigation, starting with an evaluation of the current multilateral framework.
@@ -9563,11 +9507,11 @@ Figure 22.1 Scope of an international trading market in energy CO2 emissions[^36
 
 ***Expanding and linking regional emissions trading schemes globally will raise the scope for cost-effective emissions reductions.***
 
-A s discussed in Chapter 15, an efficient and equitable framework for international collective action requires a broad, deep and liquid market for carbon, covering the major emitters and operating with transparent rules. This emphasises the importance of an increase in the size and scope of emissions trading markets globally. This can occur when an existing scheme expands to incorporate new regions, through the merger of separate schemes, or through various approaches to linking, whereby several existing schemes may meet key criteria or develop harmonised rules for mutual compatibility.
+As discussed in Chapter 15, an efficient and equitable framework for international collective action requires a broad, deep and liquid market for carbon, covering the major emitters and operating with transparent rules. This emphasises the importance of an increase in the size and scope of emissions trading markets globally. This can occur when an existing scheme expands to incorporate new regions, through the merger of separate schemes, or through various approaches to linking, whereby several existing schemes may meet key criteria or develop harmonised rules for mutual compatibility.
 
 Chapter 15 introduced several emissions trading schemes that have already been established or are planned in countries and regions across the globe. They vary in size, scope and characteristics. For example, the Chicago Climate Exchange (CCX) is a voluntary scheme. The proposed Regional Greenhouse Gas Initiative (RGGI) will only cover emissions from the power sector. The current UK Emissions Trading Scheme covers non-CO2 and both direct and indirect CO2 emissions. Some schemes may apply price caps, others may have differing penalties for compliance. The time periods for commitments also vary, often to reflect national circumstances. Creating a single scheme would entail considerable changes to harmonise these conditions.
 
-L inking, although less efficient than a single global scheme, can nevertheless be very useful. For example, a small new scheme may see linking to an established scheme as a short-cut to establishing credibility and price stability. Links are already being made between existing schemes. For example, the EU ETS allows the use of project credits created by the Kyoto Protocol, and some non-Kyoto parties, including the CCX, also permit purchases of these credits. Box 22.4 describes another recent development.
+Linking, although less efficient than a single global scheme, can nevertheless be very useful. For example, a small new scheme may see linking to an established scheme as a short-cut to establishing credibility and price stability. Links are already being made between existing schemes. For example, the EU ETS allows the use of project credits created by the Kyoto Protocol, and some non-Kyoto parties, including the CCX, also permit purchases of these credits. Box 22.4 describes another recent development.
 
 %%page 481%%
 
@@ -9657,7 +9601,7 @@ Discussions on tacking the climate change impact of the international maritime i
 
 The UK, under the lead of the domestic Maritime and Coastguard Agency (MCA), has been pushing the IMO to consider a full range of technical, methodological and market-based options for controlling maritime transport's emissions of GHGs, particularly CO2. Discussions are continuing on the feasibility of the EU incorporating this sector into the EU ETS as a demonstration not only of the seriousness with which the EU views this issue but also of the effectiveness of emissions trading as a control measure.
 
-#### 22.8 Interactions with international trade regime the
+#### 22.8 Interactions with the international trade regime
 
 ***The international trade regime offers one route to handle large disparities in levels of carbon pricing between major economies.***
 
@@ -9866,21 +9810,15 @@ The success of key developing countries in realising their current domestic ener
 
 There are a number of measures that governments can take to create a suitable investment climate for energy investment and the adoption of new technologies, such as[^16]:
 
-•
+• Removal of broad-based energy subsidies and tariff barriers;
 
-Removal of broad-based energy subsidies and tariff barriers; •
-
-Establishment of credible legal and regulatory frameworks; •
-
-Creation of market-based approaches such as emissions trading, energy service companies, energy performance contracts, and credit guarantees; •
-
-Information dissemination regarding energy savings and clean energy options; •
-
-Including environmental costs in the price for energy services; •
-
-Strengthening intellectual property rights; •
-
-Developing product standards; • Making markets more transparent.
+- Establishment of credible legal and regulatory frameworks;
+- Creation of market-based approaches such as emissions trading, energy service companies, energy performance contracts, and credit guarantees;
+- Information dissemination regarding energy savings and clean energy options;
+- Including environmental costs in the price for energy services;
+- Strengthening intellectual property rights;
+- Developing product standards;
+- Making markets more transparent.
 
 It is important to involve the private sector in designing co-operation to enhance the climate for investment and technology transfer. The Renewable Energy and Energy Efficiency Partnership (REEEP), funded by a number of developed country governments, actively structures policy initiatives for clean energy markets and facilitates financing mechanisms for sustainable energy projects. REEEP provides opportunities for concerted collaboration among its partners, and has a bottom up approach to reflect local preferences, with the organisation playing a supportive role to the partners and members that run programmes rather than dictating approaches. This has proved popular and led to a diverse range of projects ranging from pure policy advice, such as compiling renewable energy legislation for Kazakhstan or devising clean energy policy and an action plan for Liberia, or more specific tasks such as promoting low energy buildings in China.[^17]
 
@@ -10506,26 +10444,6 @@ It is possible to make comparisons of the level of deployment support in differe
 
 Table 24.1 Implicit cost of carbon in existing deployment support[^52]
 
-Imputed carbon price,
-
-Country Application $ per tonne CO2
-
-- Germany Onshore wind — 73
-
-- Offshore wind — 146
-
-- Solar — 1048
-
-- Electricity from biomass — 146
-
-- Austria Wind — 122
-
-- Electricity from biomass — 171
-
-- Spain Wind — 73
-
-- Solar — 804
-
 ***More formal co-ordination of deployment support could include the use of internationally tradable policy instruments.***
 
 Currently, deployment policies such as renewables support mechanisms are implemented at the state or national level. However, learning depends on the overall global deployment, not where it takes place. The ability to trade obligations across borders would improve efficiency by ensuring that deployment takes place where it is cheapest to do so. The benefits from this may be significant where there are major differences between countries in, for instance, the availability of a natural resource such as sunshine, or in lower labour or other costs. Such harmonisation has yet to be attempted. Even the 22 states in the US with renewable portfolio standards cannot co-operate across state boundaries to help reduce costs. An IEA study[^53] identified that deployment of some technologies within non-OECD countries could prove much more cost-effective, particularly in the case of solar technologies. Where this is the case, countries could consider including financial support for deployment in developing countries towards national deployment targets.
@@ -10543,26 +10461,6 @@ CCS is dependent on government intervention. Unlike other alternative generating
 The economic viability of using CCS technology for power companies will reflect both the relative price of coal and natural gas and the level of the carbon price. Should the carbon price reach a sufficient level, with a credible expectation that it will remain there, widespread deployment of CCS can be expected. The choice of technology will also depend on the price of different fossil fuels, so if gas prices are high then coal will be chosen as shown in the figure below.
 
 Impact of carbon and energy prices on CCS deployment[^57]
-
-## GAS COAL
-
-> + + 40 CCS CCS
-
-Carbon Price (£/tonne CO2)
-
-- 30 — 4
-
-> p/ kW h
-
-- 20 — 3
-
-> p/ kW h
-
-> COAL GAS
-
-- 2 3 4 — 5
-
-Gas price £/GJ
 
 Alternatively, international agreement could focus on a regulatory approach to deployment.. At the simplest level this would involve a commitment by participating countries to regulate that all new coal or fossil fuel electricity generation be fitted with CCS from a certain date. An example of this sort of regulation is the EU's Large Combustion Plant Directive, that places emission limit values on large plants with increasing stringency over time. It specifies different treatment depending on the age of the plant. It will ensure that by 2015 all European power stations conform to a common standard for air pollution emissions. For CCS, an agreement could set out a timetable for new plant to be capture-ready or to be fitted with CCS, and could establish differentiated responsibilities by giving more time or applying to a lower proportion of new plant in developing countries. The timing could be significant as mitigation costs will increase if significant investments are made in new capacity without, or precluding the addition of, carbon capture and storage technologies.
 
@@ -11044,7 +10942,12 @@ Transfers to developing-country governments and civil society will be necessary 
 
 Public-private partnerships for climate-related insurance can help to support adaptation. At the household level, remittances are likely to have an important role in supporting autonomous adaptation.
 
-The international community should also support adaptation through investment in global public goods, including: • Improved monitoring and prediction of climate change; • The development and deployment of drought- and flood-resistant crops; • Methods to combat land degradation; • Better modelling of impacts.
+The international community should also support adaptation through investment in global public goods, including:
+
+- Improved monitoring and prediction of climate change;
+- The development and deployment of drought- and flood-resistant crops;
+- Methods to combat land degradation;
+- Better modelling of impacts.
 
 In addition, efforts should be increased to improve mechanisms for improving risk management and preparedness, disaster response and refugee resettlement.
 
@@ -11101,7 +11004,11 @@ Box 26.1 Existing sources of dedicated funding for adaptation
 
 A range of funding streams is available to support adaptation in developing countries:
 
-GEF and associated funds To help countries adapt to the adverse impacts of climate change, the Global Environment Facility (GEF) supports projects that reduce countries' vulnerability to climate change impacts and helps them build adaptive capacity. The GEF has adopted a three-stage approach to adaptation: • Stage I: planning through studies to identify vulnerabilities, policy options, and capacity building. • Stage II: identifying measures to prepare for adaptation and further capacity building. • Stage III: promoting measures to facilitate adaptation, including insurance and other interventions.
+GEF and associated funds To help countries adapt to the adverse impacts of climate change, the Global Environment Facility (GEF) supports projects that reduce countries' vulnerability to climate change impacts and helps them build adaptive capacity. The GEF has adopted a three-stage approach to adaptation:
+
+- Stage I: planning through studies to identify vulnerabilities, policy options, and capacity building.
+- Stage II: identifying measures to prepare for adaptation and further capacity building.
+- Stage III: promoting measures to facilitate adaptation, including insurance and other interventions.
 
 GEF resources (established under the Climate Convention) include:
 
@@ -11264,13 +11171,9 @@ The other major area for action is in providing global public goods (GPGs) for a
 
 %%page 569%%
 
-References
+#### References
 
-Adger W. N., (2005): 'Governing natural resources: institutional adaptation and resilience'. In
-
-### Berkhout, M. Leach and I. Scoones (eds.) Negotoating Environmental Change: New
-
-Perspectives from Social Science. 193-208. Cheltenham: Edward Elgar.
+Adger W. N., (2005): 'Governing natural resources: institutional adaptation and resilience'. In F. Berkhout, M. Leach and I. Scoones (eds.) Negotoating Environmental Change: New Perspectives from Social Science. 193-208. Cheltenham: Edward Elgar.
 
 Agrawala, S. ed. (2005): 'Bridge over troubled waters: Linking climate change and development', Paris: OECD.
 
@@ -11348,9 +11251,7 @@ World Food Programme Executive Board Annual Session (2006): Progress Report on t
 
 %%page 572%%
 
-### 27 Conclusions: Building and Sustaining International Co-operation on
-
-Climate Change
+### 27 Conclusions: Building and Sustaining International Co-operation on Climate Change
 
 Key Messages
 
