@@ -19,6 +19,146 @@ corrections:
     replace: "flood-resistant"
     reason: "PDF p.26 (printed xxvi): 'drought- and flood-' ends the line and 'resistant' opens the next; 'drought- and flood-resistant crops'. The space after 'drought-' is printed and stays."
     added: 2026-11-08
+  # Since the full report's volumes were added, the line-end hyphen reader sees more "cooperation" than before and
+  # joins this one; the Executive Summary prints "co-operation" here and throughout (15 times).
+  - id: c-0004
+    find: "requires greater international co- operation and the development"
+    replace: "requires greater international co-operation and the development"
+    reason: "PDF p.23 (Executive Summary, printed xxiii): 'co-' ends the line and 'operation' opens the next; the summary spells it co-operation everywhere."
+    added: 2026-11-12
+  # The other half of the ingest.ts pass noteTail: note 17's last words, printed at the head of p.218's notes.
+  - id: c-0005
+    find: "indirect emission reductions from fossil fuels via"
+    replace: "indirect emission reductions from fossil fuels via energy-efficiency measures."
+    reason: "Chapter 9, PDF pp.7-8 (printed 217-218): note 17 ends 'from fossil fuels via' at the foot of p.217 and runs over to 'energy-efficiency measures.' above note 18 on p.218."
+    added: 2026-11-12
+  # Line-end hyphens in the full report's volumes, kept with a space by the hyphen reader because the second half
+  # is a number or not in its vocabulary. Each read off the page as one hyphenated word or range.
+  - id: c-0006
+    find: " around 500- 550ppm CO2e,"
+    replace: " around 500-550ppm CO2e,"
+    reason: "Chapter 10, PDF p.1 (printed 239), key messages: '500-' ends the line, '550ppm' opens the next; the range 500-550ppm."
+    added: 2026-11-12
+  - id: c-0007
+    find: "ions at 500- 550ppm CO2e "
+    replace: "ions at 500-550ppm CO2e "
+    reason: "Chapter 10 (printed 247): '500-' ends the line, '550ppm' opens the next; the range 500-550ppm."
+    added: 2026-11-12
+  - id: c-0008
+    find: "eir/pdf/enviros- report.pdf) "
+    replace: "eir/pdf/enviros-report.pdf) "
+    reason: "Chapter 9, note 28 (printed 221): a URL broken at its hyphen over two lines, enviros-report.pdf."
+    added: 2026-11-12
+  - id: c-0009
+    find: " policy think- tanks, to l"
+    replace: " policy think-tanks, to l"
+    reason: "Chapter 13 (printed 300): 'think-' ends the line, 'tanks' opens the next; the compound think-tanks."
+    added: 2026-11-12
+  - id: c-0010
+    find: "are not path- dependent. Howe"
+    replace: "are not path-dependent. Howe"
+    reason: "Chapter 13 (printed 297): 'path-' ends the line, 'dependent' opens the next; the compound path-dependent."
+    added: 2026-11-12
+  - id: c-0011
+    find: "ith the mitigation- cost studi"
+    replace: "ith the mitigation-cost studi"
+    reason: "Chapter 13 (printed 298): 'mitigation-' ends the line, 'cost' opens the next; 'mitigation-cost studies'."
+    added: 2026-11-12
+  - id: c-0012
+    find: "ut this market- sector appro"
+    replace: "ut this market-sector appro"
+    reason: "Chapter 6 (printed 145): 'market-' ends the line, 'sector' opens the next; 'this market-sector approach'."
+    added: 2026-11-12
+  - id: c-0013
+    find: "ties of learning- by-watching. In t"
+    replace: "ties of learning-by-watching. In t"
+    reason: "Chapter 2 (printed 36): 'learning-' ends the line, 'by-watching' opens the next; 'learning-by-watching', after 'learning-by-doing' on the same line."
+    added: 2026-11-12
+  - id: c-0014
+    find: "er- and intra- generational equit"
+    replace: "er- and intra-generational equit"
+    reason: "Introduction (printed iv): 'intra-' ends the line, 'generational' opens the next; 'inter- and intra-generational equity'."
+    added: 2026-11-12
+  - id: c-0015
+    find: " is the greater-than- proportionate incre"
+    replace: " is the greater-than-proportionate incre"
+    reason: "Chapter 10 (printed 241): 'greater-than-' ends the line, 'proportionate' opens the next; the compound greater-than-proportionate."
+    added: 2026-11-12
+  - id: c-0016
+    find: "ains to co- operating acros"
+    replace: "ains to co-operating acros"
+    reason: "Chapter 2 (printed 38): 'co-' ends the line, 'operating' opens the next; the chapter spells co-operation with the hyphen."
+    added: 2026-11-12
+  - id: c-0017
+    find: "he real climate- human syste"
+    replace: "he real climate-human syste"
+    reason: "Chapter 6, Figure 6.1 caption (printed 146): 'climate-' ends the line, 'human' opens the next; 'climate-human system'."
+    added: 2026-11-12
+  - id: c-0018
+    find: "ce if a carbon- price path "
+    replace: "ce if a carbon-price path "
+    reason: "Chapter 13, Box 13.3 (printed 304): 'carbon-' ends the line, 'price' opens the next; 'a carbon-price path'."
+    added: 2026-11-12
+  - id: c-0019
+    find: "(3-4): 571- 581"
+    replace: "(3-4): 571-581"
+    reason: "Chapter 13, References (printed 307): a page range, 571-581, broken over the line."
+    added: 2026-11-12
+  - id: c-0020
+    find: "89(3): 349- 378"
+    replace: "89(3): 349-378"
+    reason: "Chapter 2, References (printed 40): a page range, 349-378, broken over the line."
+    added: 2026-11-12
+  - id: c-0021
+    find: "e above 2- 3°C, as w"
+    replace: "e above 2-3°C, as w"
+    reason: "Part II introduction (printed 55): '2-' ends the line, '3°C' opens the next; the range 2-3°C."
+    added: 2026-11-12
+  - id: c-0022
+    find: "sation, 10- 20% of to"
+    replace: "sation, 10-20% of to"
+    reason: "Chapter 10 (printed 242): '10-' ends the line, '20%' opens the next; the range 10-20%."
+    added: 2026-11-12
+  - id: c-0023
+    find: "n 2100 (business-as- usual) to 5"
+    replace: "n 2100 (business-as-usual) to 5"
+    reason: "Chapter 13 (printed 298): 'business-as-' ends the line, 'usual' opens the next; business-as-usual."
+    added: 2026-11-12
+  - id: c-0024
+    find: "In the 'energy- related CO2 e"
+    replace: "In the 'energy-related CO2 e"
+    reason: "Chapter 10, note 8 (printed 245): 'energy-' ends the line, 'related' opens the next; 'energy-related CO2 emissions'."
+    added: 2026-11-12
+  - id: c-0025
+    find: "Robert Muir- Wood"
+    replace: "Robert Muir-Wood"
+    reason: "Acknowledgements (printed iii): 'Muir-' ends the line, 'Wood' opens the next; Robert Muir-Wood. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0026
+    find: "India and South- East Asia"
+    replace: "India and South-East Asia"
+    reason: "Chapter 6 key finding (printed 158): 'South-' ends the line, 'East Asia' opens the next; South-East Asia, as elsewhere in the Review. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0027
+    find: "abatement: A Meta- Analysis"
+    replace: "abatement: A Meta-Analysis"
+    reason: "Chapter 10 references: 'Meta-' ends the line, 'Analysis' opens the next; the paper's title 'A Meta-Analysis of post-SRES mitigation scenarios'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0028
+    find: "'The role of non- CO2"
+    replace: "'The role of non-CO2"
+    reason: "Chapter 10 references: 'non-' ends the line, 'CO2' opens the next; the paper's title 'The role of non-CO2 greenhouse-gases in climate policy'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0029
+    find: "(2001): Low- CO2 energy"
+    replace: "(2001): Low-CO2 energy"
+    reason: "Chapter 10 references: 'Low-' ends the line, 'CO2' opens the next; the paper's title 'Low-CO2 energy pathways'. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
+  - id: c-0030
+    find: "happens to non- CO2 greenhouse"
+    replace: "happens to non-CO2 greenhouse"
+    reason: "Chapter 13 (printed 297): 'non-' ends the line, 'CO2' opens the next; non-CO2 greenhouse gases. (reviewer fixup, review-stern-full-2026-11-12)"
+    added: 2026-11-12
 # Suspects read against the page and judged right as served; they leave the review queue.
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }

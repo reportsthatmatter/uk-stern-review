@@ -4,11 +4,17 @@ The Stern Review on the Economics of Climate Change, an independent review led b
 
 ## Scope
 
-The **Executive Summary (full)** only, so far (27 PDF pages, folioed i-xxvii), as the report id `uk-stern-review`. It is the Review's own account of its argument and conclusions, and the part most readers cite. The full report (a Table of Contents, the Summary of Conclusions, Preface, Introduction, six Parts in 27 chapters, a Postscript and technical annexes: about 55 PDFs and 700 pages on HM Treasury's site) is the next set of units of this same id, to be added as further volumes in `ingest.ts`. The short (4-page) executive summary and the Summary of Conclusions are separate documents and out of scope for now.
+One report id, `uk-stern-review`, built up unit by unit as further volumes in `ingest.ts`, in the order of the Review's own table of contents (`Table_of_Contents.pdf`: Executive Summary i-xxvii; Preface and Acknowledgements i; Introduction iv; Summary of Conclusions vi; then Parts I-VI with their chapters, arabic pages 1-575, and the acronyms list).
+
+- **Unit 1 (live 2026-11-08):** the Executive Summary (full), 27 pages.
+- **Unit 2 (2026-11-12, reportsthatmatter-gqsy.9.2, batch 1):** the Preface and Acknowledgements, the Introduction, the Summary of Conclusions, the introductions to Parts I-III, and the most-cited chapters: 2 (economics, ethics and discounting), 6 (economic modelling of impacts: the "5-20% of GDP"), 9 and 10 (the costs of cutting emissions: "around 1% of GDP") and 13 (the stabilisation goal). 122 pages.
+- **Later batches:** the remaining chapters (1, 3-5, 7, 8, 11, 12, 14-27) in table-of-contents order, the Postscript, the Chapter 2 technical annex and annexes 7a-7g. The table of contents itself (one page) and the short executive summary are not ingested: the site builds its own contents, and the short summary repeats the Executive Summary.
 
 ## Source
 
-`archive/stern-review-executive-summary.pdf`: HM Treasury's "pre-publication edition" of the Executive Summary (full), as published on hm-treasury.gov.uk on 30 October 2006 (first at `/media/8AC/F7/Executive_Summary.pdf`, later at `/d/Executive_Summary.pdf`). 317,419 bytes, SHA-256 `992ad24f46cd9d5be4078f42652417df86de9411242a29a257eefd073a077474`. HM Treasury's site of the time is held by the UK Government Web Archive; that archive refuses scripted downloads, so the file was taken from the Wayback Machine's capture of 23 October 2008 (`web.archive.org/web/20081023104149id_/http://www.hm-treasury.gov.uk/d/Executive_Summary.pdf`). See `datapackage.json`.
+HM Treasury's web edition, one PDF per part, from its report page `stern_review_report.htm` (held by the UK Government Web Archive, which refuses scripted downloads; every file here is the Wayback Machine's capture). `datapackage.json` lists each file with its size, SHA-256, original URL and the capture it was taken from.
+
+`archive/stern-review-executive-summary.pdf`: the "pre-publication edition" of the Executive Summary (full), as published on 30 October 2006 (first at `/media/8AC/F7/Executive_Summary.pdf`, later at `/d/Executive_Summary.pdf`). 317,419 bytes, SHA-256 `992ad24f46cd9d5be4078f42652417df86de9411242a29a257eefd073a077474`, from the capture of 23 October 2008.
 
 ## Materials
 
@@ -35,9 +41,15 @@ Sourcing checklist:
 7. US congressional: not applicable.
 8. Originals: HM Treasury; the printed book from Cambridge University Press.
 
-Versions: one PDF version. HM Treasury called the web edition "pre-publication"; the Cambridge University Press book (January 2007) and the later web pages added a Postscript to the full report, which is not part of the executive summary.
+Versions (Executive Summary): one PDF version. HM Treasury called the web edition "pre-publication"; the Cambridge University Press book (January 2007) and the later web pages added a Postscript to the full report, which is not part of the executive summary.
 
 Layout notes: running head "STERN REVIEW: The Economics of Climate Change" on every page (Arial Bold, navy); the roman folio at the foot; key findings in bold italic at the body size; five figures in shaded boxes with a title, a caption and a "Source:" line, four of them charts whose labels are live text (Figures 1-4, PDF pp.4, 5, 12, 15) and one an image (Figure 5, p.20); five footnotes at the page foot, each number on its own line above the note.
+
+### Versions of the full report's files (checked 2026-11-12)
+
+HM Treasury published the chapter PDFs twice. The first set (made 26-27 October 2006, Word to Distiller 5.0, mostly untagged) sat under `/media/8A?/../`; in January 2007 it was replaced under `/d/` by a reissue (made 8 and 18 January 2007 with PDFMaker, tagged), which the site served until 2013. Word-level diffs of the two show corrections, not revisions: Chapter 10 "feasibl,e" to "feasible", a note "GWP should read GDP" under Figure 10.1, Introduction "collection" to "collective", added names in the Acknowledgements, hyphenation ("greenhouse-gas" to "greenhouse gas"). **We use the January 2007 reissue wherever one exists** (Preface, Introduction, Chapters 2, 6, 9, 10, 13, Part III introduction): it is HM Treasury's corrected text of the same edition, and the one the Review's own site carried longest. The Executive Summary, Summary of Conclusions, Table of Contents and Part I and II introductions have a single digest in every capture from 2006 to 2013. For Chapter 9 only the reissue was found in the Wayback Machine. The reissues' tag trees hold paragraphs, lists and table cells but no headings or notes, so they are not a structure source; the PDF pipeline reads every volume.
+
+Layout notes (full report): body Arial 10.5pt; page head "PART II: The Impacts of Climate Change on Growth and Development" (Arial bold navy), page foot "STERN REVIEW: The Economics of Climate Change" with the folio on the same line; chapter titles ("6 Economic modelling of climate-change impacts") and numbered sections ("6.1 Introduction") in bold navy; a "Key Messages" box at each chapter's head; key findings in bold italic; footnotes at the page foot, numbered from 1 in each chapter, markers as raised digits (as is the 2 of every CO2); charts drawn with live-text labels in smaller Arial or Times New Roman; tables in a smaller Arial or in the body's face; equations (Chapter 6, Box 6.3) in Times New Roman and Symbol.
 
 ## Licence
 
@@ -45,4 +57,4 @@ Text of the report: Crown copyright, reused under the Open Government Licence v3
 
 ## Build
 
-`ingest.ts` declares how the report is turned into Markdown, with the passes it composes (each with the page that needed it). Rebuild from the site repo with `pnpm ingest run uk-stern-review`. `golden.yaml` holds eight pages read off the page images; two are known failures, each with a bead (see PROCESSING.md). Needs `@rtm/ingest` v0.33.0.
+`ingest.ts` declares how the report is turned into Markdown, with the passes it composes (each with the page that needed it). Rebuild from the site repo with `pnpm ingest run uk-stern-review`. `golden.yaml` holds sixteen pages read off the page images (eight in the Executive Summary, eight in the later volumes); two are known failures, each with a bead (see PROCESSING.md). Needs `@rtm/ingest` v0.34.0.

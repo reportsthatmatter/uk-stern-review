@@ -23,6 +23,259 @@
           "web": "https://web.archive.org/web/20081023104149id_/http://www.hm-treasury.gov.uk/d/Executive_Summary.pdf"
         }
       ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Preface and Acknowledgements, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-preface-and-acknowledgements.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 100057,
+      "hash": "sha256:910bc3b8b2df3a1a4b72dec1da9cead78ce5b66cc473a29d7f57b5a83be8e417",
+      "description": "The original of 27 October 2006 (media/8A8/B7/Preface_and_acknowledgements.pdf) differs: the reissue adds names to the acknowledgements.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Preface_and_Acknowledgements.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104550id_/http://www.hm-treasury.gov.uk/d/Preface_and_Acknowledgements.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Introduction to the Review, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 85306,
+      "hash": "sha256:8dae7c3826d46dcdf2de620a184228eaeb0792597bda26d139836800b6a19b8d",
+      "description": "The original of 27 October 2006 (media/8A8/D0/Introduction_to_the_Stern_Review.pdf) differs in three words ('collection' corrected to 'collective').",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104438id_/http://www.hm-treasury.gov.uk/d/Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Summary of Conclusions, 27 October 2006",
+      "path": "archive/stern-review-summary-of-conclusions.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 97752,
+      "hash": "sha256:f34bfebf82f50db6f35b726486492103309d1142234239d2d25488b794fc8158",
+      "description": "One version only (one digest at both its URLs, 2006-2013).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Summary_of_Conclusions.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104624id_/http://www.hm-treasury.gov.uk/d/Summary_of_Conclusions.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part I introduction, 27 October 2006",
+      "path": "archive/stern-review-part-1-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 54728,
+      "hash": "sha256:0d58a4f295168d6c7ba342d77f323b956441e7fa2802ee6fb9b721c5180e7a35",
+      "description": "One version only.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Part_1_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104737id_/http://www.hm-treasury.gov.uk/d/Part_1_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 2, Economics, ethics and climate change, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-02.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 408285,
+      "hash": "sha256:981b41d3315a9d31c4b83d7aa71d95c8c258ee0e7fb9738ffef9102f80b71943",
+      "description": "Replaces the original of 27 October 2006 (media/8A3/7A/Chapter_2_Economics,_Ethics_and_Climate_Change.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_2_Economics_Ethics_and_Climate_Change.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104753id_/http://www.hm-treasury.gov.uk/d/Chapter_2_Economics_Ethics_and_Climate_Change.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part II introduction, 27 October 2006",
+      "path": "archive/stern-review-part-2-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 58969,
+      "hash": "sha256:c0d803be78e363ed0c3e443cd5b32d27c87749ea12a936c053d5dbf8c9893e6d",
+      "description": "One version only.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Part_II_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104612id_/http://www.hm-treasury.gov.uk/d/Part_II_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 6, Economic modelling of climate-change impacts, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-06.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 632988,
+      "hash": "sha256:98c9744456a060b430233e1637448452facecdce23b0f3c3d30523d9b5e96116",
+      "description": "Replaces the original of 27 October 2006 (media/8AC/CC/Chapter_6_Economic_modelling.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_6_Economic_modelling_of_climate-change_impacts.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104440id_/http://www.hm-treasury.gov.uk/d/Chapter_6_Economic_modelling_of_climate-change_impacts.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Part III introduction, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-part-3-introduction.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 24402,
+      "hash": "sha256:02cddfdfd368cfe6885182337afa1c0ef55bb11820a25571bbcd79c3b4062b33",
+      "description": "Replaces the original of 27 October 2006 (media/8A7/D1/Part_III_Introduction.pdf; 'greenhouse-gas' and 'Climate-change' unhyphenated in the reissue).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Part_III_Introduction.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104751id_/http://www.hm-treasury.gov.uk/d/Part_III_Introduction.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 9, Identifying the costs of mitigation, HM Treasury reissue of 18 January 2007",
+      "path": "archive/stern-review-chapter-09.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 341268,
+      "hash": "sha256:d4a55e6b0ae41c7d63e99f08f57ecb0274d56573df475f408e41d1914ec8119b",
+      "description": "The only version archived.",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_9_Identifying_the_Costs_of_Mitigation.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104414id_/http://www.hm-treasury.gov.uk/d/Chapter_9_Identifying_the_Costs_of_Mitigation.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 10, Macroeconomic models of costs, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-10.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 362411,
+      "hash": "sha256:ca5aa33b1fde330f2dc907425e641db0c9cceb2e7d485e969c9c816e58fe2415",
+      "description": "Replaces the original of 27 October 2006 (media/8A7/95/Chapter_10_Macroeconomic_models_of_cost.pdf; errata such as 'feasibl,e', and 'Note: GWP should read GDP' under Figure 10.1).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_10_Macroeconomic_Models_of_Costs.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104740id_/http://www.hm-treasury.gov.uk/d/Chapter_10_Macroeconomic_Models_of_Costs.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Stern Review: The Economics of Climate Change, Chapter 13, Towards a goal for climate-change policy, HM Treasury reissue of 8 January 2007",
+      "path": "archive/stern-review-chapter-13.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 671797,
+      "hash": "sha256:c643dd510e52d2db2e2db679799b0ae588dfc67241278b8c18fb279578fbec07",
+      "description": "Replaces the original of 27 October 2006 (media/8A7/C6/Chapter_13_Towards_a_goal_for_climate.pdf).",
+      "sources": [
+        {
+          "title": "HM Treasury, Stern Review final report page (UK Government Web Archive)",
+          "web": "https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/http://www.hm-treasury.gov.uk/stern_review_report.htm"
+        },
+        {
+          "title": "HM Treasury PDF (original URL)",
+          "web": "http://www.hm-treasury.gov.uk/d/Chapter_13_Towards_a_Goal_for_Climate-Change_Policy.pdf"
+        },
+        {
+          "title": "Wayback Machine capture (the copy archived here)",
+          "web": "https://web.archive.org/web/20081023104745id_/http://www.hm-treasury.gov.uk/d/Chapter_13_Towards_a_Goal_for_Climate-Change_Policy.pdf"
+        }
+      ]
     }
   ],
   "licenses": [

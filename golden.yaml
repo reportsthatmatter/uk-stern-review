@@ -1,7 +1,7 @@
 # Golden pages: ground truth for this report, read off the PDF page image and checked by `pnpm ingest verify`.
 # Format and rules: @rtm/ingest src/golden.ts and the site's docs/quality-harness.md ("Golden pages").
 # A page marked xfail is a known pipeline defect: it stays red here, verify stays green, and the bead says why.
-# Printed page = roman folio of the PDF page (i at PDF p.1 to xxvii at PDF p.27). Chosen for the figures (pp.4, 5, 12, 15), the notes (pp.3, 5), the raised CO2 subscripts (pp.3, 11, 15, 16) and the bold-italic findings.
+# Volume 1 (the Executive Summary): printed page = roman folio of the PDF page (i at PDF p.1 to xxvii at PDF p.27). Chosen for the figures (pp.4, 5, 12, 15), the notes (pp.3, 5), the raised CO2 subscripts (pp.3, 11, 15, 16) and the bold-italic findings.
 pages:
   # The one heading, then a bold-italic key finding (served as ***emphasis***) and a list item running over to p.2.
   - pdf: 1
@@ -106,3 +106,131 @@ pages:
       - paragraph: {start: "The third approach to analysing the", end: "avoids large-scale formal economic models."}
       - paragraph: {start: "Preliminary calculations adopting the approach to", end: "the medium to long term."}
     markers: []
+  # Introduction (vol 3, printed iv): its title is a heading; the third list item runs over to p.v and is read whole.
+  - pdf: 1
+    volume: 3
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - heading: "Introduction"
+        level: 2
+      - paragraph: {start: "The economics of climate change is", end: "we start with the science."}
+      - paragraph: {start: "Human-induced climate change is caused by", end: "over the past 100 years."}
+      - paragraph: {start: "The scientific evidence that climate change", end: "smaller than the damage averted."}
+      - paragraph: {start: "Reversing the trend to higher global", end: "Review sets out to explore."}
+      - paragraph: {start: "Economics has much to say about", end: "eventually undermine growth, however measured."}
+      - paragraph: {start: "This Review takes an international perspective", end: "requiring international cooperation and leadership."}
+      - paragraph: {start: "Our approach emphasises a number of", end: "themes, which will feature throughout."}
+      - list: {start: "We use a consistent approach towards", end: "be explicit about the effects.", items: 3}
+    markers: []
+  # Summary of Conclusions (vol 4, printed vi): its title, then the bold-italic findings served as ***emphasis***.
+  - pdf: 1
+    volume: 4
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - heading: "Summary of Conclusions"
+        level: 2
+      - paragraph: {start: "***There is still time to avoid", end: "we take strong action now.***"}
+      - paragraph: {start: "The scientific evidence is now overwhelming:", end: "demands an urgent global response."}
+      - paragraph: {start: "This Review has assessed a wide", end: "economic costs of not acting."}
+      - paragraph: {start: "Climate change will affect the basic", end: "flooding as the world warms."}
+      - paragraph: {start: "Using the results from formal economic", end: "20% of GDP or more."}
+      - paragraph: {start: "In contrast, the costs of action", end: "of global GDP each year."}
+      - paragraph: {start: "The investment that takes place in", end: "impossible to reverse these changes."}
+      - paragraph: {start: "So prompt and strong action is", end: "national, regional and international level."}
+      - paragraph: {start: "***Climate change could have very serious", end: "impacts on growth and development.***"}
+      - paragraph: {start: "If no action is taken to", end: "how they live their lives."}
+      - paragraph: {start: "Even at more moderate levels of", end: "life and on the environment."}
+    markers: []
+  # Chapter 2 (vol 6, PDF p.5, printed 27): Figure 2.2's labels (body face) are not served; its title stays; the last paragraph runs on to p.28.
+  - pdf: 5
+    volume: 6
+    printed: 27
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 2.2 is thus perhaps more", end: "the stabilisation target is chosen."}
+      - paragraph: {start: "Figure 2.2 How the path for", end: "drives the extent of abatement"}
+      - paragraph: {start: "This illustrates how important it is", end: "greenhouse gases from the atmosphere."}
+      - paragraph: {start: "This analysis raises the second point,", end: "schedule in the left-hand panel."}
+      - paragraph: {start: "Dynamics and uncertainty are explored further", end: "2.6 and in Chapter 6."}
+      - paragraph: {start: "This important example shows how important", end: "environmental and public economics throughout."}
+    markers: []
+  # Chapter 6 opening (vol 8, printed 143): the chapter heading, the Key Messages box with its bold lead sentences, and its margin-bulleted list of three.
+  - pdf: 1
+    volume: 8
+    printed: 143
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - heading: "6 Economic modelling of climate-change impacts"
+        level: 3
+      - paragraph: {start: "Key Messages", end: "Key Messages"}
+      - paragraph: {start: "The monetary cost of climate change", end: "but potentially most damaging impacts."}
+      - paragraph: {start: "Modelling the overall impact of climate", end: "economics of risk and uncertainty."}
+      - paragraph: {start: "Most formal modelling has used as", end: "countries will suffer higher costs."}
+      - paragraph: {start: "However, 'business as usual' (BAU) temperature", end: "importance of revisiting past estimates."}
+      - paragraph: {start: "Modelling over many decades, regions and", end: "take action on climate change."}
+      - paragraph: {start: "Using an Integrated Assessment Model, and", end: "a minimum, now and forever."}
+      - paragraph: {start: "The cost of BAU would increase", end: "account of three important factors:"}
+      - list: {start: "First, including direct impacts on the", end: "by more than one quarter.", items: 3}
+      - paragraph: {start: "Putting these three additional factors together", end: "at a far lower cost."}
+    markers: []
+  # Table 6.1 (vol 8, printed 163): its title and footnote line stay, its rows are not served; a three-item list citing note 45.
+  - pdf: 21
+    volume: 8
+    printed: 163
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - paragraph: {start: "Table 6.1 Losses in current per-capita", end: "climate change and economic impacts*."}
+      - paragraph: {start: "*Utility discount rate = 0.1% per", end: "utility of consumption = 1.0."}
+      - paragraph: {start: "The results under the different scenarios", end: "amounts to a 0.6% loss."}
+      - paragraph: {start: "***Climate change will reduce welfare even", end: "per-capita consumption, now and forever.***"}
+      - list: {start: "Adding the possibility of the feedbacks", end: "a world without climate change.", notes: [45], items: 3}
+      - paragraph: {start: "Finally, we should discuss where one", end: "of different possible probability distributions."}
+    footnotes: [45]
+    markers: [45]
+  # Figure 9.2 (vol 10, printed 221): chart not served, title with note 28; "9.7 Low-carbon technologies" set as two layout lines is one heading. The raised 2 of CO2e is no marker.
+  - pdf: 11
+    volume: 10
+    printed: 221
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - paragraph: {start: "Figure 9.2 Aggregate carbon abatement cost", end: "annual carbon savings by 2020", notes: [28]}
+      - paragraph: {start: "Source: See notes", end: "Source: See notes"}
+      - heading: "9.7 Low-carbon technologies"
+        level: 4
+      - paragraph: {start: "***Options for low-emission energy technologies are", end: "more expensive than conventional technologies.***"}
+      - paragraph: {start: "This section examines the options for", end: "significant further development. These include:-"}
+      - list: {start: "On and offshore wind. Wave and", end: "afforestation, crops, and organic wastes.", items: 8}
+    footnotes: [28]
+    markers: [28]
+  # Chapter 10 (vol 11, printed 246): a list item carried from p.245 is read whole; notes 11 and 12 printed as one raised run "1112".
+  - pdf: 8
+    volume: 11
+    printed: 246
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - list: {start: "It will also be cheaper to", end: "to retro-fit dirty capital stock.", items: 1}
+      - paragraph: {start: "The Barker study also found that", end: "up to 80% by 2030.", notes: [11, 12]}
+      - paragraph: {start: "***Changes in consumer and producer behaviour", end: "so 'when' flexibility is desirable.***"}
+      - paragraph: {start: "The timing of emission cuts can", end: "imply very high costs later."}
+      - paragraph: {start: "Also, as discussed above, the evolution", end: "(as discussed in Chapter 15)."}
+      - paragraph: {start: "Cost-effective planning and substituting activities across", end: "people can plan ahead efficiently."}
+    footnotes: [11, 12]
+    markers: [11, 12]
+  # Table 13.2 (vol 12, printed 295): rows not served; the page's first paragraph continues p.294's; note 9 after CO2e subscripts.
+  - pdf: 12
+    volume: 12
+    printed: 295
+    verified_by: "Claude (Opus 5.5), 2026-11-12, against the page image"
+    blocks:
+      - paragraph: {start: "Recent integrated assessment models (discussed in", end: "in temperature, among other factors."}
+      - paragraph: {start: "Table 13.2 Estimates of the costs", end: "gross world product, from PAGE2002"}
+      - paragraph: {start: "Source: Hope (2003)", end: "Source: Hope (2003)"}
+      - paragraph: {start: "Thus, for example, according to PAGE2002,", end: "costs in higher-latitude regions, too."}
+      - paragraph: {start: "The estimates of the costs of", end: "– rise more rapidly still."}
+      - paragraph: {start: "***On the basis of current scientific", end: "risk of dangerous climate change.***"}
+      - paragraph: {start: "Box 8.1 showed how the risk", end: "750ppm CO2e. This box implies:"}
+      - list: {start: "Even if the world were able", end: "that temperatures will exceed 5°C.", items: 3}
+      - paragraph: {start: "It can be seen that a", end: "the risks of extreme outcomes."}
+      - paragraph: {start: "Our work with the PAGE model", end: "to there leave out more.", notes: [9]}
+    footnotes: [9]
+    markers: [9]
