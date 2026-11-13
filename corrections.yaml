@@ -263,7 +263,7 @@ corrections:
   - id: c-0050
     find: "the inverse Leontief matrix to gauge the"
     replace: "the inverse Leontief matrix to gauge the rough magnitude of this higher order indirect impact. Because data disaggregated to a level commodity output per unit of domestically met final demand has not been published in the UK since 1993, the study has not adopted this approach and has not been able to follow the impact through the entire supply-chain. However, extending the analysis to include more multipliers seems to make little difference to the results, suggesting the numbers presented here are a close approximation to the price impacts that would be derived using an up-to-date inverse Leontief."
-    where: {volume: 18, printed: 3}
+    where: {volume: 19, printed: 3}
     reason: "Chapter 11, PDF pp.3-4 (printed 255-256): note 5 ends 'to gauge the' at the foot of p.255 and runs over to five lines at the foot of p.256, below the body."
     added: 2026-11-13
   # Line-end hyphens in Chapters 11, 12 and 14-17 (and their notes and references), kept with a space by the hyphen
@@ -507,6 +507,62 @@ corrections:
     find: "the Third Assessment Report of IPCC which estimates emissions from land"
     replace: "the Third Assessment Report of IPCC which estimates emissions from land use change within the range equivalent to 2.2 to 9.9 GtCO2,, with a central estimate of 6.2 GtCO2. A fuller discussion setting out the range of estimates can be found in Baumert KA et al. (2005)."
     reason: "Chapter 25, PDF pp.1-2 (printed 537-538): note 4 ends 'estimates emissions from land' at the foot of p.537 and runs over to two lines at the head of p.538's notes, above note 5 (the double comma as printed)."
+  # Batch 3b: four line-end 'socio-economic' that the hyphen reader joined once the Chapter 2 technical annex (which prints 'socioeconomic') was added; kept as printed and as served (Chapters 3, 5 and 6).
+  - id: c-0097
+    find: "impacts interact with socio- economic factors. Population"
+    replace: "impacts interact with socio-economic factors. Population"
+    reason: "'socio-' ends the line and 'economic' opens the next; served as 'socio-economic' before the Chapter 2 technical annex brought 'socioeconomic' into the hyphen reader's vocabulary, and the Review prints 'socio-economic' mid-line."
+    added: 2026-11-13
+  - id: c-0098
+    find: "climate change from socio- economic effects, such"
+    replace: "climate change from socio-economic effects, such"
+    reason: "'socio-' ends the line and 'economic' opens the next; served as 'socio-economic' before the Chapter 2 technical annex brought 'socioeconomic' into the hyphen reader's vocabulary, and the Review prints 'socio-economic' mid-line."
+    added: 2026-11-13
+  - id: c-0099
+    find: "SRES emissions and socio- economic scenarios', Global"
+    replace: "SRES emissions and socio-economic scenarios', Global"
+    reason: "'socio-' ends the line and 'economic' opens the next; served as 'socio-economic' before the Chapter 2 technical annex brought 'socioeconomic' into the hyphen reader's vocabulary, and the Review prints 'socio-economic' mid-line."
+    added: 2026-11-13
+  - id: c-0100
+    find: "GHGs to the socio- economic impacts of"
+    replace: "GHGs to the socio-economic impacts of"
+    reason: "'socio-' ends the line and 'economic' opens the next; served as 'socio-economic' before the Chapter 2 technical annex brought 'socioeconomic' into the hyphen reader's vocabulary, and the Review prints 'socio-economic' mid-line."
+    added: 2026-11-13
+  - id: c-0101
+    find: "$40 (for the business-as- usual path). This"
+    replace: "$40 (for the business-as-usual path). This"
+    reason: "Batch 3b (Chapter 2 annex, Postscript, Annex 7.f): 'as-' ends the line and 'usual' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0102
+    find: "may apply elsewhere). Non- forests include CO2"
+    replace: "may apply elsewhere). Non-forests include CO2"
+    reason: "Batch 3b (Chapter 2 annex, Postscript, Annex 7.f): 'Non-' ends the line and 'forests' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0103
+    find: "adding utility across sub- groups in this"
+    replace: "adding utility across sub-groups in this"
+    reason: "Batch 3b (Chapter 2 annex, Postscript, Annex 7.f): 'sub-' ends the line and 'groups' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0104
+    find: "change over long time- horizons cannot give"
+    replace: "change over long time-horizons cannot give"
+    reason: "Batch 3b (Chapter 2 annex, Postscript, Annex 7.f): 'time-' ends the line and 'horizons' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  - id: c-0105
+    find: "the mid- to upper- range of estimates"
+    replace: "the mid- to upper-range of estimates"
+    reason: "Batch 3b (Chapter 2 annex, Postscript, Annex 7.f): 'upper-' ends the line and 'range' opens the next; one hyphenated word, as printed."
+    added: 2026-11-13
+  # Annexes 7.d and 7.e (p.1): the lead-in to each numbered list ends "arise from:-", and the text reading ran the list's first item on to it, dropping the dash.
+  - id: c-0106
+    find: "emissions from industry arise from:1. Direct"
+    replace: "emissions from industry arise from:- 1. Direct"
+    reason: "Annex 7.d p.1: 'arise from:-' ends the line and the list item '1. Direct fossil fuel combustion ...' opens the next; the dash is printed."
+    added: 2026-11-13
+  - id: c-0107
+    find: "emissions from buildings arise from:1. Direct"
+    replace: "emissions from buildings arise from:- 1. Direct"
+    reason: "Annex 7.e p.1: as c-0106."
     added: 2026-11-13
 dismissed:
   - { match: "CO2e", reason: "Printed so throughout: carbon dioxide equivalent, with a subscript 2.", added: 2026-11-08 }
